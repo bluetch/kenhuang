@@ -74,7 +74,7 @@ const App = () => (
         <Route path='/portfolio' component={Portfolio} />
         <Route path='/resume' component={Resume} />
         <Route path='/kenhuang' component={Home} />
-        <Route component={NoMatch} />
+        {/* <Route component={NoMatch} /> */}
       </Switch>
     </main>
     <Footer />
