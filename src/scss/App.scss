@@ -503,70 +503,67 @@ footer {
      99. Laser
   ===============================================*/
 
-// Not so useful when you look at the compiled file size but its fun.
+// .dot {
+//   position: absolute;
+//   border-radius: 50%;
+//   z-index: 1;
+// }
 
-.dot {
-  position: absolute;
-  border-radius: 50%;
-  z-index: 1;
-}
+// @for $i from 1 through 10 {
 
-@for $i from 1 through 10 {
+//   .dot {
+//     &:nth-child(#{$i}) {
+//       width: 4px;
+//       height: 4px;
+//       top: random(80) + vh;
+//       left: random(80) + vw;
+//       -webkit-animation: getRotating-#{$i} 60s forwards ease-in-out infinite;
+//       background: rgba(0, 0, 0, 0.1);
 
-  .dot {
-    &:nth-child(#{$i}) {
-      width: 4px;
-      height: 4px;
-      top: random(80) + vh;
-      left: random(80) + vw;
-      //-webkit-animation: getMoving-#{$i} 60s forwards ease-in-out infinite;
-      -webkit-animation: getRotating-#{$i} 60s forwards ease-in-out infinite;
-      background: rgba(0, 0, 0, 0.1);
+//       &::before {
+//         content: "";
+//         border: 1px solid rgba(0, 0, 0, 0.03);
+//         height: 1px;
+//         width: 2000px;
+//         display: block;
+//         position: absolute;
+//         left: -1000px;
+//         top: 1px;
+//       }
 
-      &::before {
-        content: "";
-        border: 1px solid rgba(0, 0, 0, 0.03);
-        height: 1px;
-        width: 2000px;
-        display: block;
-        position: absolute;
-        left: -1000px;
-        top: 1px;
-      }
+//       &::after {
+//         content: "";
+//         border: 1px solid rgba(0, 0, 0, 0.03);
+//         height: 1px;
+//         width: 2000px;
+//         display: block;
+//         position: absolute;
+//         left: -999px;
+//         transform: rotate(90deg);
+//       }
+//     }
+//   }
 
-      &::after {
-        content: "";
-        border: 1px solid rgba(0, 0, 0, 0.03);
-        height: 1px;
-        width: 2000px;
-        display: block;
-        position: absolute;
-        left: -999px;
-        transform: rotate(90deg);
-      }
-    }
-  }
+//   @keyframes getMoving-#{$i} {
 
-  @keyframes getMoving-#{$i} {
+//     @for $e from 1 through 10 {
 
-    @for $e from 1 through 10 {
+//       #{$e}0% {
 
-      #{$e}0% {
+//         top: random(100) + vh;
+//         left: random(100) + vw;
+//       }
+//     }
+//   }
 
-        top: random(100) + vh;
-        left: random(100) + vw;
-      }
-    }
-  }
+//   @keyframes getRotating-#{$i} {
 
-  @keyframes getRotating-#{$i} {
+//     @for $e from 1 through 10 {
 
-    @for $e from 1 through 10 {
+//       #{$e}0% {
 
-      #{$e}0% {
-
-        transform: rotate(random(360)+deg);
-      }
-    }
-  }
-}
+//         transform: rotate(random(360)+deg);
+//       }
+//     }
+//   }
+// }
