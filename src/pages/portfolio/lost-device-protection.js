@@ -2,7 +2,7 @@ import React from "react";
 
 export const Content = () => (
   <article id="portfolio">
-    <div className="hero" style={{ backgroundImage: "url('../static/images/portfolio/lost-device-protection-cover.jpg')", }}>
+    <div className="hero" style={{ backgroundImage: "url('/static/images/portfolio/lost-device-protection-cover.jpg')", }}>
     </div>
     <section>
       <div className="container">
