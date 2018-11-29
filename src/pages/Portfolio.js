@@ -7,42 +7,42 @@ const portfolioAPI = {
       url: "shopee-accelerated-mobile-page",
       name: "Accelerated Mobile Page",
       category: "Shopee",
-      image: "/static/images/portfolio/shopee-amp-product-detail-page.jpg",
+      image: "static/images/portfolio/shopee-amp-product-detail-page.jpg",
       state: true
     },
     {
       url: "google-design-exercise-pet-adoption",
       name: "Pet Adoption",
       category: "Google",
-      image: "/static/images/portfolio/pet-adoption-cover.png",
+      image: "static/images/portfolio/pet-adoption-cover.png",
       state: true
     },
     {
       url: "design-language-system",
       name: "Design Language System",
       category: "Shopee",
-      image: "/static/images/portfolio/design-language-system-cover.jpg",
+      image: "static/images/portfolio/design-language-system-cover.jpg",
       state: false
     },
     {
       url: "prescription-helper",
       name: "Prescription Helper",
       category: "Medical",
-      image: "/static/images/portfolio/prescription-helper-cover.jpg",
+      image: "static/images/portfolio/prescription-helper-cover.jpg",
       state: true
     },
     {
       url: "lost-device-protection",
       name: "Lost Device Protection",
       category: "Trend Micro",
-      image: "/static/images/portfolio/lost-device-protection-cover.jpg",
+      image: "static/images/portfolio/lost-device-protection-cover.jpg",
       state: true
     },
     {
       url: "jewelry-box",
       name: "Jewelry-box",
       category: "Trend Micro",
-      image: "/static/images/portfolio/jewelry-box-cover.jpg",
+      image: "static/images/portfolio/jewelry-box-cover.jpg",
       state: false
     },
   ],

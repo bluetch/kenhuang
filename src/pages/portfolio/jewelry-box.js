@@ -2,7 +2,7 @@ import React from "react";
 
 export const Content = () => (
   <article id="portfolio">
-    <div className="hero" style={{ backgroundImage: "url('/static/images/portfolio/jewelry-box-cover.jpg')", }}>
+    <div className="hero" style={{ backgroundImage: "url('../static/images/portfolio/jewelry-box-cover.jpg')", }}>
     </div>
     <section>
       <div className="container">
@@ -26,7 +26,7 @@ export const Content = () => (
             <h3>Lite App</h3>
           </div>
           <div className="col-7">
-            <img src="/static/images/portfolio/jewelry-box-ui-overall.png" alt="jewelry-box-ui-overall" className="img-fluid" />
+            <img src="../static/images/portfolio/jewelry-box-ui-overall.png" alt="jewelry-box-ui-overall" className="img-fluid" />
             <h2>To be continue</h2>
           </div>
         </div>

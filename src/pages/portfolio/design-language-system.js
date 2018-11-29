@@ -2,7 +2,7 @@ import React from "react";
 
 export const Content = () => (
   <article id="portfolio">
-    <div className="hero" style={{ backgroundImage: "url('/static/images/portfolio/design-language-system-cover.jpg')", }}>
+    <div className="hero" style={{ backgroundImage: "url('../static/images/portfolio/design-language-system-cover.jpg')", }}>
     </div>
     <section>
       <div className="container">
@@ -26,9 +26,9 @@ export const Content = () => (
           </div>
           <div className="col-7">
             <h4>content</h4>
-            <img src="/static/images/portfolio/design-language-system-information-architecture.png" alt="design-language-system-information-architecture" className="img-fluid" />
-            <img src="/static/images/portfolio/design-language-system-foundations.png" alt="design-language-system-foundations" className="img-fluid" />
-            <img src="/static/images/portfolio/design-language-system-documents.png" alt="design-language-system-documents" className="img-fluid" />
+            <img src="../static/images/portfolio/design-language-system-information-architecture.png" alt="design-language-system-information-architecture" className="img-fluid" />
+            <img src="../static/images/portfolio/design-language-system-foundations.png" alt="design-language-system-foundations" className="img-fluid" />
+            <img src="../static/images/portfolio/design-language-system-documents.png" alt="design-language-system-documents" className="img-fluid" />
           </div>
           <hr />
           <div className="col-5">
