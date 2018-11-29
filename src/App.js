@@ -10,6 +10,13 @@ import Resume from './pages/Resume'
 import NoMatch from './pages/NoMatch'
 import './scss/App.scss';
 import { Helmet } from "react-helmet";
+import TagManager from 'react-gtm-module'
+
+const tagManagerArgs = {
+  gtmId: 'GTM-MWXSCRM'
+}
+
+TagManager.initialize(tagManagerArgs);
 
 class Application extends React.Component {
   constructor(props){
