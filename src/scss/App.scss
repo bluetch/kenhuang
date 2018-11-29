@@ -1,0 +1,572 @@
+/* /////////////////////////////
+
+	1. Basic Styles
+	2. Navbar
+  3. Buttons
+  4. About
+  5. Home
+  6. Portfolio
+  6-1. Medium style
+	14. Footer
+	15. Media Queries
+	16. Keyframe
+
+   //////////////////////////*/
+
+
+$primary: #0052e9;
+$secondary: #ffab00;
+$black10: rgba(0, 0, 0, 0.1);
+
+.color-primary {
+  color: $primary;
+}
+
+.color-secondary {
+  color: $secondary;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Open Sans', 'Roboto', sans-serif;
+  color: #3a3f52;
+  padding-top: 83px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+strong {
+  font-weight: 600;
+}
+
+a {
+  &.text-link {
+    color: rgba(0, 0, 0, 0.83);
+    text-decoration: underline;
+    margin: 0 2px 0 4px;
+  }
+
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+p,
+li {
+  font-weight: 300;
+  letter-spacing: .05em;
+  color: rgba(0, 0, 0, 0.83);
+}
+
+section {
+  margin: 100px 0px;
+
+  // &:nth-child(even) {
+  //   background: #FAFAFA;
+  // }
+}
+
+hr{
+  margin: 32px 0;
+}
+
+.crop {
+  width: 100%;
+  margin-bottom: 20px;
+  overflow: hidden;
+  text-align: center;
+  display: inline-block;
+  position: relative;
+  &:after {
+    padding-top: 56.25%;
+    display: block;
+    content: '';
+  }
+  img {
+    position: absolute;
+    width: 100%;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+  }
+}
+
+
+/* ==============================================
+     2. Navbar 
+  ===============================================*/
+
+.navbar {
+  background-color: white;
+  //box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.09);
+  padding: 20px;
+
+  .navbar-brand {
+    padding-left: 0;
+  }
+
+  .logo-img {
+    max-height: 40px;
+    border: 3px solid white;
+    border-radius: 50%;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, .07);
+  }
+
+  .logo-text {
+    display: inline-block;
+    letter-spacing: 4px;
+    margin: 0 0 0 10px;
+    font-size: 1.2em;
+    font-weight: 400;
+  }
+
+  a {
+    font-size: 15px;
+    font-weight: 400;
+    letter-spacing: .05em;
+    padding: 10px 16px;
+    display: block;
+    color: black;
+
+    &:hover {
+      color: $primary;
+      text-decoration: none;
+    }
+  }
+
+  /* Large devices (desktops, 992px and up) */
+  @media (min-width: 992px) {
+    &.navbar-expand-lg .navbar-nav .nav-link {
+      padding-left: 40px;
+    }
+  }
+
+}
+
+
+
+/* ==============================================
+     3. Buttons
+  ===============================================*/
+
+
+
+/* ==============================================
+     5. Home
+  ===============================================*/
+
+#home {
+  .hero {
+    position: relative;
+    overflow: hidden;
+    background: linear-gradient(-45deg, white, #FAFAFA, white, #FAFAFA);
+    background-size: 400% 400%;
+    -webkit-animation: Gradient 15s ease infinite;
+    -moz-animation: Gradient 15s ease infinite;
+    animation: Gradient 15s ease infinite;
+    padding: 300px 0;
+    margin-top: 0;
+
+    h1 {
+      font-size: 36px;
+      font-weight: 300;
+    }
+
+    h2 {
+      margin-bottom: 20px;
+    }
+
+    h3 {
+      margin-bottom: 20px;
+    }
+
+    p {
+      font-size: 24px;
+      font-weight: 300;
+      margin-bottom: 0px;
+      padding: 0px;
+    }
+
+  }
+}
+
+.crop {
+  width: 100%;
+  margin-bottom: 20px;
+  overflow: hidden;
+  text-align: center;
+  display: inline-block;
+  position: relative;
+  &:after {
+    padding-top: 56.25%;
+    display: block;
+    content: '';
+  }
+  img {
+    position: absolute;
+    left: 50%;
+  top: 50%;
+  height: auto;
+  width: 100%;
+  -webkit-transform: translate(-50%,-50%);
+      -ms-transform: translate(-50%,-50%);
+          transform: translate(-50%,-50%);
+  }
+}
+
+/* ==============================================
+     4. About
+  ===============================================*/
+
+#about {
+  h1{
+    margin-bottom: 20px;
+  }
+  .hero {
+    padding: 0;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    //background-attachment: fixed;
+    //height: 50vh;
+  }
+  .title {
+    margin-bottom: 30px;
+  }
+  .portrait{
+    width: 66%;
+    border-radius: 50%;
+    border: 8px solid white;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, .07);
+  }
+  // p:last-child{
+  //   margin-bottom: 0;
+  // }
+  .instagram{
+    margin-top: 50px;
+    border-top: 1px solid $black10;
+    padding-top: 50px;
+  }
+  .instagram-photo{
+    border: 1px solid $black10;
+    border-radius: 2px;
+    display: block;
+    img{
+      width: 100%;
+      border: 6px solid white;
+    }
+  }
+}
+
+/* ==============================================
+     6. Portfolio
+  ===============================================*/
+
+#portfolio {
+  // h2 {
+  //   font-size: 18px;
+  //   font-weight: 300;
+  // }
+  h3{
+    font-size: 1.4em;
+    font-weight: 500;
+    &:not(:first-child) {
+      margin-top: 50px;
+    }
+  }
+  h4 {
+    font-size: 1.1em;
+    margin-bottom: 20px;
+    &:not(:first-child) {
+      margin-top: 50px;
+    }
+  }
+  h5{
+    margin-top: 30px;
+  }
+
+  .hero {
+    padding: 0;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    // background-attachment: fixed;
+    height: 90vh;
+  }
+
+  .title-block {
+    margin-bottom: 50px;
+    padding-bottom: 50px;
+  }
+
+  .img-fluid {
+    margin: 30px 0;
+  }
+  .card {
+    opacity: 0.8;
+    transition: 0.3s all;
+    border: none;
+    margin-bottom: 40px;
+    &:hover {
+      transition: 0.3s padding ease-out;
+      opacity: 1;
+      box-shadow: 0px 22px 43px rgba(68, 68, 68, 0.2);
+      .card-body{
+        padding-left: 1.25rem;
+      }
+    }
+    .card-body{
+      position: relative;
+      padding-left: 0;
+    }
+    .card-title {
+      font-size: 28px;
+      font-weight: 700;
+      letter-spacing: -0.5px;
+    }
+  
+    .card-title:last-child {
+      margin-bottom: 0;
+    }
+  }
+}
+
+
+/* ==============================================
+     6. Card
+  ===============================================*/
+
+
+
+/* ==============================================
+     14. Footer
+  ===============================================*/
+
+footer {
+  padding: 20px 0;
+  color: #62656a;
+
+  .copyright {
+    float: right;
+    margin: 0;
+    font-size: 12px;
+    line-height: 37px;
+  }
+
+  a {
+    display: inline-block;
+
+    &:hover {
+      color: $primary;
+      text-decoration: none;
+    }
+  }
+
+  i {
+    font-size: 25px;
+    color: #888;
+    margin-right: 10px;
+
+    &:hover {
+      color: $primary;
+    }
+  }
+}
+
+/* ==============================================
+     15. Media Queries
+  ===============================================*/
+
+/* Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {}
+
+@media (max-width: 768px) {}
+
+
+/* Small devices (mobile, 991px and down) */
+
+@media (max-width: 991px) {
+
+  h2 {
+    font-size: 24px;
+  }
+
+  p {
+    font-size: 15px;
+  }
+
+  ul {
+    padding-left: 20px;
+
+    li {
+      font-size: 15px;
+      line-height: 20px;
+      margin-bottom: 10px;
+    }
+  }
+
+  section {
+    padding: 30px 0;
+  }
+
+  .title-block {
+    margin-bottom: 10px;
+  }
+
+  .box {
+    margin-top: 10px;
+  }
+
+  .content-box {
+    padding: 20px;
+  }
+
+  .nav-logo-mobile {
+    height: 100%;
+
+    img {
+      height: 100%;
+    }
+
+    h1 {
+      margin: 0;
+      font-size: 22px;
+      display: inline-block;
+    }
+  }
+
+  .nav-logo-desktop {
+    display: none;
+  }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991.98px) {}
+
+/* ==============================================
+     16. Keyframe
+  ===============================================*/
+
+@-webkit-keyframes Gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+
+@-moz-keyframes Gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+
+@keyframes Gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+/* ==============================================
+     99. Laser
+  ===============================================*/
+
+// Not so useful when you look at the compiled file size but its fun.
+
+.dot {
+  position: absolute;
+  border-radius: 50%;
+  z-index: 1;
+}
+
+@for $i from 1 through 10 {
+
+  .dot {
+    &:nth-child(#{$i}) {
+      width: 4px;
+      height: 4px;
+      top: random(80) + vh;
+      left: random(80) + vw;
+      //-webkit-animation: getMoving-#{$i} 60s forwards ease-in-out infinite;
+      -webkit-animation: getRotating-#{$i} 60s forwards ease-in-out infinite;
+      background: rgba(0, 0, 0, 0.1);
+
+      &::before {
+        content: "";
+        border: 1px solid rgba(0, 0, 0, 0.03);
+        height: 1px;
+        width: 2000px;
+        display: block;
+        position: absolute;
+        left: -1000px;
+        top: 1px;
+      }
+
+      &::after {
+        content: "";
+        border: 1px solid rgba(0, 0, 0, 0.03);
+        height: 1px;
+        width: 2000px;
+        display: block;
+        position: absolute;
+        left: -999px;
+        transform: rotate(90deg);
+      }
+    }
+  }
+
+  @keyframes getMoving-#{$i} {
+
+    @for $e from 1 through 10 {
+
+      #{$e}0% {
+
+        top: random(100) + vh;
+        left: random(100) + vw;
+      }
+    }
+  }
+
+  @keyframes getRotating-#{$i} {
+
+    @for $e from 1 through 10 {
+
+      #{$e}0% {
+
+        transform: rotate(random(360)+deg);
+      }
+    }
+  }
+}
