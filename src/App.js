@@ -66,6 +66,7 @@ const App = () => (
         <Route path='/about' component={About} />
         <Route path='/portfolio' component={Portfolio} />
         <Route path='/resume' component={Resume} />
+        <Route path='kenhuang' component={Home} />
         <Route component={NoMatch} />
       </Switch>
     </main>
