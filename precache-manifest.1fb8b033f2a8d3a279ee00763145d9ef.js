@@ -4,15 +4,15 @@ self.__precacheManifest = [
     "url": "/kenhuang/static/js/runtime~main.7346b814.js"
   },
   {
-    "revision": "23ac1b51f1e393e97cf7",
-    "url": "/kenhuang/static/js/main.23ac1b51.chunk.js"
+    "revision": "d44dec68c4bed962ec58",
+    "url": "/kenhuang/static/js/main.d44dec68.chunk.js"
   },
   {
     "revision": "b35b1c6c67b0c30b2f43",
     "url": "/kenhuang/static/js/1.b35b1c6c.chunk.js"
   },
   {
-    "revision": "23ac1b51f1e393e97cf7",
+    "revision": "d44dec68c4bed962ec58",
     "url": "/kenhuang/static/css/main.00657ce8.chunk.css"
   },
   {
@@ -20,7 +20,7 @@ self.__precacheManifest = [
     "url": "/kenhuang/static/css/1.2aa31501.chunk.css"
   },
   {
-    "revision": "f277194f2c2d756bee703754a18d1334",
+    "revision": "9bd2f32278597cc596cee23c207d313d",
     "url": "/kenhuang/index.html"
   }
 ];

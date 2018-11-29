@@ -1,7 +1,7 @@
 {
   "main.css": "/kenhuang/static/css/main.00657ce8.chunk.css",
-  "main.js": "/kenhuang/static/js/main.23ac1b51.chunk.js",
-  "main.js.map": "/kenhuang/static/js/main.23ac1b51.chunk.js.map",
+  "main.js": "/kenhuang/static/js/main.d44dec68.chunk.js",
+  "main.js.map": "/kenhuang/static/js/main.d44dec68.chunk.js.map",
   "static/css/1.2aa31501.chunk.css": "/kenhuang/static/css/1.2aa31501.chunk.css",
   "static/js/1.b35b1c6c.chunk.js": "/kenhuang/static/js/1.b35b1c6c.chunk.js",
   "static/js/1.b35b1c6c.chunk.js.map": "/kenhuang/static/js/1.b35b1c6c.chunk.js.map",
@@ -10,6 +10,6 @@
   "static/css/1.2aa31501.chunk.css.map": "/kenhuang/static/css/1.2aa31501.chunk.css.map",
   "static/css/main.00657ce8.chunk.css.map": "/kenhuang/static/css/main.00657ce8.chunk.css.map",
   "index.html": "/kenhuang/index.html",
-  "precache-manifest.de292d36fd5c54ca1877c6e5a51fc3fb.js": "/kenhuang/precache-manifest.de292d36fd5c54ca1877c6e5a51fc3fb.js",
+  "precache-manifest.1fb8b033f2a8d3a279ee00763145d9ef.js": "/kenhuang/precache-manifest.1fb8b033f2a8d3a279ee00763145d9ef.js",
   "service-worker.js": "/kenhuang/service-worker.js"
 }
