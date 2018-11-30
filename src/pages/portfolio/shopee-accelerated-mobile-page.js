@@ -7,11 +7,11 @@ export const Content = () => (
     <section>
       <div className="container">
         <div className="row">
-          <div className="col-5">
+          <div className="col-md-5">
             <h1>Shopee Accelerated Mobile Page</h1>
             <p>Shopee</p>
           </div>
-          <div className="col-7">
+          <div className="col-md-7">
             <p>In order to help our users browsing service in  south east area, especially in Indonesia, there are not enough internet infrastructure to support friendly web service, we have to make it better.</p>
             <p>Monthly ago, Shopee was invited from Google to join a Design Sprint workshop. The workshop is designed to tackle any part of the funnel that you would desire to from Payment, to sign in to the landing page. Google would create AMP for us to work in the day. After that, we realize it can help our problems!</p>
           </div>
@@ -22,10 +22,10 @@ export const Content = () => (
     <section>
       <div className="container">
         <div className="row">
-          <div className="col-5">
+          <div className="col-md-5">
             <h2>So why did we do this?</h2>
           </div>
-          <div className="col-7">
+          <div className="col-md-7">
             <p>There were many reasons that drove this project.</p>
             <ol>
               <li>
@@ -45,10 +45,10 @@ export const Content = () => (
     <section>
       <div className="container">
         <div className="row">
-          <div className="col-5">
+          <div className="col-md-5">
             <h2>Work Process</h2>
           </div>
-          <div className="col-7">
+          <div className="col-md-7">
             <ol>
               <li>
                 <strong>Research</strong>
@@ -74,10 +74,10 @@ export const Content = () => (
     <section>
       <div className="container">
         <div className="row">
-          <div className="col-5">
+          <div className="col-md-5">
             <h2>Research</h2>
           </div>
-          <div className="col-7">
+          <div className="col-md-7">
             <h3>Data Analytics</h3>
             <p>Via Google analytics, we pick some statistics up and figure out what might be helpful to measure success and pain point.</p>
             <p>There are some data we might track or enhance.</p>
@@ -97,10 +97,10 @@ export const Content = () => (
     <section>
       <div className="container">
         <div className="row">
-          <div className="col-5">
+          <div className="col-md-5">
             <h2>Design Sprint</h2>
           </div>
-          <div className="col-7">
+          <div className="col-md-7">
             <p>A design sprint is a five-step framework that helps teams arrive at clearly defined goals, deliverables and uncover key learnings quickly through:</p>
             <ol>
               <li>Ideation</li>
@@ -110,7 +110,7 @@ export const Content = () => (
             <h3>Affinity Mapping</h3>
             <p>Each participant watched user interview videos from 1 of 6 different user segments and came prepared with their observations written on post-it notes.</p>
             <p>
-              <a href="https://www.interaction-design.org/literature/article/affinity-diagrams-learn-how-to-cluster-and-bundle-ideas-and-facts" className="text-link">Affinity maps</a> 
+              <a href="https://www.interaction-design.org/literature/article/affinity-diagrams-learn-how-to-cluster-and-bundle-ideas-and-facts" className="text-link">Affinity maps</a>
               were then used to organize and categorize these many different data points, from which common themes and relationships surrounding the observations emerged — even uncovering previously hidden ones.</p>
             <img src="../static/images/portfolio/shopee-affinity-map.jpg" alt="shopee-affinity-map" className="img-fluid" />
             <h4>Solution Discovery</h4>
@@ -144,10 +144,10 @@ export const Content = () => (
     <section>
       <div className="container">
         <div className="row">
-          <div className="col-5">
+          <div className="col-md-5">
             <h2>Execution</h2>
           </div>
-          <div className="col-7">
+          <div className="col-md-7">
             <h3>Wireframe</h3>
             <p>Base on the sketch storming of design sprint, we could start from product detail page. My goal is to solve all the problems and implement the idea of design.</p>
           </div>
@@ -158,7 +158,7 @@ export const Content = () => (
           </div>
         </div>
         <div className="row">
-          <div className="col-7 offset-5">
+          <div className="col-md-7 offset-md-5">
             <h4>First Screen</h4>
             <p>According to the card sorting and user survey, beyond the images, product page needs to give high-level information of the product right off the bat.</p>
             <p>That information includes</p>
@@ -190,10 +190,10 @@ export const Content = () => (
     <section>
       <div className="container">
         <div className="row">
-          <div className="col-5">
+          <div className="col-md-5">
             <h2>Visual Design</h2>
           </div>
-          <div className="col-7">
+          <div className="col-md-7">
             <p>Instead of using heavy text for an overview (this is *not* the description), we use colors, fonts, and icons. And we could only fetch some representative signal for that information.</p>
           </div>
         </div>
@@ -205,10 +205,10 @@ export const Content = () => (
     <section>
       <div className="container">
         <div className="row">
-          <div className="col-5">
+          <div className="col-md-5">
             <h2>Technical Solution</h2>
           </div>
-          <div className="col-7">
+          <div className="col-md-7">
             <h3>Improve Loading Speed on Mobile Devices</h3>
             <p>We launch the <a href="https://www.ampproject.org/" className="text-link">AMP project</a> for this version which is an open-source initiative aiming to make the web better for all. The project enables the creation of websites and ads that are consistently fast, beautiful and high-performing across devices and distribution platforms.</p>
             <p>In a highly competitive e-commerce market, it’s critical to provide the best user experience (UX) for customers, including for those using low-end smartphones on 3G or 2G connections. As Shopee mobile traffic grew, the company saw an opportunity to acquire new users and improve mobile conversions through this valuable channel.</p>
@@ -219,10 +219,10 @@ export const Content = () => (
     <section>
       <div className="container">
         <div className="row">
-          <div className="col-5">
+          <div className="col-md-5">
             <h2>Product Management</h2>
           </div>
-          <div className="col-7">
+          <div className="col-md-7">
             <p>Due to this project was new and start up with designers and developers for the beginning, I raise myself to be a product manager in this project to work with each team:</p>
             <ul>
               <li>Design team</li>
@@ -243,10 +243,10 @@ export const Content = () => (
     <section>
       <div className="container">
         <div className="row">
-          <div className="col-5">
+          <div className="col-md-5">
             <h2>Validation</h2>
           </div>
-          <div className="col-7">
+          <div className="col-md-7">
             <p>We use Google Analytics to track the performance with internal data to validate the result.</p>
             <ul>
               <li><strong>3X</strong> faster load time</li>
@@ -260,10 +260,10 @@ export const Content = () => (
     <section>
       <div className="container">
         <div className="row">
-          <div className="col-5">
+          <div className="col-md-5">
             <h2>Next Step</h2>
           </div>
-          <div className="col-7">
+          <div className="col-md-7">
             <p>According to these good result, as a product manager, I have to plan the overall product roadmap. We are planning to do next for:</p>
             <ul>
               <li>Category page</li>
@@ -272,7 +272,6 @@ export const Content = () => (
           </div>
         </div>
       </div>
-
     </section>
   </article >
 );

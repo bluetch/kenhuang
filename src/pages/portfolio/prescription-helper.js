@@ -7,11 +7,11 @@ export const Content = () => (
     <section>
       <div className="container">
         <div className="row">
-          <div className="col-5">
+          <div className="col-md-5">
             <h1>Prescription Helper</h1>
             <h2>Efficiency and Friendly in Medical industry</h2>
           </div>
-          <div className="col-7">
+          <div className="col-md-7">
             <p>The project was 3 years ago since I really started being a UX designer. In the beginning, there are only 4 employees to build up an e-commerce platform. Even it is not the perfect design and system, but I still proud of my first full-time design role. And there I will focus on the prescription part of the medical e-commerce platform.</p>
             <p>In Taiwan, while older people hold on the prescription is usually take a long process to get the drug. It is a chance to get more acquisition of orders.</p>
             <p>My role: Product Designer</p>
@@ -22,10 +22,10 @@ export const Content = () => (
     <section>
       <div className="container">
         <div className="row">
-          <div className="col-5">
+          <div className="col-md-5">
             <h3>Work Process</h3>
           </div>
-          <div className="col-7">
+          <div className="col-md-7">
             <ol>
               <li>
                 <strong>Research</strong>
@@ -47,10 +47,10 @@ export const Content = () => (
     <section>
       <div className="container">
         <div className="row">
-          <div className="col-5">
+          <div className="col-md-5">
             <h3>Research</h3>
           </div>
-          <div className="col-7">
+          <div className="col-md-7">
             <h4>Continuous prescription for chronic diseases</h4>
             <p>Continuous prescription, usually, people can take drugs for 3 months, maximum receive 4 times. Beside first time,  the second, third and fourth user can go to other clinic or hospital to receive the drugs.</p>
             <h4>Find problems</h4>
@@ -60,7 +60,7 @@ export const Content = () => (
               <li><strong>86.5%</strong> of people return to original hospital to take drugs.</li>
               <li>There are <strong>6500</strong> of people lost prescription per month.</li>
             </ol>
-            <img src="..static/images/portfolio/prescription-helper-background.png" alt="prescription-helper-background" className="img-fluid" />
+            <img src="../static/images/portfolio/prescription-helper-background.png" alt="prescription-helper-background" className="img-fluid" />
             <p>Every time is a long journey, some people don’t know or don’t trust the quality local clinic.</p>
             <h4>Interview with doctors and pharmacists</h4>
             <p>We have interviews with some doctors and pharmacists and get some feedback to design the order flow and upload prescriptions in prescriptions helper.</p>
@@ -80,18 +80,18 @@ export const Content = () => (
     <section>
       <div className="container">
         <div className="row">
-          <div className="col-5">
+          <div className="col-md-5">
             <h3>Design</h3>
           </div>
-          <div className="col-7">
-            <p><strong>Optimise the pharmacys workflow, medical shippingment and backend system, save the users time of process, increase traffic for the pharmacy.</strong></p>
+          <div className="col-md-7">
+            <p>Optimise the pharmacys workflow, medical shippingment and backend system, save the users time of process, increase traffic for the pharmacy.</p>
             <h4>Wireframe</h4>
             <p>Once the idea and rules of prescription confirmed, I started to draft order flow to make sure all information and access points of each stage for users, platform, suppliers and pharmacies.</p>
           </div>
           <div className="col-12">
             <img src="../static/images/portfolio/prescription-helper-flow.jpg" alt="prescription-helper-flow" className="img-fluid" />
           </div>
-          <div className="col-7 offset-5">
+          <div className="col-md-7 offset-md-5">
             <p>This is where I do most of my critical thinking about what the user needs, and design a detailed oriented user experience. My goal is to solve all the problems before I start any visual design.</p>
           </div>
           <div className="col-12">
@@ -107,10 +107,10 @@ export const Content = () => (
     <section>
       <div className="container">
         <div className="row">
-          <div className="col-5">
+          <div className="col-md-5">
             <h3>Validation</h3>
           </div>
-          <div className="col-7">
+          <div className="col-md-7">
             <h4>Result</h4>
             <ol>
               <li>QR-code upload to save time and decrease typo rate.</li>
