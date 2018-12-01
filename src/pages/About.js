@@ -12,10 +12,10 @@ class About extends PureComponent {
       <section>
         <div className="container">
           <div className="row">
-            <div className="col-4 offset-1 my-auto">
+            <div className="col-md-4 offset-md-1 my-auto">
               <img src="../static/images/ken-huang.jpg" alt="Ken Huang" className="portrait" />
             </div>
-            <div className="col-7 my-auto">
+            <div className="col-md-7 my-auto">
               <h1>Ken Huang</h1>
               <h4 className="title">Interaction Designer / Front-end Developer</h4>
               <p>I'm a big picture thinker, I listen stories, and I solve problems that affect billions of people. I do this by designing and creating products that matter.</p>
@@ -29,10 +29,10 @@ class About extends PureComponent {
       <section>
         <div className="container">
           <div className="row">
-            <div className="col-5">
+            <div className="col-md-5">
               <h3>Experience</h3>
             </div>
-            <div className="col-7">
+            <div className="col-md-7">
               <h5>Sr. UI/UX Designer</h5>
               <h6>Shopee</h6>
               <p>Sep 2017 - Present, Singapore</p>
@@ -59,10 +59,10 @@ class About extends PureComponent {
       <section>
         <div className="container">
           <div className="row">
-            <div className="col-5">
+            <div className="col-md-5">
               <h1>Skill</h1>
             </div>
-            <div className="col-7">
+            <div className="col-md-7">
               <h5>Designer</h5>
               <p>Strategy & vision presentations • User flows • Concept sketches • Wireframes & mockups with Sketch & Axure • Motion design with Invision & CSS • Product management • Style guides & pattern library</p>
               <h5>Programmer</h5>
@@ -98,10 +98,10 @@ class About extends PureComponent {
       <section>
         <div className="container">
           <div className="row">
-            <div className="col-5">
+            <div className="col-md-5">
               <h3>Clients</h3>
             </div>
-            <div className="col-7">
+            <div className="col-md-7">
               <p>I have had the great pleasure to work with many amazing organisations, from global corporations like Google, to very small businesses. </p>
               <p>It's easy to say yes to a job, but success for me is intrinsically linked with delivery. I work very hard to ensure that my products and designs are technically feasible and that they add value to customers lives, as well as to business revenue.</p>
               <p>The products we make should matter enough to be launched, or we shouldn't make them.</p>
@@ -135,10 +135,10 @@ class About extends PureComponent {
       <section>
         <div className="container">
           <div className="row">
-            <div className="col-5">
+            <div className="col-md-5">
               <h3>Contact</h3>
             </div>
-            <div className="col-7">
+            <div className="col-md-7">
               <p>You can contact me via
               <a href="mailto:bluetch@gmail.com" className="text-link">email</a>,
               <a href="https://www.linkedin.com/in/bluetch/" className="text-link">linkedin</a>,
