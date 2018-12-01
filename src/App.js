@@ -7,7 +7,7 @@ import Home from './pages/Home'
 import About from './pages/About'
 import Portfolio from './pages/Portfolio'
 import Resume from './pages/Resume'
-import NoMatch from './pages/NoMatch'
+//import NoMatch from './pages/NoMatch'
 import './scss/App.scss';
 import { Helmet } from "react-helmet";
 import TagManager from 'react-gtm-module'

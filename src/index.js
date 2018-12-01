@@ -6,8 +6,10 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
 
+
 ReactDOM.render((
-  <Router basename={process.env.PUBLIC_URL}>
+  // <Router basename={process.env.PUBLIC_URL}>
+  <Router>
     <App />
   </Router>
 ), document.getElementById('root'));
