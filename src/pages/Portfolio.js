@@ -59,13 +59,13 @@ export const ShowAll = () => (
       <div className="row">
         {
           portfolioAPI.preview().map(task => {
-            if (task.state == true) {
+            if (task.state === true) {
               return (
-                <div className="col-6" key={task.url}>
+                <div className="col-md-6" key={task.url}>
                   <Link to={`/portfolio/${task.url}`} className="card">
                     <img src={task.image} className="card-img-top" alt={task.name} />
                     <div className="card-body">
-                      <p className="card-title">{task.name}</p>
+                      <h3 className="card-title">{task.name}</h3>
                       <p className="card-text">{task.category}</p>
                     </div>
                   </Link>
@@ -73,11 +73,11 @@ export const ShowAll = () => (
               )
             } else {
               return (
-                <div className="col-6" key={task.url}>
+                <div className="col-md-6" key={task.url}>
                   <div className="card">
                     <img src={task.image} className="card-img-top" alt={task.name} />
                     <div className="card-body">
-                      <p className="card-title">{task.name}</p>
+                      <h3 className="card-title">{task.name}</h3>
                       <p className="card-text">(Coming Soon)</p>
                     </div>
                   </div>
