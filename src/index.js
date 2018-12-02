@@ -1,15 +1,19 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
+// import ReactDOM from 'react-dom';
+import { render } from 'react-snapshot';
 import { BrowserRouter as Router } from 'react-router-dom';
+import ScrollToTop from './modules/ScrollToTop'
 
 import 'bootstrap/dist/css/bootstrap.min.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
 
 
-ReactDOM.render((
+render((
   <Router basename={process.env.PUBLIC_URL}>
-    <App />
+    <ScrollToTop>
+      <App />
+    </ScrollToTop>
   </Router>
 ), document.getElementById('root'));
 

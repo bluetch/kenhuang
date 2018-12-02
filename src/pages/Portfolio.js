@@ -5,29 +5,29 @@ const portfolioAPI = {
   tasks: [
     {
       url: "shopee-accelerated-mobile-page",
-      name: "Accelerated Mobile Page",
-      category: "Shopee",
+      name: "Shopee AMP Page",
+      category: "Redesigning Shopee mobile page for AMP",
       image: "static/images/portfolio/shopee-amp-product-detail-page.jpg",
       state: true
     },
     {
       url: "google-design-exercise-pet-adoption",
       name: "Pet Adoption",
-      category: "Google",
+      category: "Google design exercise",
       image: "static/images/portfolio/pet-adoption-cover.png",
       state: true
     },
     {
       url: "design-language-system",
       name: "Design Language System",
-      category: "Shopee",
+      category: "Coming soon",
       image: "static/images/portfolio/design-language-system-cover.jpg",
       state: false
     },
     {
       url: "prescription-helper",
       name: "Prescription Helper",
-      category: "Medical",
+      category: "A simple Medical App for get drugs of prescription",
       image: "static/images/portfolio/prescription-helper-cover.jpg",
       state: true
     },
@@ -78,7 +78,7 @@ export const ShowAll = () => (
                     <img src={task.image} className="card-img-top" alt={task.name} />
                     <div className="card-body">
                       <h3 className="card-title">{task.name}</h3>
-                      <p className="card-text">(Coming Soon)</p>
+                      <p className="card-text">{task.category}</p>
                     </div>
                   </div>
                 </div>

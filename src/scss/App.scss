@@ -1,3 +1,4 @@
+@import "_mixin.scss";
 /* /////////////////////////////
 
 	1. Basic Styles
@@ -100,26 +101,36 @@ hr {
   margin: 32px 0;
 }
 
+section {
+  @media (min-width: 992px) {
+    margin: 100px 0px;
+  }
+
+  @media (max-width: 991px) {
+    margin: 30px 0;
+  }
+}
+
+
 .crop {
-  width: 100%;
-  margin-bottom: 20px;
-  overflow: hidden;
-  text-align: center;
-  display: inline-block;
   position: relative;
-
-  &:after {
-    padding-top: 56.25%;
-    display: block;
-    content: '';
-  }
-
-  img {
-    top: 0;
-    bottom: 0;
-    right: 0;
-    left: 0;
-  }
+  width: 100%;
+  padding-top: 100%;
+  overflow: hidden;
+}
+.crop img {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  height: 100%;
+  width: auto;
+  -webkit-transform: translate(-50%,-50%);
+      -ms-transform: translate(-50%,-50%);
+          transform: translate(-50%,-50%);
+}
+.crop img.portrait {
+  width: 100%;
+  height: auto;
 }
 
 /* ==============================================
@@ -164,6 +175,10 @@ hr {
     &:hover {
       color: $primary;
       text-decoration: none;
+    }
+
+    &.active {
+      color: $primary;
     }
   }
 
@@ -223,7 +238,7 @@ hr {
     margin-bottom: 30px;
   }
 
-  .portrait {
+  .my-portrait {
     width: 66%;
     border-radius: 50%;
     border: 8px solid white;
@@ -259,6 +274,7 @@ hr {
   .hero {
     position: relative;
     padding: 30vh 0;
+
     h2 {
       font-size: 50px;
       font-weight: 300;
@@ -276,52 +292,23 @@ hr {
       margin-bottom: 0px;
       padding: 0px;
     }
-    @media (min-width: 992px){
+
+    @media (min-width: 992px) {
       margin-bottom: 60px;
     }
+
     @media (max-width: 991px) {
-      padding: 15vh 0;
+      padding: 30vh 0;
 
       h2 {
         font-size: 24px;
         display: none;
       }
-
-      h3 {
-        font-size: 1rem;
-      }
-
-      p {
-        font-size: 1rem;
-      }
     }
   }
-  .particles-layout{
+
+  .particles-layout {
     background: #0052e9;
-  }
-}
-
-.crop {
-  width: 100%;
-  margin-bottom: 20px;
-  overflow: hidden;
-  text-align: center;
-  display: inline-block;
-  position: relative;
-
-  &:after {
-    padding-top: 56.25%;
-    display: block;
-    content: '';
-  }
-
-  img {
-    top: 50%;
-    height: auto;
-    width: 100%;
-    -webkit-transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
   }
 }
 
@@ -330,15 +317,7 @@ hr {
   ===============================================*/
 
 #portfolio {
-  section {
-    @media (min-width: 992px) {
-      margin: 100px 0px;
-    }
-  
-    @media (max-width: 991px) {
-      margin: 30px 0;
-    }
-  }
+
   h3 {
     font-size: 1.4em;
     font-weight: 500;
@@ -387,6 +366,7 @@ hr {
     transition: 0.3s all;
     border: none;
     margin-bottom: 40px;
+
     &:hover {
       transition: 0.3s all;
       opacity: 1;
@@ -476,9 +456,7 @@ footer {
 
 /* Small devices (mobile, 991px and down) */
 
-@media (max-width: 991px) {
-
-}
+@media (max-width: 991px) {}
 
 /* Large devices (desktops, 992px and up) */
 

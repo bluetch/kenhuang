@@ -7,7 +7,7 @@ import Home from './pages/Home'
 import About from './pages/About'
 import Portfolio from './pages/Portfolio'
 import Resume from './pages/Resume'
-//import NoMatch from './pages/NoMatch'
+import NoMatch from './pages/NoMatch'
 import './scss/App.scss';
 import { Helmet } from "react-helmet";
 import TagManager from 'react-gtm-module'
@@ -24,7 +24,7 @@ class Application extends React.Component {
     this.title = "Ken Huang | Interaction Designer & Front End Developer";
     this.desc = "UI/UX Designer and Front End Developer with a passion for designing beautiful and functional user experiences.";
     this.url = "http://kenhuang.tw";
-    this.imageURL = "https://kenhuang.tw/images/cover.png";
+    this.imageURL = "https://kenhuang.tw/static/images/cover.jpg";
   }
   render() {
     return (
@@ -50,8 +50,10 @@ class Application extends React.Component {
             type: "application/ld+json",
             innerHTML: JSON.stringify({
               "@context": "http://schema.org",
-              "@type": "Event",
-              "name": this.title,
+              "@type": "Person",
+              "name": "Ken Huang",
+              "jobTitle": "Designer & Developer",
+              "image:": this.imageURL,
               "description": this.desc,
               "image": this.imageURL,
               "url": this.url,
@@ -74,7 +76,7 @@ const App = () => (
         <Route path='/portfolio' component={Portfolio} />
         <Route path='/resume' component={Resume} />
         <Route path='/kenhuang' component={Home} />
-        {/* <Route component={NoMatch} /> */}
+        <Route path="*" component={NoMatch} />
       </Switch>
     </main>
     <Footer />
