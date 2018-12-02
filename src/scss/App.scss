@@ -96,16 +96,6 @@ ul {
   }
 }
 
-section {
-  @media (min-width: 992px) {
-    margin: 100px 0px;
-  }
-
-  @media (max-width: 991px) {
-    margin: 30px 0;
-  }
-}
-
 hr {
   margin: 32px 0;
 }
@@ -125,8 +115,6 @@ hr {
   }
 
   img {
-    position: absolute;
-    width: 100%;
     top: 0;
     bottom: 0;
     right: 0;
@@ -270,15 +258,7 @@ hr {
 #home {
   .hero {
     position: relative;
-    overflow: hidden;
-    background: linear-gradient(-45deg, white, #FAFAFA, white, #FAFAFA);
-    background-size: 400% 400%;
-    -webkit-animation: Gradient 15s ease infinite;
-    -moz-animation: Gradient 15s ease infinite;
-    animation: Gradient 15s ease infinite;
-    margin-top: 0;
     padding: 30vh 0;
-
     h2 {
       font-size: 50px;
       font-weight: 300;
@@ -296,10 +276,11 @@ hr {
       margin-bottom: 0px;
       padding: 0px;
     }
-
+    @media (min-width: 992px){
+      margin-bottom: 60px;
+    }
     @media (max-width: 991px) {
-      padding: 10vh 0;
-      background: white;
+      padding: 15vh 0;
 
       h2 {
         font-size: 24px;
@@ -314,6 +295,9 @@ hr {
         font-size: 1rem;
       }
     }
+  }
+  .particles-layout{
+    background: #0052e9;
   }
 }
 
@@ -332,8 +316,6 @@ hr {
   }
 
   img {
-    position: absolute;
-    left: 50%;
     top: 50%;
     height: auto;
     width: 100%;
@@ -348,6 +330,15 @@ hr {
   ===============================================*/
 
 #portfolio {
+  section {
+    @media (min-width: 992px) {
+      margin: 100px 0px;
+    }
+  
+    @media (max-width: 991px) {
+      margin: 30px 0;
+    }
+  }
   h3 {
     font-size: 1.4em;
     font-weight: 500;
@@ -396,18 +387,19 @@ hr {
     transition: 0.3s all;
     border: none;
     margin-bottom: 40px;
-
     &:hover {
-      transition: 0.3s padding ease-out;
+      transition: 0.3s all;
       opacity: 1;
       box-shadow: 0px 22px 43px rgba(68, 68, 68, 0.2);
 
       .card-body {
+        transition: 0.3s all;
         padding-left: 1.25rem;
       }
     }
 
     .card-body {
+      transition: 0.3s all;
       position: relative;
       padding-left: 0;
     }
@@ -415,6 +407,7 @@ hr {
     .card-title {
       color: rgba(0, 0, 0, 0.87);
       font-weight: 700;
+      display: inline-block;
     }
 
     .card-title:last-child {
@@ -542,73 +535,5 @@ footer {
 
   100% {
     background-position: 0% 50%;
-  }
-}
-
-/* ==============================================
-     99. Laser
-  ===============================================*/
-
-
-.dot {
-  position: absolute;
-  border-radius: 50%;
-  z-index: 1;
-
-  @media (max-width: 991px) {
-    display: none;
-  }
-}
-
-
-@for $i from 1 through 10 {
-  .dot {
-    &:nth-child(#{$i}) {
-      width: 4px;
-      height: 4px;
-      top: random(80) + vh;
-      left: random(80) + vw;
-      -webkit-animation: getRotating-#{$i} 60s forwards ease-in-out infinite;
-      background: rgba(0, 0, 0, 0.1);
-
-      &::before {
-        content: "";
-        border: 1px solid rgba(0, 0, 0, 0.03);
-        height: 1px;
-        width: 2000px;
-        display: block;
-        position: absolute;
-        left: -1000px;
-        top: 1px;
-      }
-
-      &::after {
-        content: "";
-        border: 1px solid rgba(0, 0, 0, 0.03);
-        height: 1px;
-        width: 2000px;
-        display: block;
-        position: absolute;
-        left: -999px;
-        transform: rotate(90deg);
-      }
-    }
-  }
-
-  @keyframes getMoving-#{$i} {
-    @for $e from 1 through 10 {
-      #{$e}0% {
-        top: random(100) + vh;
-        left: random(100) + vw;
-      }
-    }
-  }
-
-  @keyframes getRotating-#{$i} {
-    @for $e from 1 through 10 {
-      #{$e}0% {
-        transform: rotate(random(360)+deg);
-      }
-    }
   }
 }

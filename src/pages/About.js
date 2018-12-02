@@ -13,7 +13,7 @@ class About extends PureComponent {
         <div className="container">
           <div className="row">
             <div className="col-md-4 offset-md-1 my-auto">
-              <img src="../static/images/ken-huang.jpg" alt="Ken Huang" className="portrait" />
+              <img src="../static/images/about/ken-huang.jpg" alt="Ken Huang" className="portrait" />
             </div>
             <div className="col-md-7 my-auto">
               <h1>Ken Huang</h1>
