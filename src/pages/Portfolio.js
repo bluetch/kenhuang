@@ -22,7 +22,7 @@ const portfolioAPI = {
       name: "Design Language System",
       category: "Coming soon",
       image: "static/images/portfolio/design-language-system-cover.jpg",
-      state: true
+      state: false
     },
     {
       url: "prescription-helper",
@@ -41,7 +41,7 @@ const portfolioAPI = {
     {
       url: "jewelry-box",
       name: "Jewelry-box",
-      category: "Trend Micro",
+      category: "Coming soon",
       image: "static/images/portfolio/jewelry-box-cover.jpg",
       state: false
     },
@@ -75,7 +75,6 @@ export const ShowAll = () => (
               return (
                 <div className="col-md-6" key={task.url}>
                   <div className="card coming">
-                    <div className="coming-text">Coming Soon</div>
                     <img src={task.image} className="card-img-top" alt={task.name} />
                     <div className="card-body">
                       <h3 className="card-title">{task.name}</h3>
