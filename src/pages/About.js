@@ -13,15 +13,13 @@ class About extends React.Component {
           <div className="container">
             <div className="row">
               <div className="col-md-4 offset-md-1 my-auto">
-                <img src="../static/images/about/ken-huang.jpg" alt="Ken Huang" className="portrait" />
+                <img src="../static/images/about/ken-huang.jpg" alt="Ken Huang" className="my-portrait" />
               </div>
               <div className="col-md-7 my-auto">
                 <h1>Ken Huang</h1>
                 <h4 className="title">Interaction Designer / Front-end Developer</h4>
                 <p>I'm a big picture thinker, I listen stories, and I solve problems that affect billions of people. I do this by designing and creating products that matter.</p>
                 <p>Currently I have been working at Shopee in Singapore, design for south east area users. I enjoy turning complex problems into simple, beautiful and intuitive designs. When I'm not coding, tweeting or pushing pixels, you'll find me making coffee, jogging or working out in the park.</p>
-                <hr />
-                <p>I research, document, prototype, test, iterate, design and deliver.</p>
               </div>
             </div>
           </div>

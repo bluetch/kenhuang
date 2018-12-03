@@ -5,7 +5,7 @@ const portfolioAPI = {
   tasks: [
     {
       url: "shopee-accelerated-mobile-page",
-      name: "Shopee AMP Page",
+      name: "Shopee Accelerated Mobile Page",
       category: "Redesigning Shopee mobile page for AMP",
       image: "static/images/portfolio/shopee-amp-product-detail-page.jpg",
       state: true
@@ -22,7 +22,7 @@ const portfolioAPI = {
       name: "Design Language System",
       category: "Coming soon",
       image: "static/images/portfolio/design-language-system-cover.jpg",
-      state: false
+      state: true
     },
     {
       url: "prescription-helper",
@@ -74,7 +74,8 @@ export const ShowAll = () => (
             } else {
               return (
                 <div className="col-md-6" key={task.url}>
-                  <div className="card">
+                  <div className="card coming">
+                    <div className="coming-text">Coming Soon</div>
                     <img src={task.image} className="card-img-top" alt={task.name} />
                     <div className="card-body">
                       <h3 className="card-title">{task.name}</h3>
