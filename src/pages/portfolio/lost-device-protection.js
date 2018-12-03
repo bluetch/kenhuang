@@ -2,7 +2,7 @@ import React from "react";
 
 export const Content = () => (
   <article id="portfolio">
-    <div className="hero" style={{ backgroundImage: "url('../static/images/portfolio/lost-device-protection-cover.jpg')", }}>
+    <div className="hero" style={{ backgroundImage: "url('../static/images/portfolio/lost-device-protection-cover.jpg')", height: "100vh" }}>
     </div>
     <section>
       <div className="container">
@@ -14,7 +14,7 @@ export const Content = () => (
           <div className="col-md-7">
             <p>There was a project called Lost Device Protection when I worked atTrend Micro in 2011. The product team asked me to develop the next version for new UI and responsive web design. I used a bootstrap framework, I also assisted with the HTML & CSS for the mobile version of the site, and wrote a separate stylesheet specifically for the site when being viewed on an iPad.</p>
             <p>My Rule: Front End Developer</p>
-            <a href="https://mobilesecurity.trendmicro.com/" className="btn btn-primary">View Website</a>
+            <a href="https://mobilesecurity.trendmicro.com/" className="">View Website</a>
           </div>
         </div>
       </div>

@@ -66,7 +66,7 @@ export const ShowAll = () => (
                     <img src={task.image} className="card-img-top" alt={task.name} />
                     <div className="card-body">
                       <h3 className="card-title">{task.name}</h3>
-                      <p className="card-text">{task.category}</p>
+                      <p>{task.category}</p>
                     </div>
                   </Link>
                 </div>
@@ -78,7 +78,7 @@ export const ShowAll = () => (
                     <img src={task.image} className="card-img-top" alt={task.name} />
                     <div className="card-body">
                       <h3 className="card-title">{task.name}</h3>
-                      <p className="card-text">{task.category}</p>
+                      <p>{task.category}</p>
                     </div>
                   </div>
                 </div>
