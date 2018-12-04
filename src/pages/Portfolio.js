@@ -11,13 +11,6 @@ const portfolioAPI = {
       state: true
     },
     {
-      url: "google-design-exercise-pet-adoption",
-      name: "Pet Adoption",
-      category: "Google design exercise",
-      image: "static/images/portfolio/pet-adoption-cover.png",
-      state: true
-    },
-    {
       url: "design-language-system",
       name: "Design Language System",
       category: "Coming soon",
@@ -25,11 +18,25 @@ const portfolioAPI = {
       state: false
     },
     {
+      url: "google-design-exercise-pet-adoption",
+      name: "Pet Adoption",
+      category: "Google design exercise",
+      image: "static/images/portfolio/pet-adoption-cover.png",
+      state: true
+    },
+    {
       url: "prescription-helper",
       name: "Prescription Helper",
       category: "A simple Medical App for get drugs of prescription",
       image: "static/images/portfolio/prescription-helper-cover.jpg",
       state: true
+    },
+    {
+      url: "line-flash-sale",
+      name: "LINE Flash Sale",
+      category: "Coming soon",
+      image: "static/images/portfolio/line-flash-sale-cover.png",
+      state: false
     },
     {
       url: "lost-device-protection",

@@ -34,12 +34,15 @@ class About extends React.Component {
                 <h5>Sr. UI/UX Designer</h5>
                 <h6>Shopee</h6>
                 <p>Sep 2017 - Present, Singapore</p>
-                <p>Designing for a south east asia e-commerce platform which has 30 millions downloads and It's launching in Singapore, Indonesia, Malaysia, Vietnam, Thailand, Philippines and Taiwan. In addition. Creating a design language system to improve design quality and work efficiency.</p>
+                <p>Worked with design, developer and product team to conceptualize, mock & prototyped new interactions & features through extensive user studies.</p>
+                <p>Tackled complex problems from users, technical and business perspectives.
+Designed accessible and intuitive interfaces for billions of users.</p>
+                <p>Maintained the internal design language system & implemented new design patterns for web page & mobile app.</p>
                 <hr />
                 <h5>Project Manager (UI/UX)</h5>
                 <h6>Yulon Group</h6>
                 <p>Jul 2016 - Apr 2017, Taiwan</p>
-                <p>Manage projects for travel website, car service system, Roadside Assistance App, airport pick-up service and e-commerce App. </p>
+                <p>Managed projects from idea, research, design, to launch for travel website, car management system, Roadside Assistance App, airport pick-up service and e-commerce App.</p>
                 <hr />
                 <h5>Front-end Design Lead</h5>
                 <h6>Uitox E-commerce Group</h6>
@@ -49,7 +52,12 @@ class About extends React.Component {
                 <h5>Front End Developer</h5>
                 <h6>Trend Micro</h6>
                 <p>Aug 2010 - Feb 2013</p>
-                <p>Developed Lost Device Protection, Site Safety Center, Jewelry Box and Hadoop database query system by HTML, CSS/SASS, Javascript, JAVA, PHP, and Git for site development. </p>
+                <p>Developed Lost Device Protection, Site Safety Center, Jewelry Box, and internal database query system by HTML, CSS, Javascript,  PHP, MySQL, JAVA, and Git for site development.</p>
+                <hr />
+                <h5>Freelancer</h5>
+                <h6>KenHuang.tw</h6>
+                <p>Aug 2005 - Current</p>
+                <p>I collaborated with developer teams & managed a wide variety of cross-media projects involving branding, illustrations & UI design for startups & academic institutions.</p>
               </div>
             </div>
           </div>
