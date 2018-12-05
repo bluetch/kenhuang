@@ -108,6 +108,19 @@ export const Content = () => (
       <div className="container">
         <div className="row">
           <div className="col-md-5">
+            <h2>Visual Design</h2>
+          </div>
+          <div className="col-md-7">
+            <p>Instead of using heavy text for an overview (this is *not* the description), we use colors, fonts, and icons. And we could only fetch some representative signal for that information.</p>
+          </div>
+        </div>
+      </div>
+      <img src="../static/images/portfolio/prescription-helper-cover.jpg" alt="prescription-helper-background" className="img-fluid" />
+    </section>
+    <section>
+      <div className="container">
+        <div className="row">
+          <div className="col-md-5">
             <h3>Validation</h3>
           </div>
           <div className="col-md-7">

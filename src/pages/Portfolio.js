@@ -17,13 +17,13 @@ const portfolioAPI = {
       image: "static/images/portfolio/design-language-system-cover.jpg",
       state: true
     },
-    // {
-    //   url: "google-design-exercise-pet-adoption",
-    //   name: "Pet Adoption",
-    //   category: "Google design exercise",
-    //   image: "static/images/portfolio/pet-adoption-cover.png",
-    //   state: true
-    // },
+    {
+      url: "google-design-exercise-pet-adoption",
+      name: "Pet Adoption",
+      category: "Google design exercise",
+      image: "static/images/portfolio/pet-adoption-cover.png",
+      state: "hide"
+    },
     {
       url: "prescription-helper",
       name: "Prescription Helper",
@@ -78,7 +78,7 @@ export const ShowAll = () => (
                   </Link>
                 </div>
               )
-            } else {
+            } else if(task.state === false){
               return (
                 <div className="col-md-6" key={task.url}>
                   <div className="card coming">
@@ -90,6 +90,8 @@ export const ShowAll = () => (
                   </div>
                 </div>
               )
+            }else{
+              
             }
           })
         }
