@@ -13,17 +13,17 @@ const portfolioAPI = {
     {
       url: "design-language-system",
       name: "Design Language System",
-      category: "Coming soon",
+      category: "A set of rules and guidelines help work efficiency",
       image: "static/images/portfolio/design-language-system-cover.jpg",
-      state: false
-    },
-    {
-      url: "google-design-exercise-pet-adoption",
-      name: "Pet Adoption",
-      category: "Google design exercise",
-      image: "static/images/portfolio/pet-adoption-cover.png",
       state: true
     },
+    // {
+    //   url: "google-design-exercise-pet-adoption",
+    //   name: "Pet Adoption",
+    //   category: "Google design exercise",
+    //   image: "static/images/portfolio/pet-adoption-cover.png",
+    //   state: true
+    // },
     {
       url: "prescription-helper",
       name: "Prescription Helper",

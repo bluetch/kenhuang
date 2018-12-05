@@ -22,7 +22,7 @@ export const Content = () => (
       <div className="container">
         <div className="row">
           <div className="col-md-5">
-            <h2>Work Process</h2>
+            <h2>Design Process</h2>
           </div>
           <div className="col-md-7">
             <ol>
