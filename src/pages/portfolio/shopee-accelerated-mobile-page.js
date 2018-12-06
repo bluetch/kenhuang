@@ -32,7 +32,7 @@ export const Content = () => (
                 <p><strong>Business:</strong> We wanted to reduce the drop-off rate of web pages, and increase discoverability from Google search.</p>
               </li>
               <li>
-                <p><strong>Technology:</strong> The previous app design and architecture was difficult to fit low-bandwidth internet environment like Indonesia.</p>
+                <p><strong>Technology:</strong> The previous app design and architecture was difficult to fit low-bandwidth internet environment like Indonesia. It need to load a page around 11 seconds.</p>
               </li>
               <li>
                 <p><strong>User’s pain points:</strong> There is too much information for many South-east-Asians use the older smartphone with small screen size. A lot of our users in Indonesia are hard to filter the more meaningful thing they care. </p>
@@ -193,9 +193,18 @@ export const Content = () => (
                 <img src="../static/images/portfolio/shopee-amp-pdp-wireframe-recommendation.png" alt="shopee-amp-pdp-wireframe-recommendation" className="img-fluid" />
               </div>
             </div>
-            <h3>Labels</h3>
+            <h4>Labels</h4>
             <p><p>And we also rearrange the labels of product card, for different purpose of pages, it displays the most attactive info for buyers.</p></p>
             <img src="../static/images/portfolio/shopee-amp-pdp-wireframe-labels.png" alt="shopee-amp-pdp-wireframe-labels" className="img-fluid" />
+            <h4>Error Page</h4>
+            <p>Error message text is a unique situation in the world of error messages, but definitely not rare. The default message provided by a user’s browser can often be unhelpful and generic.</p>
+            <p>To create the best error messages for a internet issue, it’s important to know what type of website error this is. The cause could be:</p>
+            <ul>
+              <li>No internet connection</li>
+              <li>The network is busy</li>
+              <li>Something went wrong</li>
+            </ul>
+            <p>Base on different scenario, we have to design suitable wording and visual to help users process.</p>
           </div>
         </div>
       </div>
