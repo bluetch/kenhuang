@@ -176,6 +176,11 @@ export const Content = () => (
             <img src="../static/images/portfolio/shopee-amp-pdp-variation.png" alt="shopee-amp-pdp-variation" className="img-fluid" />
             <h4>Hot sales from shop</h4>
             <p>We found the users as us, usually reference hot sales products, it is human nature, which also help for seller promotion. For this section it is suitable for some big seller, especially they have many products. Make buyers feel it is so popular.</p>
+            <div className="row">
+              <div className="col-md-6">
+                <img src="../static/images/portfolio/shopee-amp-pdp-wireframe-shop.png" alt="shopee-amp-pdp-wireframe-shop" className="img-fluid" />
+              </div>
+            </div>
             <h4>Recommendation</h4>
             <ul>
               <li>From the same shop</li>
@@ -183,6 +188,14 @@ export const Content = () => (
               <li>You may also like</li>
             </ul>
             <p>There are 3 recommendation sections, We put these under the product information, it can help users find out more ideal, similiar, cheaper products. For You May Also Like section, it relate the users browse history and current product, make people more choice.</p>
+            <div className="row">
+              <div className="col-md-6">
+                <img src="../static/images/portfolio/shopee-amp-pdp-wireframe-recommendation.png" alt="shopee-amp-pdp-wireframe-recommendation" className="img-fluid" />
+              </div>
+            </div>
+            <h3>Labels</h3>
+            <p><p>And we also rearrange the labels of product card, for different purpose of pages, it displays the most attactive info for buyers.</p></p>
+            <img src="../static/images/portfolio/shopee-amp-pdp-wireframe-labels.png" alt="shopee-amp-pdp-wireframe-labels" className="img-fluid" />
           </div>
         </div>
       </div>
@@ -201,6 +214,8 @@ export const Content = () => (
     </section>
     <section>
       <img src="../static/images/portfolio/shopee-amp-pdp-mockup-01.png" alt="shopee-amp-pdp-mockup-01" className="img-fluid" />
+      <img src="../static/images/portfolio/shopee-amp-pdp-mockup-02.png" alt="shopee-amp-pdp-mockup-02" className="img-fluid" />
+      <img src="../static/images/portfolio/shopee-amp-pdp-mockup-error.png" alt="shopee-amp-pdp-mockup-error" className="img-fluid" />
     </section>
     <section>
       <div className="container">
@@ -233,9 +248,14 @@ export const Content = () => (
               <li>QA(Quality assurance) team</li>
               <li>Local country team (7 countries)</li>
             </ul>
-            <h3>PRD (Product Requirements Document)</h3>
-            <p>I wrote a PRD containing all the requirements to a certain product. It is written to allow people to understand what a product should do.</p>
-            <p></p>
+            <h4>Documentation</h4>
+            <p>I created and maintaind some documents like PRD (Product Requirements Document) containing all the requirements to a certain product. It is written to allow people to understand what a product should do.</p>
+            <ul>
+              <li>Product Requirements Document (PRD)</li>
+              <li>Tracking point requirement</li>
+              <li>Design spec</li>
+              <li>Test case</li>
+            </ul>
           </div>
         </div>
       </div>
@@ -248,11 +268,12 @@ export const Content = () => (
           </div>
           <div className="col-md-7">
             <p>We use Google Analytics to track the performance with internal data to validate the result.</p>
-            <ul>
+            {/* <ul>
               <li><strong>3X</strong> faster load time</li>
               <li><strong>150%</strong> more user browse time on pages</li>
               <li>Increase to <strong>39%</strong> new users reach the page from Google search</li>
-            </ul>
+            </ul> */}
+            <img src="../static/images/portfolio/shopee-amp-pdp-performance-simple.png" alt="shopee-amp-pdp-performance-simple" className="img-fluid" />
           </div>
         </div>
       </div>
@@ -264,11 +285,7 @@ export const Content = () => (
             <h2>Next Step</h2>
           </div>
           <div className="col-md-7">
-            <p>According to these good result, as a product manager, I have to plan the overall product roadmap. We are planning to do next for:</p>
-            <ul>
-              <li>Category page</li>
-              <li>Search result page</li>
-            </ul>
+            <p>According to these good result, as a designer, I have to plan the overall product roadmap. We are planning to do next for <strong>Category page</strong></p>
           </div>
         </div>
       </div>

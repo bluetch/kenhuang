@@ -5,8 +5,7 @@ import React from "react";
 
 export const Content = () => (
   <article id="portfolio">
-    <div className="hero" style={{ backgroundImage: "url('../static/images/portfolio/design-language-system-cover.jpg')", height: "100vh" }}>
-    </div>
+    <img src="../static/images/portfolio/design-language-system-cover.jpg" alt="design-language-system-cover" className="img-fluid" style={{width: "100%", height: "100%", margin: "0"}}/>
     <section>
       <div className="container">
         <div className="row">
