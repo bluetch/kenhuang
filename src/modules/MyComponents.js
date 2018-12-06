@@ -16,3 +16,21 @@ export class PortfolioItem extends PureComponent {
     )
   }
 }
+
+export class SeeMorePortfolio extends React.Components {
+  render() {
+    return (
+      <section>
+        <div className="container">
+          <div className="row">
+            <div className="col-12">
+              <Link to="/portfolio" className="btn btn-primary float-right">
+                See more portfolio
+          </Link>
+            </div>
+          </div>
+        </div>
+      </section>
+    )
+  }
+}
