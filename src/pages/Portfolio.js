@@ -25,6 +25,13 @@ const portfolioAPI = {
       state: "hide"
     },
     {
+      url: "shopee-microsite",
+      name: "Shopee microsite",
+      category: "A content management system help on E-commerce",
+      image: "static/images/portfolio/design-language-system-cover.jpg",
+      state: "hide"
+    },
+    {
       url: "prescription-helper",
       name: "Prescription Helper",
       category: "A simple Medical App for get drugs of prescription",
@@ -57,6 +64,25 @@ const portfolioAPI = {
   get: function (id) {
     const isPortfolio = p => p.url === id
     return this.tasks.find(isPortfolio)
+  }
+}
+
+
+export class SeeMorePortfolio extends React.Component {
+  render() {
+    return (
+      <section>
+        <div className="container">
+          <div className="row">
+            <div className="col-12">
+              <Link to="/portfolio" className="btn btn-light float-right">
+                See more portfolio
+              </Link>
+            </div>
+          </div>
+        </div>
+      </section>
+    )
   }
 }
 
@@ -117,7 +143,10 @@ class Article extends React.Component {
     if (item) {
       var { Content } = require('./portfolio/' + item.url);
       return (
+        <div>
         <Content />
+        <SeeMorePortfolio />
+        </div>
       )
     } else {
       return <div>Sorry, but the task was not found</div>
