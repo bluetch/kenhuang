@@ -28,9 +28,16 @@ const portfolioAPI = {
     {
       url: "shopee-microsite",
       name: "Shopee microsite",
-      category: "A content management system help on E-commerce",
+      desc: "A content management system help on E-commerce",
       image: "static/images/portfolio/design-language-system-cover.jpg",
       state: "hide"
+    },
+    {
+      url: "shopee-recruitment",
+      name: "Shopee Recruitment",
+      desc: "Graphic design for recruit event, coming soon...",
+      image: "static/images/portfolio/shopee-recruitment-frog-cover.png",
+      state: false
     },
     {
       url: "prescription-helper",
