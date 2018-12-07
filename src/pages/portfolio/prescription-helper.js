@@ -116,6 +116,7 @@ export const Content = () => (
         </div>
       </div>
       <img src="../static/images/portfolio/prescription-helper-cover.jpg" alt="prescription-helper-background" className="img-fluid" />
+      <img src="../static/images/portfolio/prescription-helper-mockup-2.jpg" alt="prescription-helper-mockup" className="img-fluid" />
     </section>
     <section>
       <div className="container">

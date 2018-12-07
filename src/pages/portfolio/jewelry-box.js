@@ -23,6 +23,19 @@ export const Content = () => (
       <div className="container">
         <div className="row">
           <div className="col-md-5">
+            <h3>Wireframe</h3>
+          </div>
+        </div>
+        <div className="row">
+          <img src="../static/images/portfolio/jewelry-box-wireframe.png" alt="jewelry-box-wireframe" className="img-fluid" style={{height: "100%", width: "100%"}} />
+        </div>
+      </div>
+
+    </section>
+    <section>
+      <div className="container">
+        <div className="row">
+          <div className="col-md-5">
             <h3>Lite App</h3>
           </div>
           <div className="col-md-7">

@@ -26,6 +26,13 @@ const portfolioAPI = {
       state: "hide"
     },
     {
+      url: "shopee-microsite",
+      name: "Shopee microsite",
+      category: "A content management system help on E-commerce",
+      image: "static/images/portfolio/design-language-system-cover.jpg",
+      state: "hide"
+    },
+    {
       url: "prescription-helper",
       name: "Prescription Helper",
       desc: "A simple Medical App for get drugs of prescription",
@@ -58,6 +65,25 @@ const portfolioAPI = {
   get: function (id) {
     const isPortfolio = p => p.url === id
     return this.tasks.find(isPortfolio)
+  }
+}
+
+
+export class SeeMorePortfolio extends React.Component {
+  render() {
+    return (
+      <section>
+        <div className="container">
+          <div className="row">
+            <div className="col-12">
+              <Link to="/portfolio" className="btn btn-light float-right">
+                See more portfolio
+              </Link>
+            </div>
+          </div>
+        </div>
+      </section>
+    )
   }
 }
 
@@ -124,13 +150,14 @@ class Article extends React.Component {
             meta={[
               { name: "description", content: item.desc },
               { property: "og:title", content: item.title },
-              { property: "og:site_name", content: "Ken Huang" },
+              { property: "og:site_name", content: "Ken Huang | Interaction Designer" },
               { property: "og:url", content: item.url },
               { property: "og:image", content: item.image },
               { property: "og:description", content: item.desc },
             ]}
           />
           <Content />
+          <SeeMorePortfolio />
         </div>
       )
     } else {

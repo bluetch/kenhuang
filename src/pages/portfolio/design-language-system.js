@@ -1,11 +1,16 @@
 import React from "react";
+import { Link } from 'react-router-dom'
 
 // Reference: https://airbnb.design/building-a-visual-language/
 //            https://uxplanet.org/design-language-system-d438f4aa30e0
 
 export const Content = () => (
   <article id="portfolio">
-    <img src="../static/images/portfolio/design-language-system-cover.jpg" alt="design-language-system-cover" className="img-fluid" style={{width: "100%", height: "100%", margin: "0"}}/>
+    <img src="../static/images/portfolio/design-language-system-cover.jpg"
+      alt="design-language-system"
+      className="img-fluid"
+      style={{ margin: "0" }}
+    />
     <section>
       <div className="container">
         <div className="row">
@@ -32,7 +37,7 @@ export const Content = () => (
             <h3>Problems</h3>
             <h4>Too few constraints</h4>
             <p>
-            E-commerce design has few physical constraints compared to many other design disciplines. This allows for a variety of solutions to any given challenge but also opens it to disjointed user experiences. As product owners and designers, we have to create and follow our own constraints.
+              E-commerce design has few physical constraints compared to many other design disciplines. This allows for a variety of solutions to any given challenge but also opens it to disjointed user experiences. As product owners and designers, we have to create and follow our own constraints.
                 </p>
             <h4>Multiple designers and stakeholders</h4>
             <p>Software is often built by teams– sometimes incredibly large teams– of people. The challenge to create coherent experiences multiplies exponentially as more people are added to the mix. Also over time, no matter how consistent or small a team is, different people will contribute new solutions and styles, causing experiences to diverge.
@@ -116,11 +121,10 @@ export const Content = () => (
             <p>Due to there are too many guidelines, styles, and images, sometimes we are not sure current project belong to part of DLS, or special case. It make people confused and complex. We think there should have some tools to help check.</p>
             <h4>Work Efficiency</h4>
             <p>In the other hand, we realize some of the repeat works could solve by automation tool, like the banners of marketing daily work, designers usually have to resize lots of banners to upload many different advertisement platforms. We are building the auto-layout to help they work efficiency.</p>
-            <iframe title="autolayout" width="560" height="315" src="https://www.youtube.com/embed/CwmaUkF94dc" frameborder="0" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <iframe title="autolayout" width="560" height="315" src="https://www.youtube.com/embed/CwmaUkF94dc" frameBorder="0" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
           </div>
         </div>
       </div>
     </section>
-
   </article >
 );
