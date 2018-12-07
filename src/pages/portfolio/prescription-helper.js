@@ -9,7 +9,7 @@ export const Content = () => (
         <div className="row">
           <div className="col-md-5">
             <h1>Prescription Helper</h1>
-            <h2>Efficiency and Friendly in Medical industry</h2>
+            <p>Efficiency and Friendly in Medical industry</p>
           </div>
           <div className="col-md-7">
             <p>The project was 3 years ago since I really started being a UX designer. In the beginning, there are only 4 employees to build up an e-commerce platform. Even it is not the perfect design and system, but I still proud of my first full-time design role. And there I will focus on the prescription part of the medical e-commerce platform.</p>

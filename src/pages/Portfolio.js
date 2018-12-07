@@ -1,54 +1,55 @@
 import React from "react";
-import { Switch, Route, Link } from 'react-router-dom'
+import { Switch, Route, Link } from 'react-router-dom';
+import { Helmet } from "react-helmet";
 
 const portfolioAPI = {
   tasks: [
     {
       url: "shopee-accelerated-mobile-page",
       name: "Shopee Accelerated Mobile Page",
-      category: "Redesigning Shopee mobile page for AMP",
+      desc: "Redesigning Shopee mobile page for AMP",
       image: "static/images/portfolio/shopee-amp-product-detail-page.jpg",
       state: true
     },
     {
       url: "design-language-system",
       name: "Design Language System",
-      category: "A set of rules and guidelines help work efficiency",
+      desc: "A set of rules and guidelines help work efficiency",
       image: "static/images/portfolio/design-language-system-cover.jpg",
       state: true
     },
     {
       url: "google-design-exercise-pet-adoption",
       name: "Pet Adoption",
-      category: "Google design exercise",
+      desc: "Google design exercise",
       image: "static/images/portfolio/pet-adoption-cover.png",
       state: "hide"
     },
     {
       url: "prescription-helper",
       name: "Prescription Helper",
-      category: "A simple Medical App for get drugs of prescription",
+      desc: "A simple Medical App for get drugs of prescription",
       image: "static/images/portfolio/prescription-helper-cover.jpg",
       state: true
     },
     {
       url: "line-flash-sale",
       name: "LINE Flash Sale",
-      category: "Coming soon",
+      desc: "Coming soon",
       image: "static/images/portfolio/line-flash-sale-cover.png",
       state: false
     },
     {
       url: "lost-device-protection",
       name: "Lost Device Protection",
-      category: "Trend Micro",
+      desc: "Trend Micro",
       image: "static/images/portfolio/lost-device-protection-cover.jpg",
       state: true
     },
     {
       url: "jewelry-box",
-      name: "Jewelry-box",
-      category: "Coming soon",
+      name: "Jewelry Box",
+      desc: "Coming soon",
       image: "static/images/portfolio/jewelry-box-cover.jpg",
       state: false
     },
@@ -73,25 +74,25 @@ export const ShowAll = () => (
                     <img src={task.image} className="card-img-top" alt={task.name} />
                     <div className="card-body">
                       <h3 className="card-title">{task.name}</h3>
-                      <p>{task.category}</p>
+                      <p>{task.desc}</p>
                     </div>
                   </Link>
                 </div>
               )
-            } else if(task.state === false){
+            } else if (task.state === false) {
               return (
                 <div className="col-md-6" key={task.url}>
                   <div className="card coming">
                     <img src={task.image} className="card-img-top" alt={task.name} />
                     <div className="card-body">
                       <h3 className="card-title">{task.name}</h3>
-                      <p>{task.category}</p>
+                      <p>{task.desc}</p>
                     </div>
                   </div>
                 </div>
               )
-            }else{
-              
+            } else {
+
             }
           })
         }
@@ -117,7 +118,20 @@ class Article extends React.Component {
     if (item) {
       var { Content } = require('./portfolio/' + item.url);
       return (
-        <Content />
+        <div>
+          <Helmet
+            title={item.name}
+            meta={[
+              { name: "description", content: item.desc },
+              { property: "og:title", content: item.title },
+              { property: "og:site_name", content: "Ken Huang" },
+              { property: "og:url", content: item.url },
+              { property: "og:image", content: item.image },
+              { property: "og:description", content: item.desc },
+            ]}
+          />
+          <Content />
+        </div>
       )
     } else {
       return <div>Sorry, but the task was not found</div>
