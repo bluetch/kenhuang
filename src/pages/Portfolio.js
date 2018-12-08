@@ -34,7 +34,7 @@ const portfolioAPI = {
     },
     {
       url: "shopee-recruitment",
-      name: "Shopee Recruitment",
+      name: "Graphic Recruitment",
       desc: "Graphic design for recruit event, coming soon...",
       image: "static/images/portfolio/shopee-recruitment-frog-cover.png",
       state: false
