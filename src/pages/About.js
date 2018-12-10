@@ -9,7 +9,7 @@ class About extends React.Component {
       <article id="about">
         {/* <div className="hero" style={{ backgroundImage: "url('../static/images/portfolio/shopee-workshop-01.jpg')", height: "90vh" }}>
     </div> */}
-        <section>
+        <section className="profile">
           <div className="container">
             <div className="row">
               <div className="col-md-4 offset-md-1 my-auto">
@@ -24,39 +24,39 @@ class About extends React.Component {
             </div>
           </div>
         </section>
-        <section>
+        <section className="experience">
           <div className="container">
             <div className="row">
               <div className="col-md-5">
                 <h3>Experience</h3>
               </div>
               <div className="col-md-7">
-                <h5>Sr. UI/UX Designer</h5>
-                <h6>Shopee</h6>
-                <p>Sep 2017 - Present, Singapore</p>
+                <img src="../static/images/about/logo-shopee.png" alt="" className="job-logo" />
+                <h5 className="job-title">Sr. UI/UX Designer</h5>
+                <p>Shopee (Sep 2017 - Present, Singapore)</p>
                 <p>Worked with design, developer and product team to conceptualize, mock & prototyped new interactions & features through extensive user studies.</p>
                 <p>Tackled complex problems from users, technical and business perspectives.
 Designed accessible and intuitive interfaces for billions of users.</p>
                 <p>Maintained the internal design language system & implemented new design patterns for web page & mobile app.</p>
                 <hr />
-                <h5>Project Manager (UI/UX)</h5>
-                <h6>Yulon Group</h6>
-                <p>Jul 2016 - Apr 2017, Taiwan</p>
+                <img src="../static/images/about/logo-yulon.png" alt="" className="job-logo" />
+                <h5 className="job-title">Project Manager (UI/UX)</h5>
+                <p>Yulon Group (Jul 2016 - Apr 2017, Taiwan)</p>
                 <p>Managed projects from idea, research, design, to launch for travel website, car management system, Roadside Assistance App, airport pick-up service and e-commerce App.</p>
                 <hr />
+                <img src="../static/images/about/logo-uitox.jpg" alt="" className="job-logo" />
                 <h5>Front-end Design Lead</h5>
-                <h6>Uitox E-commerce Group</h6>
-                <p>Aug 2013 - Jul 2016</p>
+                <p>Uitox E-commerce Group (Aug 2013 - Jul 2016)</p>
                 <p>Designed brand e-commerce for ASUS, LINE, Feiniu in China, Taiwan, Singapore, and Indonesia.</p>
                 <hr />
-                <h5>Front End Developer</h5>
-                <h6>Trend Micro</h6>
-                <p>Aug 2010 - Feb 2013</p>
+                <img src="../static/images/about/logo-trendmicro.jpg" alt="" className="job-logo" />
+                <h5 className="job-title">Front End Developer</h5>
+                <p>Trend Micro (Aug 2010 - Feb 2013)</p>
                 <p>Developed Lost Device Protection, Site Safety Center, Jewelry Box, and internal database query system by HTML, CSS, Javascript,  PHP, MySQL, JAVA, and Git for site development.</p>
                 <hr />
-                <h5>Freelancer</h5>
-                <h6>KenHuang.tw</h6>
-                <p>Aug 2005 - Current</p>
+                <img src="../static/images/ken-huang-logo.png" alt="" className="job-logo" />
+                <h5 className="job-title">Freelancer</h5>
+                <p>KenHuang.tw (Aug 2005 - Current)</p>
                 <p>I collaborated with developer teams & managed a wide variety of cross-media projects involving branding, illustrations & UI design for startups & academic institutions.</p>
               </div>
             </div>
@@ -66,7 +66,7 @@ Designed accessible and intuitive interfaces for billions of users.</p>
           <div className="container">
             <div className="row">
               <div className="col-md-5">
-                <h1>Skill</h1>
+                <h3>Skill</h3>
               </div>
               <div className="col-md-7">
                 <h5>Designer</h5>
@@ -129,6 +129,44 @@ Designed accessible and intuitive interfaces for billions of users.</p>
           <div className="container">
             <div className="row">
               <div className="col-md-5">
+                <h3>Travel</h3>
+              </div>
+              <div className="col-md-7">
+                <div className="row">
+                  <div className="col-4">
+                    <img src="../static/images/about/travel-australia-cover.jpg" alt="" className="img-fluid" />
+                    <p className="text-center">Australia</p>
+                  </div>
+                  <div className="col-4">
+                    <img src="../static/images/about/travel-england-cover.jpg" alt="" className="img-fluid" />
+                    <p className="text-center">England</p>
+                  </div>
+                  <div className="col-4">
+                    <img src="../static/images/about/travel-iceland-cover.jpg" alt="" className="img-fluid" />
+                    <p className="text-center">Iceland</p>
+                  </div>
+                  <div className="col-4">
+                    <img src="../static/images/about/travel-japan-cover.jpg" alt="" className="img-fluid" />
+                    <p className="text-center">Japan</p>
+                  </div>
+                  <div className="col-4">
+                    <img src="../static/images/about/travel-indonesia-cover.jpg" alt="" className="img-fluid" />
+                    <p className="text-center">Indonesia</p>
+                  </div>
+                  <div className="col-4">
+                    <img src="../static/images/about/travel-thailand-cover.jpg" alt="" className="img-fluid" />
+                    <p className="text-center">Thailand</p>
+                  </div>
+                </div>
+                <p>The blog is rewriting for English, please look forward it.</p>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section>
+          <div className="container">
+            <div className="row">
+              <div className="col-md-5">
                 <h3>Contact</h3>
               </div>
               <div className="col-md-7">
@@ -142,7 +180,7 @@ Designed accessible and intuitive interfaces for billions of users.</p>
             </div>
           </div>
         </section>
-      </article>
+      </article >
     );
   }
 }

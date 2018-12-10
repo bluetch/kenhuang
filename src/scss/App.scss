@@ -192,7 +192,7 @@ section {
 	}
 
 	@media (max-width: 991px) {
-		
+
 		.logo-img {
 			position: absolute;
 			left: 50%;
@@ -229,6 +229,13 @@ section {
 #about {
 	h1 {
 		margin-bottom: 10px;
+		@media (max-width: 991px){
+			margin: 20px 0;
+		}
+	}
+
+	h3{
+		margin-bottom: 30px;
 	}
 
 	.hero {
@@ -253,6 +260,17 @@ section {
 	// p:last-child{
 	//   margin-bottom: 0;
 	// }
+	.job-logo {
+		float: left;
+		width: 36px;
+		margin-right: 15px;
+		margin-top: 4px;
+	}
+
+	.job-title {
+		margin-bottom: 0;
+	}
+
 	.instagram {
 		margin-top: 50px;
 		border-top: 1px solid $black10;
@@ -267,6 +285,18 @@ section {
 		img {
 			width: 100%;
 			border: 6px solid white;
+		}
+	}
+
+	.profile {
+		@media (max-width: 991px) {
+			text-align: center;
+		}
+	}
+
+	.experience {
+		p {
+			margin-left: 52px;
 		}
 	}
 }
@@ -303,6 +333,7 @@ section {
 			margin: 0 auto;
 			perspective: 1000;
 			@include clearfix;
+
 			&:hover .flipper-back {
 				transform: rotateY(0deg);
 			}
@@ -349,6 +380,7 @@ section {
 		@media (max-width: 991px) {
 			padding: 15vh 0;
 			text-align: center;
+
 			h2 {
 				font-size: 24px;
 			}
@@ -356,16 +388,19 @@ section {
 			h3 {
 				font-size: 24px;
 			}
-			.flipper{
+
+			.flipper {
 				min-height: 205px;
 			}
+
 			.avatar {
 				width: 50%;
 			}
-			p{
+
+			p {
 				font-size: 14px;
 			}
-			
+
 		}
 	}
 
