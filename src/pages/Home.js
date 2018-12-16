@@ -3,6 +3,9 @@ import { ShowAll } from "./Portfolio.js"
 import Particles from 'react-particles-js';
 
 class Home extends PureComponent {
+  componentDidMount() {
+    document.title = "Ken Huang | Interaction Designer";
+  }
   render() {
     return (
       <div id="home">

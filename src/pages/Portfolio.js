@@ -35,9 +35,9 @@ const portfolioAPI = {
     {
       url: "shopee-recruitment",
       name: "Graphic Recruitment",
-      desc: "Graphic design for recruit event, coming soon...",
+      desc: "Social network recruitment strategy",
       image: "static/images/portfolio/shopee-recruitment-frog-cover.png",
-      state: false
+      state: true
     },
     {
       url: "prescription-helper",
@@ -125,7 +125,6 @@ export const ShowAll = () => (
                 </div>
               )
             } else {
-
             }
           })
         }
@@ -141,9 +140,6 @@ class Article extends React.Component {
   componentDidMount() {
     const item = portfolioAPI.get(this.props.match.params.url);
     document.title = item.name;
-  }
-  componentWillUnmount() {
-    document.title = "Portfolio - Ken Huang";
   }
   render() {
     const item = portfolioAPI.get(this.props.match.params.url);
@@ -175,9 +171,7 @@ class Article extends React.Component {
 
 class Portfolio extends React.Component {
   componentDidMount() {
-    if (!document.title) {
       document.title = "Portfolio - Ken Huang";
-    }
   }
   render() {
     return (
