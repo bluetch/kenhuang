@@ -20,6 +20,7 @@ class About extends React.Component {
                 <h4 className="title">Interaction Designer / Front-end Developer</h4>
                 <p>I'm a big picture thinker, I listen stories, and I solve problems that affect billions of people. I do this by designing and creating products that matter.</p>
                 <p>Currently I have been working at Shopee in Singapore, design for south east area users. I enjoy turning complex problems into simple, beautiful and intuitive designs. When I'm not coding, tweeting or pushing pixels, you'll find me making coffee, jogging or working out in the park.</p>
+                <a href="https://drive.google.com/open?id=1vGYSgokPtEfYkJ6jmWySyW0vbEjxT8Lz" className="btn btn-primary">Resume</a>
               </div>
             </div>
           </div>
