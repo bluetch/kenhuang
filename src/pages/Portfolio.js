@@ -43,7 +43,7 @@ const portfolioAPI = {
       name: "LINE Flash Sale",
       category: "Coming soon",
       image: "static/images/portfolio/line-flash-sale-cover.png",
-      state: false
+      state: "hide"
     },
     {
       url: "lost-device-protection",
@@ -55,9 +55,9 @@ const portfolioAPI = {
     {
       url: "jewelry-box",
       name: "Jewelry-box",
-      category: "Coming soon",
+      category: "Trend Micro",
       image: "static/images/portfolio/jewelry-box-cover.jpg",
-      state: false
+      state: true
     },
   ],
   preview() { return this.tasks },

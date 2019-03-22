@@ -99,7 +99,6 @@ class Home extends PureComponent {
                 {/* <h2>Hi, I'm Ken Huang!</h2> */}
                 <h3>I am a <span className="color-primary">designer</span> and <span className="color-secondary">developer</span> with 10 years experience.</h3>
                 <p>Some of my skills include user research, UX/UI design, interaction design, prototyping, user testing and front end developing. I also play tennis.</p>
-
               </div>
             </div>
           </div>

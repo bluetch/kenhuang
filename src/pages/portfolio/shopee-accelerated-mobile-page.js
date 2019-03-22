@@ -15,7 +15,6 @@ export const Content = () => (
             <p>In order to help our users browsing service in  south east area, especially in Indonesia, there are not enough internet infrastructure to support friendly web service, we have to make it better.</p>
             <p>Monthly ago, Shopee was invited from Google to join a Design Sprint workshop. The workshop is designed to tackle any part of the funnel that you would desire to from Payment, to sign in to the landing page. Google would create AMP for us to work in the day. After that, we realize it can help our problems!</p>
           </div>
-
         </div>
       </div>
     </section>

@@ -34,10 +34,9 @@ class About extends React.Component {
                 <h5>Sr. UI/UX Designer</h5>
                 <h6>Shopee</h6>
                 <p>Sep 2017 - Present, Singapore</p>
-                <p>Worked with design, developer and product team to conceptualize, mock & prototyped new interactions & features through extensive user studies.</p>
-                <p>Tackled complex problems from users, technical and business perspectives.
-Designed accessible and intuitive interfaces for billions of users.</p>
-                <p>Maintained the internal design language system & implemented new design patterns for web page & mobile app.</p>
+                <p>Lead design language system for Shopee projects: design library, CMS for operations and components with developers.</p>
+                <p>Executing design at all stages from early concept to end to end experience including UX, interaction, user research, and visual design.</p>
+                <p>Collaborate with the product, business, and engineering team to define the product direction. </p>
                 <hr />
                 <h5>Project Manager (UI/UX)</h5>
                 <h6>Yulon Group</h6>
@@ -47,7 +46,8 @@ Designed accessible and intuitive interfaces for billions of users.</p>
                 <h5>Front-end Design Lead</h5>
                 <h6>Uitox E-commerce Group</h6>
                 <p>Aug 2013 - Jul 2016</p>
-                <p>Designed brand e-commerce for ASUS, LINE, Feiniu in China, Taiwan, Singapore, and Indonesia.</p>
+                <p>Led UX/UI for e-commerce system: web and App store, payment, shipping features and dashboard for buyers and sellers from research, conception and validation, through documentation, implementation and launch.</p>
+                <p>Led a team of designers & front-end developers, hiring and mentor, responsible for direct reports, and designed brand e-commerce for ASUS, LINE, Feiniu.</p>
                 <hr />
                 <h5>Front End Developer</h5>
                 <h6>Trend Micro</h6>

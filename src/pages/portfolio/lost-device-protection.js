@@ -9,10 +9,10 @@ export const Content = () => (
         <div className="row">
           <div className="col-md-5">
             <h1>Lost Device Protection</h1>
-            <p>Trend Micro</p>
+            <p>Trend Micro, 2013</p>
           </div>
           <div className="col-md-7">
-            <p>There was a project called Lost Device Protection when I worked atTrend Micro in 2011. The product team asked me to develop the next version for new UI and responsive web design. I used a bootstrap framework, I also assisted with the HTML & CSS for the mobile version of the site, and wrote a separate stylesheet specifically for the site when being viewed on an iPad.</p>
+            <p>There was a project called Lost Device Protection when I worked at Trend Micro. The product team asked me to develop the next version for new UI and responsive web design. I used a bootstrap framework, I also assisted with the HTML & CSS for the mobile version of the site, and wrote a separate stylesheet specifically for the site when being viewed on an iPad.</p>
             <p>My Rule: Front End Developer</p>
             <a href="https://mobilesecurity.trendmicro.com/" className="">View Website</a>
           </div>
