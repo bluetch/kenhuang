@@ -20,7 +20,7 @@ class About extends React.Component {
                 <h4 className="title">Interaction Designer / Front-end Developer</h4>
                 <p>I'm a big picture thinker, I listen stories, and I solve problems that affect billions of people. I do this by designing and creating products that matter.</p>
                 <p>Currently I have been working at Shopee in Singapore, design for south east area users. I enjoy turning complex problems into simple, beautiful and intuitive designs. When I'm not coding, tweeting or pushing pixels, you'll find me making coffee, jogging or working out in the park.</p>
-                <a href="https://drive.google.com/open?id=1vGYSgokPtEfYkJ6jmWySyW0vbEjxT8Lz" className="btn btn-primary">Resume</a>
+                <a href="https://drive.google.com/open?id=1IAZQVlsNZ_sZZ7sNEMbtChJhzEZoLe-H" className="btn btn-light">Resume</a>
               </div>
             </div>
           </div>
@@ -33,9 +33,9 @@ class About extends React.Component {
               </div>
               <div className="col-md-7">
                 <img src="../static/images/about/logo-shopee.png" alt="" className="job-logo" />
-                <h5 className="job-title">Sr. UI/UX Designer</h5>
+                <h5 className="job-title">Sr. UI/UX Designer / Engineer</h5>
                 <p>Shopee (Sep 2017 - Present, Singapore)</p>
-                <p>Led design language system for Shopee projects: design library, CMS for operations and components with developers.</p>
+                <p>Owner of design language system for Shopee projects: design library, CMS for operations and components with developers.</p>
                 <p>Executing design at all stages from early concept to end to end experience including UX, interaction, user research, and visual design.</p>
                 <p>Collaborate with the product, business, and engineering team to define the product direction. </p>
 
@@ -160,7 +160,6 @@ class About extends React.Component {
                     <p className="text-center">Thailand</p>
                   </div>
                 </div>
-                <p>The blog is rewriting for English, please look forward it.</p>
               </div>
             </div>
           </div>
