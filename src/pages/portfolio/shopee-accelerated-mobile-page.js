@@ -1,7 +1,7 @@
 import React from "react";
 
 export const Content = () => (
-  <article id="portfolio">
+  <article className="portfolio">
     <div className="hero" style={{ backgroundImage: "url('../static/images/portfolio/shopee-workshop-01.jpg')", }}>
     </div>
     <section>
@@ -193,7 +193,7 @@ export const Content = () => (
               </div>
             </div>
             <h4>Labels</h4>
-            <p><p>And we also rearrange the labels of product card, for different purpose of pages, it displays the most attactive info for buyers.</p></p>
+            <p>>And we also rearrange the labels of product card, for different purpose of pages, it displays the most attactive info for buyers.</p>
             <img src="../static/images/portfolio/shopee-amp-pdp-wireframe-labels.png" alt="shopee-amp-pdp-wireframe-labels" className="img-fluid" />
             <h4>Error Page</h4>
             <p>Error message text is a unique situation in the world of error messages, but definitely not rare. The default message provided by a user’s browser can often be unhelpful and generic.</p>

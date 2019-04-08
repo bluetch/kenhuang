@@ -1,61 +1,69 @@
 import React from "react";
-import { Switch, Route, Link } from 'react-router-dom'
+import { Switch, Route, Link } from 'react-router-dom';
+import { Helmet } from "react-helmet";
 
 const portfolioAPI = {
   tasks: [
     {
       url: "shopee-accelerated-mobile-page",
       name: "Shopee Accelerated Mobile Page",
-      category: "Redesigning Shopee mobile page for AMP",
+      desc: "Redesigning Shopee mobile page for AMP",
       image: "static/images/portfolio/shopee-amp-product-detail-page.jpg",
       state: true
     },
     {
       url: "design-language-system",
       name: "Design Language System",
-      category: "A set of rules and guidelines help work efficiency",
+      desc: "A set of rules and guidelines help work efficiency",
       image: "static/images/portfolio/design-language-system-cover.jpg",
       state: true
     },
     {
-      url: "google-design-exercise-pet-adoption",
+      url: "design-exercise-pet-adoption",
       name: "Pet Adoption",
-      category: "Google design exercise",
+      desc: "Design exercise",
       image: "static/images/portfolio/pet-adoption-cover.png",
       state: "hide"
     },
     {
       url: "shopee-microsite",
       name: "Shopee microsite",
-      category: "A content management system help on E-commerce",
+      desc: "A content management system help on E-commerce",
       image: "static/images/portfolio/design-language-system-cover.jpg",
       state: "hide"
     },
     {
+      url: "shopee-recruitment",
+      name: "Graphic Recruitment",
+      desc: "Social network recruitment strategy",
+      image: "static/images/portfolio/shopee-recruitment-frog-cover.png",
+      state: true
+    },
+    {
       url: "prescription-helper",
       name: "Prescription Helper",
-      category: "A simple Medical App for get drugs of prescription",
+      desc: "A simple Medical App for get drugs of prescription",
       image: "static/images/portfolio/prescription-helper-cover.jpg",
       state: true
     },
     {
       url: "line-flash-sale",
       name: "LINE Flash Sale",
-      category: "Coming soon",
+      desc: "Deliver UX/UI design for Web App for LINE",
       image: "static/images/portfolio/line-flash-sale-cover.png",
-      state: "hide"
+      state: true
     },
     {
       url: "lost-device-protection",
       name: "Lost Device Protection",
-      category: "Trend Micro",
+      desc: "Trend Micro",
       image: "static/images/portfolio/lost-device-protection-cover.jpg",
       state: true
     },
     {
       url: "jewelry-box",
       name: "Jewelry-box",
-      category: "Trend Micro",
+      desc: "Trend Micro",
       image: "static/images/portfolio/jewelry-box-cover.jpg",
       state: true
     },
@@ -87,7 +95,7 @@ export class SeeMorePortfolio extends React.Component {
 }
 
 export const ShowAll = () => (
-  <section id="portfolio">
+  <section className="portfolio">
     <div className="container">
       <div className="row">
         {
@@ -99,25 +107,25 @@ export const ShowAll = () => (
                     <img src={task.image} className="card-img-top" alt={task.name} />
                     <div className="card-body">
                       <h3 className="card-title">{task.name}</h3>
-                      <p>{task.category}</p>
+                      <p>{task.desc}</p>
                     </div>
                   </Link>
                 </div>
               )
-            } else if(task.state === false){
+            } else if (task.state === false) {
               return (
                 <div className="col-md-6" key={task.url}>
                   <div className="card coming">
                     <img src={task.image} className="card-img-top" alt={task.name} />
                     <div className="card-body">
                       <h3 className="card-title">{task.name}</h3>
-                      <p>{task.category}</p>
+                      <p>{task.desc}</p>
                     </div>
                   </div>
                 </div>
               )
-            }else{
-              
+            } else {
+              return false;
             }
           })
         }
@@ -134,9 +142,6 @@ class Article extends React.Component {
     const item = portfolioAPI.get(this.props.match.params.url);
     document.title = item.name;
   }
-  componentWillUnmount() {
-    document.title = "Portfolio - Ken Huang";
-  }
   render() {
     const item = portfolioAPI.get(this.props.match.params.url);
     //console.log(item);
@@ -144,8 +149,19 @@ class Article extends React.Component {
       var { Content } = require('./portfolio/' + item.url);
       return (
         <div>
-        <Content />
-        <SeeMorePortfolio />
+          <Helmet
+            title={item.name}
+            meta={[
+              { name: "description", content: item.desc },
+              { property: "og:title", content: item.title },
+              { property: "og:site_name", content: "Ken Huang | Interaction Designer" },
+              { property: "og:url", content: item.url },
+              { property: "og:image", content: item.image },
+              { property: "og:description", content: item.desc },
+            ]}
+          />
+          <Content />
+          <SeeMorePortfolio />
         </div>
       )
     } else {
@@ -156,9 +172,7 @@ class Article extends React.Component {
 
 class Portfolio extends React.Component {
   componentDidMount() {
-    if (!document.title) {
       document.title = "Portfolio - Ken Huang";
-    }
   }
   render() {
     return (

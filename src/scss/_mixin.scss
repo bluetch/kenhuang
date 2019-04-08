@@ -10,3 +10,11 @@
         padding-top: $padding;
     }
 }
+
+@mixin clearfix {
+    &:after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+  }

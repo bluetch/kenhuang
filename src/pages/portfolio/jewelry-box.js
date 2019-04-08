@@ -3,7 +3,7 @@ import React from "react";
 // https://medium.com/prototyping-practice/apple-tv-gestural-ui-redesign-4388b9d779b3
 
 export const Content = () => (
-  <article id="portfolio">
+  <article className="portfolio">
     <div className="hero" style={{ backgroundImage: "url('../static/images/portfolio/jewelry-box-cover.jpg')", }}>
     </div>
     <section>

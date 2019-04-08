@@ -1,11 +1,10 @@
 import React from "react";
-import { Link } from 'react-router-dom'
 
 // Reference: https://airbnb.design/building-a-visual-language/
 //            https://uxplanet.org/design-language-system-d438f4aa30e0
 
 export const Content = () => (
-  <article id="portfolio">
+  <article className="portfolio">
     <img src="../static/images/portfolio/design-language-system-cover.jpg"
       alt="design-language-system"
       className="img-fluid"

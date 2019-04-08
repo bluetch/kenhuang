@@ -1,7 +1,7 @@
 import React from "react";
 
 export const Content = () => (
-	<article id="portfolio">
+	<article className="portfolio">
 		<div className="hero" style={{ backgroundImage: "url('../static/images/portfolio/prescription-helper-cover.jpg')", }}>
 		</div>
 		<section>
