@@ -67,6 +67,13 @@ const portfolioAPI = {
       image: "static/images/portfolio/jewelry-box-cover.jpg",
       state: true
     },
+    {
+      url: "climber",
+      name: "Climber",
+      desc: "Shopee",
+      image: "static/images/portfolio/jewelry-box-cover.jpg",
+      state: "hide"
+    },
   ],
   preview() { return this.tasks },
   get: function (id) {
