@@ -147,15 +147,17 @@ export const Content = () => (
             <h2>Execution</h2>
           </div>
           <div className="col-md-7">
-            <h3>Wireframe</h3>
+          <h3>Wireframe</h3>
             <p>Base on the sketch storming of design sprint, we could start from product detail page. My goal is to solve all the problems and implement the idea of design.</p>
           </div>
         </div>
-        <div className="row">
-          <div className="col">
-            <img src="../static/images/portfolio/shopee-amp-pdp-wireframe-overall.png" alt="shopee-amp-pdp-wireframe-overall" className="img-fluid" />
-          </div>
-        </div>
+      </div>
+    </section>
+    <section>
+      <img src="../static/images/portfolio/shopee-amp-pdp-wireframe-overall.png" alt="shopee-amp-pdp-wireframe-overall" className="img-fluid" />
+    </section>
+    <section>
+      <div className="container">
         <div className="row">
           <div className="col-md-7 offset-md-5">
             <h4>First Screen</h4>
@@ -170,17 +172,7 @@ export const Content = () => (
             </ul>
             <p>Ideally, all of this information lives above the fold. That isn’t always possible (in fact, it is rarely possible). The solution here is to extraction the most meaningful wording of each service. Like voucher, via interview survey, there are few people need it, but which they actually need. We make it as a small block, only display the discount percentage, if they really like to know in detail (expire date, min speed, capped), they can click to see more in detail.</p>
             <img src="../static/images/portfolio/shopee-amp-pdp-wireframe-voucher.png" alt="shopee-amp-pdp-wireframe-voucher" className="img-fluid" />
-            <h4>Variation</h4>
-            <p>For some products, there are many variations like color, size, height, weight ...etc. And in different countries own different format, I collect all possible types try to make multiusability components.</p>
-            <img src="../static/images/portfolio/shopee-amp-pdp-variation.png" alt="shopee-amp-pdp-variation" className="img-fluid" />
-            <h4>Hot sales from shop</h4>
-            <p>We found the users as us, usually reference hot sales products, it is human nature, which also help for seller promotion. For this section it is suitable for some big seller, especially they have many products. Make buyers feel it is so popular.</p>
-            <div className="row">
-              <div className="col-md-6">
-                <img src="../static/images/portfolio/shopee-amp-pdp-wireframe-shop.png" alt="shopee-amp-pdp-wireframe-shop" className="img-fluid" />
-              </div>
-            </div>
-            <h4>Recommendation</h4>
+            <h4>Fourth Screen: Recommendation</h4>
             <ul>
               <li>From the same shop</li>
               <li>Similar products</li>
@@ -192,9 +184,6 @@ export const Content = () => (
                 <img src="../static/images/portfolio/shopee-amp-pdp-wireframe-recommendation.png" alt="shopee-amp-pdp-wireframe-recommendation" className="img-fluid" />
               </div>
             </div>
-            <h4>Labels</h4>
-            <p>>And we also rearrange the labels of product card, for different purpose of pages, it displays the most attactive info for buyers.</p>
-            <img src="../static/images/portfolio/shopee-amp-pdp-wireframe-labels.png" alt="shopee-amp-pdp-wireframe-labels" className="img-fluid" />
             <h4>Error Page</h4>
             <p>Error message text is a unique situation in the world of error messages, but definitely not rare. The default message provided by a user’s browser can often be unhelpful and generic.</p>
             <p>To create the best error messages for a internet issue, it’s important to know what type of website error this is. The cause could be:</p>
@@ -207,7 +196,7 @@ export const Content = () => (
           </div>
         </div>
       </div>
-    </section>
+    </section >
     <section>
       <div className="container">
         <div className="row">
