@@ -126,43 +126,54 @@ class About extends React.Component {
             </div>
           </div>
         </section>
-        <section>
+        <section className="travel">
           <div className="container">
+            <h3>Travel</h3>
+            <p>I love to plant, taking the photo, and learn something new. Also, love to explore new places for breakfast. I'm proactively learning and seeking challenges to make myself forward. If you’d like to get in touch, feel free to say hello through any of the social links below. </p>
             <div className="row">
-              <div className="col-md-5">
-                <h3>Travel</h3>
+              <div className="col-md-3">
+                <img src="../static/images/about/travel-amsterdam-cover.jpg" alt="" className="img-fluid" />
+                <p className="desc">Giethoorn in Amsterdam</p>
               </div>
-              <div className="col-md-7">
-                <div className="row">
-                  <div className="col-4">
-                    <img src="../static/images/about/travel-australia-cover.jpg" alt="" className="img-fluid" />
-                    <p className="text-center">Australia</p>
-                  </div>
-                  <div className="col-4">
-                    <img src="../static/images/about/travel-england-cover.jpg" alt="" className="img-fluid" />
-                    <p className="text-center">England</p>
-                  </div>
-                  <div className="col-4">
-                    <img src="../static/images/about/travel-iceland-cover.jpg" alt="" className="img-fluid" />
-                    <p className="text-center">Iceland</p>
-                  </div>
-                  <div className="col-4">
-                    <img src="../static/images/about/travel-japan-cover.jpg" alt="" className="img-fluid" />
-                    <p className="text-center">Japan</p>
-                  </div>
-                  <div className="col-4">
-                    <img src="../static/images/about/travel-indonesia-cover.jpg" alt="" className="img-fluid" />
-                    <p className="text-center">Indonesia</p>
-                  </div>
-                  <div className="col-4">
-                    <img src="../static/images/about/travel-thailand-cover.jpg" alt="" className="img-fluid" />
-                    <p className="text-center">Thailand</p>
-                  </div>
-                </div>
+              <div className="col-md-3">
+                <img src="../static/images/about/travel-belgium-cover.jpg" alt="" className="img-fluid" />
+                <p className="desc">Waffle in Belgium</p>
+              </div>
+              <div className="col-md-3">
+                <img src="../static/images/about/travel-tokyo-cover.jpg" alt="" className="img-fluid" />
+                <p className="desc">Skiing in Japan</p>
+              </div>
+              <div className="col-md-3">
+                <img src="../static/images/about/travel-australia-cover.jpg" alt="" className="img-fluid" />
+                <p className="desc">Surfing in Australia</p>
+              </div>
+              <div className="col-md-3">
+                <img src="../static/images/about/travel-england-cover.jpg" alt="" className="img-fluid" />
+                <p className="desc">Hogwarts in England</p>
+              </div>
+              <div className="col-md-3">
+                <img src="../static/images/about/travel-iceland-cover.jpg" alt="" className="img-fluid" />
+                <p className="desc">Iceberg in Iceland</p>
+              </div>
+              <div className="col-md-3">
+                <img src="../static/images/about/travel-japan-cover.jpg" alt="" className="img-fluid" />
+                <p className="desc">Tea in Japan</p>
+              </div>
+              <div className="col-md-3">
+                <img src="../static/images/about/travel-indonesia-cover.jpg" alt="" className="img-fluid" />
+                <p className="desc">Volcano in Indonesia</p>
+              </div>
+              <div className="col-md-3">
+                <img src="../static/images/about/travel-thailand-cover.jpg" alt="" className="img-fluid" />
+                <p className="desc">History in Thailand</p>
+              </div>
+              <div className="col-md-3">
+                <img src="../static/images/about/travel-taiwan-cover.jpg" alt="" className="img-fluid" />
+                <p className="desc">Hiking in Taiwan</p>
               </div>
             </div>
           </div>
-        </section>
+        </section >
         <section>
           <div className="container">
             <div className="row">
