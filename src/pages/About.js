@@ -129,7 +129,7 @@ class About extends React.Component {
         <section className="travel">
           <div className="container">
             <h3>Travel</h3>
-            <p>I love to plant, taking the photo, and learn something new. Also, love to explore new places for breakfast. I'm proactively learning and seeking challenges to make myself forward. If you’d like to get in touch, feel free to say hello through any of the social links below. </p>
+            <p style={{marginBottom: "60px"}}>I love to plant, taking the photo, and learn something new. Also, love to explore new places for breakfast. I'm proactively learning and seeking challenges to make myself forward. If you’d like to get in touch, feel free to say hello through any of the social links below. </p>
             <div className="row">
               <div className="col-md-3">
                 <img src="../static/images/about/travel-amsterdam-cover.jpg" alt="" className="img-fluid" />
