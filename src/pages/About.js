@@ -17,7 +17,7 @@ class About extends React.Component {
               </div>
               <div className="col-md-7 my-auto">
                 <h1>Ken Huang</h1>
-                <h4 className="title">Interaction Designer / Front-end Developer</h4>
+                <h4 className="title">Full-stack UX Designer</h4>
                 <p>I'm a big picture thinker, I listen stories, and I solve problems that affect billions of people. I do this by designing and creating products that matter.</p>
                 <p>Currently I have been working at Shopee in Singapore, design for south east area users. I enjoy turning complex problems into simple, beautiful and intuitive designs. When I'm not coding, tweeting or pushing pixels, you'll find me making coffee, jogging or working out in the park.</p>
                 <a href="https://drive.google.com/open?id=1IAZQVlsNZ_sZZ7sNEMbtChJhzEZoLe-H" className="btn btn-light">Resume</a>
@@ -28,10 +28,8 @@ class About extends React.Component {
         <section className="experience">
           <div className="container">
             <div className="row">
-              <div className="col-md-5">
+              <div className="col-md-8">
                 <h3>Experience</h3>
-              </div>
-              <div className="col-md-7">
                 <img src="../static/images/about/logo-shopee.png" alt="" className="job-logo" />
                 <h5 className="job-title">Sr. UI/UX Designer / Engineer</h5>
                 <p>Shopee (Sep 2017 - Present, Singapore)</p>
@@ -63,33 +61,32 @@ class About extends React.Component {
             </div>
           </div>
         </section>
-        <section>
+        <section className="skill">
           <div className="container">
+            <h3>Skill</h3>
             <div className="row">
-              <div className="col-md-5">
-                <h3>Skill</h3>
-              </div>
-              <div className="col-md-7">
+              <div className="col-md-4">
                 <h5>Designer</h5>
-                <p>Strategy & vision presentations • User flows • Concept sketches • Wireframes & mockups with Sketch & Axure • Motion design with Invision & CSS • Product management • Style guides & pattern library</p>
+                <p>Strategy & vision presentations</p>
+                <p>UX Design</p>
+                <p>UI Design</p>
+              </div>
+              <div className="col-md-4">
                 <h5>Programmer</h5>
-                <p>Rapid prototyping using Invision • Interactive flow with HTML/ CSS/ JS • Frameworks (React, Bootstrap) & APIs</p>
+                <p>Rapid prototyping using Invision</p>
+                <p>Interactive flow with HTML/ CSS/ JS</p>
+                <p>Frameworks (React, Bootstrap) & APIs</p>
+              </div>
+              <div className="col-md-4">
                 <h5>Research</h5>
-                <p>Data analysis (Google analytics) • User Interview & persona hypothesis • A/B Testing & Experiment </p>
-                {/* <div className="crop" style={{ }}>
-                  <img src="../static/images/about/sketch-idea-stickers.jpg" alt="" />
-                </div>
-                <div className="crop" >
-                  <img src="../static/images/about/sketch-idea-hackathon.jpg" alt="" />
-                </div>
-                <div className="crop" style={{ width: "33%" }}>
-                  <img src="../static/images/about/sketch-idea-travel.jpg" style={{ width: "33%" }} alt="" />
-                </div> */}
+                <p>Data analysis</p>
+                <p>User Interview & persona hypothesis</p>
+                <p>A/B Testing & Experiment</p>
               </div>
             </div>
           </div>
         </section>
-        <section>
+        {/* <section>
           <div className="container">
             <div className="row">
               <div className="col-md-5">
@@ -125,11 +122,11 @@ class About extends React.Component {
               </div>
             </div>
           </div>
-        </section>
+        </section> */}
         <section className="travel">
           <div className="container">
             <h3>Travel</h3>
-            <p style={{marginBottom: "60px"}}>I love to plant, taking the photo, and learn something new. Also, love to explore new places for breakfast. I'm proactively learning and seeking challenges to make myself forward. If you’d like to get in touch, feel free to say hello through any of the social links below. </p>
+            <p style={{ marginBottom: "60px" }}>I love to plant, taking the photo, and learn something new. Also, love to explore new places for breakfast. I'm proactively learning and seeking challenges to make myself forward. If you’d like to get in touch, feel free to say hello through any of the social links below. </p>
             <div className="row">
               <div className="col-md-3">
                 <img src="../static/images/about/travel-amsterdam-cover.jpg" alt="" className="img-fluid" />
@@ -174,18 +171,16 @@ class About extends React.Component {
             </div>
           </div>
         </section >
-        <section>
+        <section style={{textAlign: "center"}}>
           <div className="container">
             <div className="row">
-              <div className="col-md-5">
+              <div className="col-md-6 offset-md-3">
                 <h3>Contact</h3>
-              </div>
-              <div className="col-md-7">
                 <p>You can contact me via
-              <a href="mailto:bluetch@gmail.com" className="text-link">email</a>,
-              <a href="https://www.linkedin.com/in/bluetch/" className="text-link">linkedin</a>,
-              <a href="https://www.facebook.com/bluetch" className="text-link">facebook</a> or
-              <a href="https://www.instagram.com/kenbluer/" className="text-link">instagram</a>.
+              <a href="mailto:bluetch@gmail.com" className="primary-link">email</a>,
+              <a href="https://www.linkedin.com/in/bluetch/" className="primary-link">linkedin</a>,
+              <a href="https://www.facebook.com/bluetch" className="primary-link">facebook</a> or
+              <a href="https://www.instagram.com/kenbluer/" className="primary-link">instagram</a>.
             </p>
               </div>
             </div>

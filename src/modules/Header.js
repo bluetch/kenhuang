@@ -29,8 +29,8 @@ class Header extends React.Component {
         <nav className={"navbar navbar-expand-lg fixed-top navbar-light " + (this.state.shadow ? 'shadow-sm' : '')}>
           <div className="container">
             <NavLink className="navbar-brand" to="/">
-              {/* <img src="../static/images/ken-huang-logo.png" alt="" className="logo-img" /> */}
-              <h1 className="logo-text">KEN HUANG</h1>
+              <img src="../static/images/kenhuang-logo.png" alt="" className="logo-img" />
+              {/* <h1 className="logo-text">KEN HUANG</h1> */}
             </NavLink>
             <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
               <span className="navbar-toggler-icon"></span>

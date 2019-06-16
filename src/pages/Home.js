@@ -4,7 +4,7 @@ import Particles from 'react-particles-js';
 
 class Home extends PureComponent {
   componentDidMount() {
-    document.title = "Ken Huang | Interaction Designer";
+    document.title = "Full-stack UX designer | Ken Huang";
   }
   render() {
     return (

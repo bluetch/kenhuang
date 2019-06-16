@@ -8,12 +8,11 @@ export const Content = () => (
       <div className="container">
         <div className="row">
           <div className="col-md-5">
-            <h1>Shopee Accelerated Mobile Page</h1>
+            <h1>Accelerated Mobile Page (AMP)</h1>
             <p>Shopee</p>
           </div>
           <div className="col-md-7">
-            <p>In order to help our users browsing service in  south east area, especially in Indonesia, there are not enough internet infrastructure to support friendly web service, we have to make it better.</p>
-            <p>Monthly ago, Shopee was invited from Google to join a Design Sprint workshop. The workshop is designed to tackle any part of the funnel that you would desire to from Payment, to sign in to the landing page. Google would create AMP for us to work in the day. After that, we realize it can help our problems!</p>
+            <p>In order to help our users browsing service in south east area, especially in Indonesia, there are not enough internet infrastructure to support friendly web service, we have to make it better.</p>
           </div>
         </div>
       </div>

@@ -147,7 +147,7 @@ class Article extends React.Component {
   // }
   componentDidMount() {
     const item = portfolioAPI.get(this.props.match.params.url);
-    document.title = item.name;
+    document.title = item.name + " | Ken Huang";
   }
   render() {
     const item = portfolioAPI.get(this.props.match.params.url);
@@ -161,7 +161,7 @@ class Article extends React.Component {
             meta={[
               { name: "description", content: item.desc },
               { property: "og:title", content: item.title },
-              { property: "og:site_name", content: "Ken Huang | Interaction Designer" },
+              { property: "og:site_name", content: "Full-stack UX Designer | Ken Huang" },
               { property: "og:url", content: item.url },
               { property: "og:image", content: item.image },
               { property: "og:description", content: item.desc },
