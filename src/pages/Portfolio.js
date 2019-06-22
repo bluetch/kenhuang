@@ -6,7 +6,7 @@ const portfolioAPI = {
   tasks: [
     {
       url: "shopee-accelerated-mobile-page",
-      name: "Shopee Product detail page Redesign",
+      name: "Accelerated Mobile Page",
       desc: "To improve performance and get more acquisition for e-commerce",
       image: "static/images/portfolio/shopee-amp-product-detail-page.jpg",
       state: true

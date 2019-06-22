@@ -8,7 +8,7 @@ export const Content = () => (
       <div className="container">
         <div className="row">
           <div className="col-md-5">
-            <h1>Product Detail page Redesign</h1>
+            <h1>Accelerated Mobile Page</h1>
             <p>Shopee</p>
           </div>
           <div className="col-md-7">
