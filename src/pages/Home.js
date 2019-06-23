@@ -35,15 +35,15 @@ class Home extends PureComponent {
                 "line_linked": {
                   "enable": true,
                   "distance": 150,
-                  "color": "#bababa",
+                  "color": "#1ed8a6",
                   "opacity": 0.4,
                   "width": 1
                 },
                 "shape": {
                   "type": "circle",
                   "stroke": {
-                    "width": 0,
-                    "color": "#bababa"
+                    "width": 10,
+                    "color": "#def8fa"
                   },
                   "polygon": {
                     "nb_sides": 5
@@ -99,7 +99,7 @@ class Home extends PureComponent {
             <div className="row">
               <div className="col-md-8">
                 <h2>Hi, I'm Ken Huang,</h2>
-                <h3><span className="text-primary">Designer</span> and <span className="text-secondary">Developer</span> with 10 years experience.</h3>
+                <h3><span className="text-primary">Designer</span> and <span className="text-secondary">Developer</span> with 9 years experience.</h3>
               </div>
               <div className="col-md-3 offset-md-1">
                 <div className="flipper">
