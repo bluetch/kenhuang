@@ -82,7 +82,7 @@ export const Content = () => (
             <h2>Result</h2>
           </div>
           <div className="col-md-7">
-            <p>We got nearly <strong>hundred</strong> of great designer resumes around the China, Taiwan, Indonesia, Singapore, and Thailand ...etc, in one week.</p>
+            <p>We got nearly <strong className="text-primary">hundred</strong> of great designer resumes around the China, Taiwan, Indonesia, Singapore, and Thailand ...etc, in one week.</p>
             <img src="../static/images/portfolio/shopee-recruitment-email.png"
         alt="shopee recruitment content"
         className="img-fluid"

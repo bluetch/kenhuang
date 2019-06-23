@@ -2,44 +2,17 @@ import React from "react";
 
 export const Content = () => (
   <article className="portfolio">
-    <div className="hero" style={{ backgroundImage: "url('../static/images/portfolio/prescription-helper-cover.jpg')", }}>
-    </div>
-    <section>
+    
+    <section style={{ textAlign: "center" }}>
       <div className="container">
         <div className="row">
-          <div className="col-md-5">
-            <h1>Prescription Helper</h1>
-            <p>Efficiency and Friendly in Medical industry</p>
-          </div>
-          <div className="col-md-7">
-            <p>The project was 3 years ago since I really started being a UX designer. In the beginning, there are only 4 employees to build up an e-commerce platform. Even it is not the perfect design and system, but I still proud of my first full-time design role. And there I will focus on the prescription part of the medical e-commerce platform.</p>
-            <p>In Taiwan, while older people hold on the prescription is usually take a long process to get the drug. It is a chance to get more acquisition of orders.</p>
-            <p>My role: Product Designer</p>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section>
-      <div className="container">
-        <div className="row">
-          <div className="col-md-5">
-            <h3>Work Process</h3>
-          </div>
-          <div className="col-md-7">
-            <ol>
-              <li>
-                <strong>Research</strong>
-                <p>Industry study, stackholder interview</p>
-              </li>
-              <li>
-                <strong>Design</strong>
-                <p>Information artecture, flow, wireframe</p>
-              </li>
-              <li>
-                <strong>Validation</strong>
-                <p>Prototype, Usability test</p>
-              </li>
-            </ol>
+          <div className="col-md-8 offset-md-2">
+            <h1 style={{ fontSize: "46px", fontWeight: "700", margin: "60px 0" }}>Design Prescription Helper App for patient to get pills more efficiently</h1>
+            <p>The prescription flow has remained paper work for decades. Its redesign is an opportunity to improve the user flow infrastructure in one of the biggest cities in Taiwan, which could decrease pollution, provide access to better education and employment opportunities, improve the health of millions of citizens and potentially save the economy an enormous amount of money.</p>
+            <p>My role: Product Designer, 2014 - 2016</p>
+            <img src="../static/images/portfolio/prescription-helper-cover.png"
+    alt="Prescription UX design"
+    className="img-fluid" />
           </div>
         </div>
       </div>
@@ -94,15 +67,12 @@ export const Content = () => (
           <div className="col-md-7 offset-md-5">
             <p>This is where I do most of my critical thinking about what the user needs, and design a detailed oriented user experience. My goal is to solve all the problems before I start any visual design.</p>
           </div>
-          <div className="col-12">
-            <img src="../static/images/portfolio/prescription-helper-order-flow.png" alt="prescription-helper-order-flow" className="img-fluid" />
-          </div>
-          <div className="col-12">
-            <img src="../static/images/portfolio/prescription-helper-upload-flow-mobile.png" alt="prescription-helper-upload-flow-mobile" className="img-fluid" />
-            <img src="../static/images/portfolio/prescription-helper-upload-flow-pc.png" alt="prescription-helper-upload-flow-pc" className="img-fluid" />
-          </div>
         </div>
       </div>
+    </section>
+    <section>
+      <img src="../static/images/portfolio/prescription-helper-upload-flow-mobile.png" alt="prescription-helper-upload-flow-pc" className="img-fluid" />
+      <p style={{ textAlign: "center" }}>Upload flow</p>
     </section>
     <section>
       <div className="container">
@@ -115,7 +85,7 @@ export const Content = () => (
           </div>
         </div>
       </div>
-      <img src="../static/images/portfolio/prescription-helper-cover.jpg" alt="prescription-helper-background" className="img-fluid" />
+      <img src="../static/images/portfolio/prescription-helper-mockup-1.jpg" alt="prescription-helper-background" className="img-fluid" />
       <img src="../static/images/portfolio/prescription-helper-mockup-2.jpg" alt="prescription-helper-mockup" className="img-fluid" />
     </section>
     <section>

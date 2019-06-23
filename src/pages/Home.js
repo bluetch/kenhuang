@@ -99,7 +99,7 @@ class Home extends PureComponent {
             <div className="row">
               <div className="col-md-8">
                 <h2>Hi, I'm Ken Huang,</h2>
-                <h3><span className="color-primary">Designer</span> and <span className="color-secondary">Developer</span> with 10 years experience.</h3>
+                <h3><span className="text-primary">Designer</span> and <span className="text-secondary">Developer</span> with 10 years experience.</h3>
               </div>
               <div className="col-md-3 offset-md-1">
                 <div className="flipper">

@@ -21,8 +21,8 @@ TagManager.initialize(tagManagerArgs);
 class Application extends React.Component {
   constructor(props){
     super(props);
-    this.title = "Full-stack UX designer | Ken Huang";
-    this.desc = "Ken Huang is Full-stack UX designer with a passion for user experiences, research, interface, product, interaction, data analytic and prototype. Here is the design portfolio.";
+    this.title = "Product Designer | Ken Huang";
+    this.desc = "Ken Huang is Full-stack Product designer with a passion for user experiences, research, interface, product, interaction, data analytic and prototype. Here is the design portfolio.";
     this.url = "http://kenhuang.tw";
     this.imageURL = "https://kenhuang.tw/static/images/cover.jpg";
   }
@@ -53,7 +53,7 @@ class Application extends React.Component {
               "@type": "Person",
               "@id": "https://kenhuang.tw",
               "name": "Ken Huang",
-              "jobTitle": "Full-stack UX designer",
+              "jobTitle": "Product Designer",
               "description": this.desc,
               "image": this.imageURL,
               "url": "https://www.linkedin.com/in/bluetch/",

@@ -1,19 +1,19 @@
 import React from "react";
-import { Switch, Route, Link } from 'react-router-dom';
+import { Switch, Route, Link, NavLink } from 'react-router-dom';
 import { Helmet } from "react-helmet";
 
 const portfolioAPI = {
   tasks: [
     {
       url: "shopee-accelerated-mobile-page",
-      name: "Accelerated Mobile Page",
+      name: "Shopee Accelerated Mobile Page",
       desc: "To improve performance and get more acquisition for e-commerce",
       image: "static/images/portfolio/shopee-amp-product-detail-page.jpg",
       state: true
     },
     {
       url: "design-language-system",
-      name: "Design Language System",
+      name: "Shopee Design Language System",
       desc: "A set of rules and guidelines help work efficiency",
       image: "static/images/portfolio/design-language-system-cover.jpg",
       state: true
@@ -34,7 +34,7 @@ const portfolioAPI = {
     },
     {
       url: "shopee-recruitment",
-      name: "Graphic Recruitment",
+      name: "Shopee Graphic Recruitment",
       desc: "Social network recruitment strategy",
       image: "static/images/portfolio/shopee-recruitment-frog-cover.png",
       state: true
@@ -43,7 +43,7 @@ const portfolioAPI = {
       url: "prescription-helper",
       name: "Prescription Helper",
       desc: "A simple Medical App for get drugs of prescription",
-      image: "static/images/portfolio/prescription-helper-cover.jpg",
+      image: "static/images/portfolio/prescription-helper-cover.png",
       state: true
     },
     {
@@ -90,9 +90,18 @@ export class SeeMorePortfolio extends React.Component {
         <div className="container">
           <div className="row">
             <div className="col-12">
-              <Link to="/portfolio" className="btn btn-light float-right">
-                See more portfolio
-              </Link>
+              <NavLink to="/portfolio" className="portfolio-footer-link">All</NavLink>
+              {
+                portfolioAPI.preview().map(task => {
+                  if (task.state === true) {
+                    return (
+                      <NavLink to={`/portfolio/${task.url}`} className="portfolio-footer-link">
+                        {task.name}
+                      </NavLink>
+                    )
+                  }
+                })
+              }
             </div>
           </div>
         </div>
@@ -179,7 +188,7 @@ class Article extends React.Component {
 
 class Portfolio extends React.Component {
   componentDidMount() {
-      document.title = "Portfolio - Ken Huang";
+    document.title = "Portfolio - Ken Huang";
   }
   render() {
     return (
