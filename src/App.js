@@ -22,7 +22,7 @@ class Application extends React.Component {
   constructor(props){
     super(props);
     this.title = "Product Designer | Ken Huang";
-    this.desc = "Ken Huang is Full-stack Product designer with a passion for user experiences, research, interface, product, interaction, data analytic and prototype. Here is the design portfolio.";
+    this.desc = "Ken Huang is Product designer with a passion for user experiences, research, interface, product, interaction, data analytic and prototype. Here is the design portfolio.";
     this.url = "http://kenhuang.tw";
     this.imageURL = "https://kenhuang.tw/static/images/cover.jpg";
   }

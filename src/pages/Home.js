@@ -35,15 +35,15 @@ class Home extends PureComponent {
                 "line_linked": {
                   "enable": true,
                   "distance": 150,
-                  "color": "#1ed8a6",
+                  "color": "#bababa",
                   "opacity": 0.4,
                   "width": 1
                 },
                 "shape": {
                   "type": "circle",
                   "stroke": {
-                    "width": 10,
-                    "color": "#def8fa"
+                    "width": 0,
+                    "color": "#bababa"
                   },
                   "polygon": {
                     "nb_sides": 5
