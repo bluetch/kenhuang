@@ -361,6 +361,7 @@ section {
         margin: 0;
 
         h2 {
+            margin-top: 36px;
             font-size: 36px;
             font-weight: 300;
         }
@@ -418,7 +419,7 @@ section {
         }
 
         .avatar {
-            width: 100%;
+            width: 80%;
         }
 
         @media (min-width: 992px) {}

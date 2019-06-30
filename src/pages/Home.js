@@ -120,11 +120,6 @@ class Home extends PureComponent {
                 </div>
               </div>
             </div>
-            <div className="row">
-              <div className="col-md-8">
-                <p>Some of my skills include user research, UX/UI design, interaction design, prototyping, user testing and front end developing. I also play tennis.</p>
-              </div>
-            </div>
           </div>
         </section>
         <ShowAll />
