@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from 'react-router-dom'
 
 class About extends React.Component {
   componentDidMount() {
@@ -12,15 +13,20 @@ class About extends React.Component {
         <section className="profile">
           <div className="container">
             <div className="row">
-              <div className="col-md-4 offset-md-1 my-auto">
+              {/* <div className="col-md-4 offset-md-1 my-auto">
                 <img src="../static/images/about/ken-huang.jpg" alt="Ken Huang" className="my-portrait" />
+              </div> */}
+              <div className="col-md-6">
+                <h3>About</h3>
+                <p>Hi I'm Ken Huang as a Senior Product Designer working at <a href="https://www.seagroup.com" target="_blank" className="text-link">Sea Group</a> (Shopee) in Singapore, design for south east area users.</p>
+                <p>I enjoy turning complex problems into simple, beautiful and intuitive designs. When I'm not coding, tweeting or pushing pixels, you'll find me making coffee, jogging, doodle, tennis, exercises or working out in the park.</p>
+                <p>
+                  <strong><span className="text-primary">6 years</span> of product design experience and <span className="text-secondary">3 years</span> developer experience</strong>
+                  . Find out more on <a href="https://www.linkedin.com/in/bluetch/" target="_blank" className="text-link">Linkedin</a>
+                </p>
               </div>
-              <div className="col-md-7 my-auto">
-                <h1>Ken Huang</h1>
-                <h4 className="title">Full-stack UX Designer</h4>
-                <p>I'm a big picture thinker, I listen stories, and I solve problems that affect billions of people. I do this by designing and creating products that matter.</p>
-                <p>Currently I have been working at Shopee in Singapore, design for south east area users. I enjoy turning complex problems into simple, beautiful and intuitive designs. When I'm not coding, tweeting or pushing pixels, you'll find me making coffee, jogging or working out in the park.</p>
-                <a href="https://drive.google.com/open?id=1IAZQVlsNZ_sZZ7sNEMbtChJhzEZoLe-H" className="btn btn-light">Resume</a>
+              <div className="col-md-5 offset-md-1">
+                <img src="/static/images/about/kenhuang-snow.jpg" alt="Ken Huang photo" className="img-fluid" />
               </div>
             </div>
           </div>
@@ -28,35 +34,61 @@ class About extends React.Component {
         <section className="experience">
           <div className="container">
             <div className="row">
-              <div className="col-md-8">
+              <div className="col-md-12">
                 <h3>Experience</h3>
-                <img src="../static/images/about/logo-shopee.png" alt="" className="job-logo" />
-                <h5 className="job-title">Sr. UI/UX Designer / Engineer</h5>
-                <p>Shopee (Sep 2017 - Present, Singapore)</p>
+              </div>
+            </div>
+            <div className="row">
+              <div className="col-md-8">
+                <h5 className="job-title">Sr. Product Designer / Engineer</h5>
+                <p>
+                  <a href="https://www.seagroup.com" target="_blank" className="text-primary">Sea Group</a> (Sep 2017 - Present, Singapore)</p>
                 <p>Owner of design language system for Shopee projects: design library, CMS for operations and components with developers.</p>
                 <p>Executing design at all stages from early concept to end to end experience including UX, interaction, user research, and visual design.</p>
                 <p>Collaborate with the product, business, and engineering team to define the product direction. </p>
-                <hr />
-                <img src="../static/images/about/logo-yulon.png" alt="" className="job-logo" />
-                <h5 className="job-title">Project Manager (UI/UX)</h5>
-                <p>Yulon Group (Jul 2016 - Apr 2017, Taiwan)</p>
+              </div>
+            </div>
+            <div className="row">
+              <div className="col-md-8">
+                <h5 className="job-title">Product Designer</h5>
+                <p>
+                  <a href="http://www.yulon-group.com/" target="_blank" className="text-primary">Yulon Group</a> (Jul 2016 - Apr 2017, Taiwan)</p>
                 <p>Managed projects from idea, research, design, to launch for travel website, car management system, Roadside Assistance App, airport pick-up service and e-commerce App.</p>
-                <hr />
-                <img src="../static/images/about/logo-uitox.jpg" alt="" className="job-logo" />
+              </div>
+            </div>
+            <div className="row">
+              <div className="col-md-8">
                 <h5 className="job-title">Front-end Design Lead</h5>
-                <p>Uitox E-commerce Group (Aug 2013 - Jul 2016)</p>
+                <p>
+                  <a href="http://www.uitox.com/c/web/inside/front/en/index.html" target="_blank" className="text-primary">Uitox E-commerce Group</a> (Aug 2013 - Jul 2016)
+                  </p>
                 <p>Led UX/UI for e-commerce system: web and App store, payment, shipping features and dashboard for buyers and sellers from research, concepting and validation, through documentation, implementation and launch.</p>
                 <p>Led a team of designers & front-end developers, hiring and mentor, responsible for direct reports, and designed brand e-commerce for ASUS, LINE, Feiniu.</p>
-                <hr />
-                <img src="../static/images/about/logo-trendmicro.jpg" alt="" className="job-logo" />
+              </div>
+            </div>
+            <div className="row">
+              <div className="col-md-8">
                 <h5 className="job-title">Front End Developer</h5>
-                <p>Trend Micro (Aug 2010 - Feb 2013)</p>
+                <p>
+                  <a href="https://www.trendmicro.com" target="_blank" className="text-primary">Trend Micro</a> (Aug 2010 - Feb 2013)
+                  </p>
                 <p>Developed Lost Device Protection, Site Safety Center, Jewelry Box, and internal database query system by HTML, CSS, Javascript,  PHP, MySQL, JAVA, and Git for site development.</p>
-                <hr />
-                <img src="../static/images/ken-huang-logo.png" alt="" className="job-logo" />
+              </div>
+            </div>
+            <div className="row">
+              <div className="col-md-8">
                 <h5 className="job-title">Freelancer</h5>
-                <p>KenHuang.tw (Aug 2005 - Current)</p>
-                <p>I collaborated with developer teams & managed a wide variety of cross-media projects involving branding, illustrations & UI design for startups & academic institutions.</p>
+                <p>
+                  <a href="https://kenhuang.tw" target="_blank" className="text-primary">KenHuang.tw</a> (Aug 2005 - Current)
+                </p>
+                <p>I have had the great pleasure to work with many amazing organisations, from global corporations like Google, to very small businesses. </p>
+                <p>It's easy to say yes to a job, but success for me is intrinsically linked with delivery. I work very hard to ensure that my products and designs are technically feasible and that they add value to customers lives, as well as to business revenue.</p>
+                <p>The products we make should matter enough to be launched, or we shouldn't make them.</p>
+              </div>
+            </div>
+            <div className="row">
+              <div className="col-md-8">
+                <a href="https://drive.google.com/open?id=1IAZQVlsNZ_sZZ7sNEMbtChJhzEZoLe-H" className="btn btn-light">My Resume</a>
               </div>
             </div>
           </div>
@@ -65,19 +97,18 @@ class About extends React.Component {
           <div className="container">
             <h3>Skill</h3>
             <div className="row">
-              <div className="col-md-4">
+              <div className="col-md-6">
+                <img src="/static/images/about/kenhuang-doodle.jpg" alt="Ken Huang skill on design, programming, and research" className="img-fluid"/>
+              </div>
+              <div className="col-md-5 offset-md-1">
                 <h5>Designer</h5>
                 <p>Strategy & vision presentations</p>
                 <p>UX Design</p>
                 <p>UI Design</p>
-              </div>
-              <div className="col-md-4">
                 <h5>Programmer</h5>
                 <p>Rapid prototyping using Invision</p>
                 <p>Interactive flow with HTML/ CSS/ JS</p>
                 <p>Frameworks (React, Bootstrap) & APIs</p>
-              </div>
-              <div className="col-md-4">
                 <h5>Research</h5>
                 <p>Data analysis</p>
                 <p>User Interview & persona hypothesis</p>
@@ -171,7 +202,7 @@ class About extends React.Component {
             </div>
           </div>
         </section >
-        <section style={{textAlign: "center"}}>
+        <section style={{ textAlign: "center" }}>
           <div className="container">
             <div className="row">
               <div className="col-md-6 offset-md-3">
