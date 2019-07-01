@@ -38,10 +38,12 @@ class Header extends React.Component {
             <div className="collapse navbar-collapse flex-grow-0" id="navbarTogglerDemo01">
               <ul className="navbar-nav">
                 <li className="nav-item">
-                  <NavLink className="nav-link" to="/about">About</NavLink>
+                  {/* <NavLink className="nav-link" to="/about">About</NavLink> */}
+                  <a href="/about" className="nav-link">About</a>
                 </li>
                 <li className="nav-item">
-                  <NavLink className="nav-link" to="/portfolio">Portfolio</NavLink>
+                  <a href="/portfolio" className="nav-link">Portfolio</a>
+                  {/* <NavLink className="nav-link" to="/portfolio">Portfolio</NavLink> */}
                 </li>
                 <li className="nav-item">
                   <a className="nav-link" href="https://medium.com/@bluetch" target="_blank" rel="noopener noreferrer">Medium</a>

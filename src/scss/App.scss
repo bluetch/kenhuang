@@ -186,6 +186,7 @@ section {
 	.navbar-toggler {
 		padding: .25rem;
 		border: none;
+		color: black;
 	}
 
 	/* Large devices (desktops, 992px and up) */
@@ -198,28 +199,29 @@ section {
 	}
 
 	@media (max-width: 991px) {
-
 		.logo-img {
-			position: absolute;
-			left: 50%;
-			-webkit-transform: translateX(-50%);
-			-ms-transform: translateX(-50%);
-			transform: translateX(-50%);
+			width: 30px;
+			// position: absolute;
+			// left: 50%;
+			// -webkit-transform: translateX(-50%);
+			// -ms-transform: translateX(-50%);
+			// transform: translateX(-50%);
 		}
 
 		.logo-text {
 			font-size: 1.1rem;
 			letter-spacing: 0;
 		}
-
-		.navbar-collapse::after {
-			content: "";
-			position: fixed;
-			top: 256px;
-			right: 0;
-			bottom: 0;
-			left: 0;
-			background: rgba(0, 0, 0, 0.4);
+		.navbar-collapse{
+			height: 100vh;
+			padding-top: 30%;
+			.nav-link{
+				padding: 16px 0;
+				color: black;
+				font-size: 20px;
+				font-weight: bold;
+				text-align: center;
+			}
 		}
 	}
 }
@@ -300,6 +302,7 @@ section {
 		margin: 160px 0;
 		@media (max-width: 991px) {
 			text-align: center;
+			margin: 0;
 		}
 	}
 
@@ -454,6 +457,10 @@ section {
 		&:not(:first-child) {
 			margin-top: 50px;
 		}
+
+		@media(max-width: 991px) {
+			font-size: 1em;
+		}
 	}
 
 	h4 {
@@ -480,10 +487,6 @@ section {
 	.title-block {
 		margin-bottom: 50px;
 		padding-bottom: 50px;
-
-		@media(max-widh: 991px) {
-			margin-bottom: 10px;
-		}
 	}
 
 	.img-fluid {
@@ -557,7 +560,19 @@ section {
 			}
 		}
 
-		@media (max-width: 991px) {}
+		@media (max-width: 991px) {
+			margin-bottom: 10px;
+			.card-body{
+				padding: 10px 0 0 0;
+			}
+			.card-title{
+				margin-bottom: 0;
+			}
+			.desc{
+				font-size: 0.9em;
+			}
+				
+		}
 	}
 
 	&.dls{

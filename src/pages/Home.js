@@ -100,6 +100,7 @@ class Home extends PureComponent {
               <div className="col-md-8">
                 <h2>Hi, I'm Ken Huang,</h2>
                 <h3><span className="color-primary">Designer</span> and <span className="color-secondary">Developer</span> with 10 years experience.</h3>
+                <p>Some of my skills include user research, UX/UI design, interaction design, prototyping, user testing and front end developing. I also play tennis.</p>
               </div>
               <div className="col-md-3 offset-md-1">
                 <div className="flipper">
@@ -118,11 +119,6 @@ class Home extends PureComponent {
                     </div>
                   </div>
                 </div>
-              </div>
-            </div>
-            <div className="row">
-              <div className="col-md-8">
-                <p>Some of my skills include user research, UX/UI design, interaction design, prototyping, user testing and front end developing. I also play tennis.</p>
               </div>
             </div>
           </div>
