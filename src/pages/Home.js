@@ -97,11 +97,12 @@ class Home extends PureComponent {
             }} />
           <div className="container">
             <div className="row">
-              <div className="col-md-8">
-                <h2>Hi, I'm Ken Huang,</h2>
-                <h3><span className="text-primary">Designer</span> and <span className="text-secondary">Developer</span> with 9 years experience.</h3>
+              <div className="col-md-8 offset-md-2 text-center">
+                <h2>Ken Huang</h2>
+                <h3>Hi! I'm a Product Designer based in Singapore</h3>
+
               </div>
-              <div className="col-md-3 offset-md-1">
+              {/* <div className="col-md-3 offset-md-1">
                 <div className="flipper">
                   <div className="flipper-content">
                     <div className="flipper-front">
@@ -118,7 +119,7 @@ class Home extends PureComponent {
                     </div>
                   </div>
                 </div>
-              </div>
+              </div> */}
             </div>
           </div>
         </section>
