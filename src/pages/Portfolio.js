@@ -23,7 +23,7 @@ const portfolioAPI = {
       name: "Pet Adoption",
       desc: "Design exercise",
       image: "static/images/portfolio/pet-adoption-cover.png",
-      state: "hide"
+      state: true
     },
     {
       url: "shopee-microsite",
