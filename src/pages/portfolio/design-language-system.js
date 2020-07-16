@@ -2,6 +2,8 @@ import React from "react";
 
 // Reference: https://airbnb.design/building-a-visual-language/
 // https://uxplanet.org/design-language-system-d438f4aa30e0
+// Shopee clipping magic
+// https://www.youtube.com/watch?v=5JIZsHAFU5I&feature=youtu.be
 
 export const Content = () => (
 <article className="portfolio dls">
