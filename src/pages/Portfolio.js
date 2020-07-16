@@ -5,8 +5,8 @@ import { Helmet } from "react-helmet";
 const portfolioAPI = {
   tasks: [
     {
-      url: "shopee-accelerated-mobile-page",
-      name: "Shopee Accelerated Mobile Page",
+      url: "product-detail-page",
+      name: "Product Detail Page",
       desc: "To improve performance and get more acquisition for e-commerce",
       image: "static/images/portfolio/shopee-amp-product-detail-page.jpg",
       state: true
@@ -37,14 +37,14 @@ const portfolioAPI = {
       name: "Shopee Graphic Recruitment",
       desc: "Social network recruitment strategy",
       image: "static/images/portfolio/shopee-recruitment-frog-cover.png",
-      state: true
+      state: "hide"
     },
     {
       url: "prescription-helper",
       name: "Prescription Helper",
       desc: "A simple Medical App for get drugs of prescription",
       image: "static/images/portfolio/prescription-helper-cover.png",
-      state: true
+      state: "hide"
     },
     {
       url: "line-flash-sale",
@@ -66,13 +66,6 @@ const portfolioAPI = {
       desc: "Trend Micro",
       image: "static/images/portfolio/jewelry-box-cover.jpg",
       state: true
-    },
-    {
-      url: "climber",
-      name: "Climber",
-      desc: "Shopee",
-      image: "static/images/portfolio/jewelry-box-cover.jpg",
-      state: "hide"
     },
   ],
   preview() { return this.tasks },

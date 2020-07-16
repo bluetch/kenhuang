@@ -1,6 +1,7 @@
 import React, { PureComponent } from "react";
 import { ShowAll } from "./Portfolio.js"
 import Particles from 'react-particles-js';
+import Typing from 'react-typing-animation';
 
 class Home extends PureComponent {
   componentDidMount() {
@@ -98,28 +99,19 @@ class Home extends PureComponent {
           <div className="container">
             <div className="row">
               <div className="col-md-8 offset-md-2 text-center">
-                <h2>Ken Huang</h2>
-                <h3>Hi! I'm a Product Designer based in Singapore</h3>
-
+                <h2>Hi, I'm Ken Huang, a passionate product designer / UX engineer from Taipei, Taiwan now living in Singapore</h2>
+                <h3>
+                  <Typing>
+                    <span>🕵️‍♂️ Detective?</span>
+                    <Typing.Delay ms={2000} />
+                    <Typing.Backspace count={20} />
+                    <span>🏂 Explorer?</span>
+                    <Typing.Delay ms={2000} />
+                    <Typing.Backspace count={20} />
+                    <span>Design everywhere! 👨‍🎨</span>
+                  </Typing>
+                </h3>
               </div>
-              {/* <div className="col-md-3 offset-md-1">
-                <div className="flipper">
-                  <div className="flipper-content">
-                    <div className="flipper-front">
-                      <img src="../static/images/about/kenhuang-avatar.png"
-                        alt="ken-huang-avatar"
-                        className="avatar"
-                      />
-                    </div>
-                    <div className="flipper-back">
-                      <img src="../static/images/about/about-ken-huang-designer.png"
-                        alt="ken-huang-avatar"
-                        className="avatar"
-                      />
-                    </div>
-                  </div>
-                </div>
-              </div> */}
             </div>
           </div>
         </section>
