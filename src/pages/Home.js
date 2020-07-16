@@ -102,13 +102,13 @@ class Home extends PureComponent {
                 <h2>Hi, I'm Ken Huang, a passionate product designer / UX engineer from Taipei, Taiwan now living in Singapore</h2>
                 <h3>
                   <Typing>
-                    <span>🕵️‍♂️ Detective?</span>
+                    <span role="img" aria-label="people">🕵️‍♂️ Detective?</span>
                     <Typing.Delay ms={2000} />
                     <Typing.Backspace count={20} />
-                    <span>🏂 Explorer?</span>
+                    <span role="img" aria-label="people">🏂 Explorer?</span>
                     <Typing.Delay ms={2000} />
                     <Typing.Backspace count={20} />
-                    <span>Design everywhere! 👨‍🎨</span>
+                    <span role="img" aria-label="people">Design everywhere! 👨‍🎨</span>
                   </Typing>
                 </h3>
               </div>
