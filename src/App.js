@@ -3,14 +3,16 @@ import { Switch, Route } from 'react-router-dom'
 
 import Header from './modules/Header';
 import Footer from './modules/Footer';
-import Home from './pages/Home'
-import About from './pages/About'
-import Portfolio from './pages/Portfolio'
-import Resume from './pages/Resume'
-import NoMatch from './pages/NoMatch'
+import Home from './pages/Home';
+import About from './pages/About';
+import Portfolio from './pages/Portfolio';
+import Resume from './pages/Resume';
+import NoMatch from './pages/NoMatch';
+import Stock from './pages/Stock';
+import Vocabulary from './pages/Vocabulary';
 import './scss/App.scss';
 import { Helmet } from "react-helmet";
-import TagManager from 'react-gtm-module'
+import TagManager from 'react-gtm-module';
 
 const tagManagerArgs = {
   gtmId: 'GTM-MWXSCRM'
@@ -76,6 +78,8 @@ const App = () => (
         <Route path='/portfolio' component={Portfolio} />
         <Route path='/resume' component={Resume} />
         <Route path='/kenhuang' component={Home} />
+        <Route path='/stock' component={Stock} />
+        <Route path='/vocabulary' component={Vocabulary} />
         <Route path="*" component={NoMatch} />
       </Switch>
     </main>
