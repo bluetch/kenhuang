@@ -43,6 +43,48 @@ const words = [
     sentence_tw: "準備討論您如何使用溝通和決策技巧動員他人。",
     hint: "",
   },
+  {
+    en: "hypothetical",
+    tw: "(adj.) 假設的；假定的",
+    sentence_en: "Nobody likes to have wars, but we must make preparations for a hypothetical warfare.",
+    sentence_tw: "沒有人喜歡戰爭，但我們一定要為假設性的戰爭作出準備。",
+    hint: "",
+  },
+  {
+    en: "reputation",
+    tw: "(n) 名聲",
+    sentence_en: "My reputation has never been worse, so you must like me for me.",
+    sentence_tw: "我的聲譽從未這麼差過，所以你一定是真的喜歡我。",
+    hint: "",
+  },
+  {
+    en: "sculpture",
+    tw: "(n) 雕塑品",
+    sentence_en: "",
+    sentence_tw: "",
+    hint: "",
+  },
+  {
+    en: "exhibition",
+    tw: "(n) 展覽",
+    sentence_en: "Prominent sculptures will be presented in the exhibition next week.",
+    sentence_tw: "傑出的雕塑作品將在下週的展覽中展出。",
+    hint: "",
+  },
+  {
+    en: "costume",
+    tw: "(n) (特殊)服裝",
+    sentence_en: "Halloween costumes",
+    sentence_tw: "萬聖節服裝",
+    hint: "",
+  },
+  {
+    en: "renowned",
+    tw: "(adj) 有名的",
+    sentence_en: "The region is renowned for its outstanding natural beauty.",
+    sentence_tw: "該地區以其傑出的自然美景而聞名。",
+    hint: "",
+  },
 ]
 
 
