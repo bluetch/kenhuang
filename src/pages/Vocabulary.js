@@ -110,9 +110,21 @@ class Vocabulary extends React.Component {
     return (
       <section id="vocabulary">
         <div className="container">
+          <h1>Localize Vocuablary <span style={{fontSize: "12px"}}>(developing)</span></h1>
+          Language:
+          <input type="checkbox" name="" id="english" />
+          <label for="english">English</label>
+          <span style={{ width: "12px", display: "inline-block" }}></span>
+          <input type="checkbox" name="" id="taiwan" />
+          <label for="taiwan">Taiwan Chinese</label>
           <div className="card">
             <div className="card-body" style={{ textAlign: "center" }}>
-              <p>{words.length}</p>
+              <input type="checkbox" name="" id="ux" />
+              <label for="ux">UX</label>
+              <span style={{ width: "12px", display: "inline-block" }}></span>
+              <input type="checkbox" name="" id="dev" />
+              <label for="dev">Developer</label>
+              {/* <p>{words.length}</p> */}
               <h3>{this.state.word.en}</h3>
               <p>{this.state.word.tw}</p>
               <p>{this.state.word.sentence_en} {this.state.word.sentence_tw}</p>
