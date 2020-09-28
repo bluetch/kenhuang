@@ -37,7 +37,7 @@ const portfolioAPI = {
       name: "Shopee Graphic Recruitment",
       desc: "Social network recruitment strategy",
       image: "static/images/portfolio/shopee-recruitment-frog-cover.png",
-      state: "hide"
+      state: true
     },
     {
       url: "prescription-helper",
@@ -92,6 +92,8 @@ export class SeeMorePortfolio extends React.Component {
                         {task.name}
                       </NavLink>
                     )
+                  }else{
+                    return false
                   }
                 })
               }

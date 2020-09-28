@@ -1,5 +1,4 @@
 import React from "react";
-import { Link } from 'react-router-dom'
 
 class About extends React.Component {
   componentDidMount() {
@@ -18,15 +17,15 @@ class About extends React.Component {
               </div> */}
               <div className="col-md-6">
                 <h3>About</h3>
-                <p>Hi I'm Ken Huang as a Senior Product Designer working at <a href="https://www.seagroup.com" target="_blank" className="text-link">Sea Group</a> (Shopee) in Singapore, design for south east area users.</p>
+                <p>Hi I'm Ken Huang as a Senior Product Designer working at <a href="https://www.seagroup.com" target="_blank" rel="noopener noreferrer" className="text-link">Sea Group</a> (Shopee) in Singapore, design for south east area users.</p>
                 <p>I enjoy turning complex problems into simple, beautiful and intuitive designs. When I'm not coding, tweeting or pushing pixels, you'll find me making coffee, jogging, doodle, tennis, exercises or working out in the park.</p>
                 <p>
                   <strong><span className="text-primary">6 years</span> of product design experience and <span className="text-secondary">3 years</span> developer experience</strong>
-                  . Find out more on <a href="https://www.linkedin.com/in/bluetch/" target="_blank" className="text-link">Linkedin</a>
+                  . Find out more on <a href="https://www.linkedin.com/in/bluetch/" target="_blank" rel="noopener noreferrer" className="text-link">Linkedin</a>
                 </p>
               </div>
               <div className="col-md-5 offset-md-1">
-                <img src="/static/images/about/kenhuang-snow.jpg" alt="Ken Huang photo" className="img-fluid" />
+                <img src="/static/images/about/kenhuang-snow.jpg" alt="Ken Huang" className="img-fluid" />
               </div>
             </div>
           </div>
@@ -42,7 +41,7 @@ class About extends React.Component {
               <div className="col-md-8">
                 <h5 className="job-title">Sr. Product Designer / Engineer</h5>
                 <p>
-                  <a href="https://www.seagroup.com" target="_blank" className="text-primary">Sea Group</a> (Sep 2017 - Present, Singapore)</p>
+                  <a href="https://www.seagroup.com" target="_blank" rel="noopener noreferrer" className="text-primary">Sea Group</a> (Sep 2017 - Present, Singapore)</p>
                 <p>Owner of design language system for Shopee projects: design library, CMS for operations and components with developers.</p>
                 <p>Executing design at all stages from early concept to end to end experience including UX, interaction, user research, and visual design.</p>
                 <p>Collaborate with the product, business, and engineering team to define the product direction. </p>
@@ -52,7 +51,7 @@ class About extends React.Component {
               <div className="col-md-8">
                 <h5 className="job-title">Product Designer</h5>
                 <p>
-                  <a href="http://www.yulon-group.com/" target="_blank" className="text-primary">Yulon Group</a> (Jul 2016 - Apr 2017, Taiwan)</p>
+                  <a href="http://www.yulon-group.com/" target="_blank" rel="noopener noreferrer" className="text-primary">Yulon Group</a> (Jul 2016 - Apr 2017, Taiwan)</p>
                 <p>Managed projects from idea, research, design, to launch for travel website, car management system, Roadside Assistance App, airport pick-up service and e-commerce App.</p>
               </div>
             </div>
@@ -60,7 +59,7 @@ class About extends React.Component {
               <div className="col-md-8">
                 <h5 className="job-title">Front-end Design Lead</h5>
                 <p>
-                  <a href="http://www.uitox.com/c/web/inside/front/en/index.html" target="_blank" className="text-primary">Uitox E-commerce Group</a> (Aug 2013 - Jul 2016)
+                  <a href="http://www.uitox.com/c/web/inside/front/en/index.html" target="_blank" rel="noopener noreferrer" className="text-primary">Uitox E-commerce Group</a> (Aug 2013 - Jul 2016)
                   </p>
                 <p>Led UX/UI for e-commerce system: web and App store, payment, shipping features and dashboard for buyers and sellers from research, concepting and validation, through documentation, implementation and launch.</p>
                 <p>Led a team of designers & front-end developers, hiring and mentor, responsible for direct reports, and designed brand e-commerce for ASUS, LINE, Feiniu.</p>
@@ -70,7 +69,7 @@ class About extends React.Component {
               <div className="col-md-8">
                 <h5 className="job-title">Front End Developer</h5>
                 <p>
-                  <a href="https://www.trendmicro.com" target="_blank" className="text-primary">Trend Micro</a> (Aug 2010 - Feb 2013)
+                  <a href="https://www.trendmicro.com" target="_blank" rel="noopener noreferrer" className="text-primary">Trend Micro</a> (Aug 2010 - Feb 2013)
                   </p>
                 <p>Developed Lost Device Protection, Site Safety Center, Jewelry Box, and internal database query system by HTML, CSS, Javascript,  PHP, MySQL, JAVA, and Git for site development.</p>
               </div>
@@ -79,7 +78,7 @@ class About extends React.Component {
               <div className="col-md-8">
                 <h5 className="job-title">Freelancer</h5>
                 <p>
-                  <a href="https://kenhuang.tw" target="_blank" className="text-primary">KenHuang.tw</a> (Aug 2005 - Current)
+                  <a href="https://kenhuang.tw" target="_blank" rel="noopener noreferrer" className="text-primary">KenHuang.tw</a> (Aug 2005 - Current)
                 </p>
                 <p>I have had the great pleasure to work with many amazing organisations, from global corporations like Google, to very small businesses. </p>
                 <p>It's easy to say yes to a job, but success for me is intrinsically linked with delivery. I work very hard to ensure that my products and designs are technically feasible and that they add value to customers lives, as well as to business revenue.</p>
