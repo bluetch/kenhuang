@@ -31,7 +31,7 @@ $black10: rgba(0, 0, 0, 0.1);
 body {
 	margin: 0;
 	padding: 0;
-	font-family: "Noto Sans", 'Roboto', 'Open Sans', sans-serif;
+	font-family: 'Roboto', 'Open Sans', sans-serif;
 	color: rgba(0, 0, 0, 0.87);
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
@@ -335,11 +335,11 @@ section {
 		}
 
 		h5 {
-			font-weight: 700;
+			font-weight: 500;
 		}
 
 		a {
-			font-weight: 700;
+			margin: 0;
 		}
 	}
 
@@ -350,6 +350,19 @@ section {
 			text-align: center;
 			font-size: 12px;
 			margin-top: 6px;
+			white-space: nowrap;
+			overflow: hidden;
+			text-overflow: ellipsis;
+		}
+
+		a {
+			img {
+				transition: all .2s ease-in-out;
+
+				&:hover {
+					transform: scale(1.1);
+				}
+			}
 		}
 	}
 }
@@ -553,8 +566,7 @@ section {
      6. Card
   ===============================================*/
 
-.card{
-}
+.card {}
 
 /* ==============================================
      14. Footer
@@ -588,8 +600,8 @@ footer {
 	}
 }
 
-#vocabulary{
-	input[type="checkbox"]{
+#vocabulary {
+	input[type="checkbox"] {
 		margin-right: 4px;
 	}
 }
@@ -669,11 +681,37 @@ footer {
 
 // stock start
 
-.stock{
-	table{
-		p{
+.stock {
+	table {
+		p {
 			margin: 0;
 			font-size: 12px;
+		}
+	}
+}
+
+// illustration
+
+.illustration-page {
+	.grid {
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr 1fr;
+		grid-gap: 20px;
+	}
+
+	.item {
+		border: 1px solid rgba(0, 0, 0, 0.09);
+		padding: 4px;
+
+		&:hover {
+			img {
+				transform: scale(1.1);
+			}
+		}
+
+		img {
+			width: 100%;
+			transition: all .2s ease-in-out;
 		}
 	}
 }

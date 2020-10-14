@@ -9,7 +9,9 @@ import Portfolio from './pages/Portfolio';
 import Resume from './pages/Resume';
 import NoMatch from './pages/NoMatch';
 import Stock from './pages/Stock';
+import Illustration from './pages/Illustration';
 import Ark from './pages/Ark';
+import Game from './pages/Game';
 import Vocabulary from './pages/Vocabulary';
 import './scss/App.scss';
 import { Helmet } from "react-helmet";
@@ -78,9 +80,11 @@ const App = () => (
         <Route path='/about' component={About} />
         <Route path='/portfolio' component={Portfolio} />
         <Route path='/resume' component={Resume} />
+        <Route path='/illustration' component={Illustration} />
         <Route path='/kenhuang' component={Home} />
         <Route path='/stock' component={Stock} />
-        <Route path='/ark' component={Ark} />
+        <Route path='/stock/ark' component={Ark} />
+        <Route path='/game' component={Game} />
         <Route path='/vocabulary' component={Vocabulary} />
         <Route path="*" component={NoMatch} />
       </Switch>
