@@ -20,6 +20,7 @@ class Illustration extends React.Component {
       .catch(error => {
         console.log(error);
       });
+      console.log(this.photos);
   };
 
   render() {
@@ -33,7 +34,7 @@ class Illustration extends React.Component {
                 this.state.photos.map((item, index) => {
                   return (
                     <div key={index} className="item">
-                      <a href={"https://www.instagram.com/p/" + item.node.shortcode} className="instagramIcon" target="_blank">
+                      <a href={"https://www.instagram.com/p/" + item.node.shortcode} className="instagramIcon" rel="noopener noreferrer" target="_blank">
                         <img src={item.node.thumbnail_resources[3].src} alt={item.node.accessibility_caption} className="photo" />
                       </a>
                     </div>
