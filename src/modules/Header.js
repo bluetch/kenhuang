@@ -46,7 +46,7 @@ class Header extends React.Component {
                   {/* <NavLink className="nav-link" to="/portfolio">Portfolio</NavLink> */}
                 </li>
                 <li className="nav-item">
-                  <a className="nav-link" href="/illustration" rel="noopener noreferrer">Illustration</a>
+                  {/* <a className="nav-link" href="/illustration" rel="noopener noreferrer">Illustration</a> */}
                   <a className="nav-link" href="http://instgram.com/kenbluerr" rel="noopener noreferrer">Illustration</a>
                 </li>
                 <li className="nav-item">
