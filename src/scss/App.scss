@@ -516,11 +516,18 @@ section {
 
 		.card-title {
 			color: rgba(0, 0, 0, 0.87);
+			font-size: 18px;
 			display: inline-block;
 		}
 
 		.card-title:last-child {
 			margin-bottom: 0;
+		}
+		.date{
+			font-size: 14px;
+			margin-left: 8px;
+			vertical-align: middle;
+			color: rgba(0,0,0,0.4);
 		}
 
 		@media (min-width: 992px) {

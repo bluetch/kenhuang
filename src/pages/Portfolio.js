@@ -7,13 +7,15 @@ const portfolioAPI = {
     {
       url: "product-detail-page",
       name: "Product Detail Page",
+      date: "2018",
       desc: "To improve performance and get more acquisition for e-commerce",
       image: "static/images/portfolio/shopee-amp-product-detail-page.jpg",
       state: true
     },
     {
       url: "design-language-system",
-      name: "Shopee Design Language System",
+      name: "Design Language System",
+      date: "2018",
       desc: "A set of rules and guidelines help work efficiency",
       image: "static/images/portfolio/design-language-system-cover.jpg",
       state: true
@@ -21,6 +23,7 @@ const portfolioAPI = {
     {
       url: "design-exercise-pet-adoption",
       name: "Pet Adoption",
+      date: "2017",
       desc: "Design exercise",
       image: "static/images/portfolio/pet-adoption-cover.png",
       state: true
@@ -28,6 +31,7 @@ const portfolioAPI = {
     {
       url: "shopee-microsite",
       name: "Shopee microsite",
+      date: "2017",
       desc: "A content management system help on E-commerce",
       image: "static/images/portfolio/design-language-system-cover.jpg",
       state: "hide"
@@ -35,6 +39,7 @@ const portfolioAPI = {
     {
       url: "shopee-recruitment",
       name: "Shopee Graphic Recruitment",
+      date: "2017",
       desc: "Social network recruitment strategy",
       image: "static/images/portfolio/shopee-recruitment-frog-cover.png",
       state: true
@@ -42,6 +47,7 @@ const portfolioAPI = {
     {
       url: "prescription-helper",
       name: "Prescription Helper",
+      date: "2015",
       desc: "A simple Medical App for get drugs of prescription",
       image: "static/images/portfolio/prescription-helper-cover.png",
       state: "hide"
@@ -49,6 +55,7 @@ const portfolioAPI = {
     {
       url: "line-flash-sale",
       name: "LINE Flash Sale",
+      date: "2014",
       desc: "Deliver UX/UI design for Web App for LINE",
       image: "static/images/portfolio/line-flash-sale-cover.png",
       state: true
@@ -56,6 +63,7 @@ const portfolioAPI = {
     {
       url: "lost-device-protection",
       name: "Lost Device Protection",
+      date: "2012",
       desc: "Trend Micro",
       image: "static/images/portfolio/lost-device-protection-cover.jpg",
       state: true
@@ -63,6 +71,7 @@ const portfolioAPI = {
     {
       url: "jewelry-box",
       name: "Jewelry-box",
+      date: "2012",
       desc: "Trend Micro",
       image: "static/images/portfolio/jewelry-box-cover.jpg",
       state: true
@@ -117,7 +126,7 @@ export const ShowAll = () => (
                   <Link to={`/portfolio/${task.url}`} className="card">
                     <img src={task.image} className="card-img-top" alt={task.name} />
                     <div className="card-body">
-                      <h3 className="card-title">{task.name}</h3>
+                      <h3 className="card-title">{task.name}<span class="date">({task.date})</span></h3>
                       <p className="desc">{task.desc}</p>
                     </div>
                   </Link>
@@ -129,7 +138,7 @@ export const ShowAll = () => (
                   <div className="card coming">
                     <img src={task.image} className="card-img-top" alt={task.name} />
                     <div className="card-body">
-                      <h3 className="card-title">{task.name}</h3>
+                      <h3 className="card-title">{task.name}<span class="date">({task.date})</span></h3>
                       <p className="desc">{task.desc}</p>
                     </div>
                   </div>

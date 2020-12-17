@@ -8,7 +8,6 @@ import About from './pages/About';
 import Portfolio from './pages/Portfolio';
 import Resume from './pages/Resume';
 import NoMatch from './pages/NoMatch';
-import Stock from './pages/Stock';
 import Illustration from './pages/Illustration';
 import Ark from './pages/Ark';
 import Game from './pages/Game';
@@ -82,8 +81,7 @@ const App = () => (
         <Route path='/resume' component={Resume} />
         <Route path='/illustration' component={Illustration} />
         <Route path='/kenhuang' component={Home} />
-        <Route path='/stock' component={Stock} />
-        <Route path='/stock/ark' component={Ark} />
+        <Route path='/ark' component={Ark} />
         <Route path='/game' component={Game} />
         <Route path='/vocabulary' component={Vocabulary} />
         <Route path="*" component={NoMatch} />

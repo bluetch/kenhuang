@@ -1,0 +1,15 @@
+.day {
+  td {
+    padding: 4px;
+  }
+
+  .direction {
+    &.red {
+      color: red;
+    }
+
+    &.green {
+      color: green;
+    }
+  }
+}

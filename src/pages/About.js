@@ -183,7 +183,7 @@ class About extends React.Component {
                     }
                     return (
                       <div key={index} className="item col-md-3">
-                        <a href={"https://www.instagram.com/p/" + item.node.shortcode} className="instagramIcon" target="_blank">
+                        <a href={"https://www.instagram.com/p/" + item.node.shortcode} className="instagramIcon" target="_blank" rel="noopener noreferrer">
                           <img src={item.node.thumbnail_resources[3].src} alt={item.node.accessibility_caption} className="img-fluid" />
                         </a>
                         <p className="desc"></p>
