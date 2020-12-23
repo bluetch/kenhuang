@@ -3,8 +3,8 @@ import React from "react";
 // https://medium.com/prototyping-practice/apple-tv-gestural-ui-redesign-4388b9d779b3
 
 export const Content = () => (
-  <article className="portfolio">
-    <div className="hero" style={{ backgroundImage: "url('../static/images/portfolio/jewelry-box-cover.jpg')", }}>
+  <article className="portfolio-page">
+    <div className="hero" style={{ backgroundImage: "url('/images/portfolio/jewelry-box-cover.jpg')", }}>
     </div>
     <section>
       <div className="container">
@@ -33,7 +33,7 @@ export const Content = () => (
         </div>
         <div className="row">
           <div className="col-md-12">
-            <img src="../static/images/portfolio/jewelry-box-wireframe.png" alt="jewelry-box-wireframe" className="img-fluid" />
+            <img src="/images/portfolio/jewelry-box-wireframe.png" alt="jewelry-box-wireframe" className="img-fluid" />
           </div>
         </div>
         <div className="row">
@@ -58,7 +58,7 @@ export const Content = () => (
     </section>
     <section>
       <div className="container">
-        <img src="../static/images/portfolio/jewelry-box-ui-overall.png" alt="jewelry-box-ui-overall" className="img-fluid" style={{ width: "100%" }} />
+        <img src="/images/portfolio/jewelry-box-ui-overall.png" alt="jewelry-box-ui-overall" className="img-fluid" style={{ width: "100%" }} />
       </div>
     </section>
     <section>
@@ -75,7 +75,7 @@ export const Content = () => (
               <li>How can we create a realistic test context in which the user believes the gestures they are making are controlling the Jewelry Box</li>
             </ul>
             <h4>User Testing Set Up and Process</h4>
-            <img src="../static/images/portfolio/jewelry-box-scene.png" alt="jewelry-box-scene" className="img-fluid" />
+            <img src="/images/portfolio/jewelry-box-scene.png" alt="jewelry-box-scene" className="img-fluid" />
             <p>Our set up included one person controlling the Jewelry Box with its native remote control out of the line of sight of the user. We set up a camera to record the session, which was placed behind the user to capture both user gestures and what was happening on the TV. One team member facilitated the user testing sessions and encouraged users to think aloud and feedback on the spot.</p>
             <p>Questions we asked the users throughout testing were those such as:</p>
             <ul>

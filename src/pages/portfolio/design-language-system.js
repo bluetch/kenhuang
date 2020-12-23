@@ -6,8 +6,8 @@ import React from "react";
 // https://www.youtube.com/watch?v=5JIZsHAFU5I&feature=youtu.be
 
 export const Content = () => (
-<article className="portfolio dls">
-  <img src="../static/images/portfolio/design-language-system-cover.jpg" alt="design-language-system"
+<article className="portfolio-page dls">
+  <img src="/images/portfolio/design-language-system-cover.jpg" alt="design-language-system"
     className="img-fluid" style={{ margin: "0" }} />
   <section>
     <div className="container text-center">
@@ -108,37 +108,37 @@ export const Content = () => (
           <h4>Unified</h4>
           <p>Each piece is part of a greater whole and should contribute positively to the system at scale. There should
             be no isolated features or outliers.</p>
-          <img src="../static/images/portfolio/design-language-system-color.png" alt="design-language-system-color"
+          <img src="/images/portfolio/design-language-system-color.png" alt="design-language-system-color"
             className="img-fluid" />
           <h4>Iconic</h4>
           <p>We’re focused when it comes to both design and functionality. Our work should speak boldly and clearly to
             this focus.</p>
-          <img src="../static/images/portfolio/design-language-system-iconic.png" alt="design-language-system-iconic"
+          <img src="/images/portfolio/design-language-system-iconic.png" alt="design-language-system-iconic"
             className="img-fluid" />
           <h3>Tools</h3>
           <p>Standardize the tools different teams use in different phases of the project. Right from the discovery of
             the project through the design, development and validation phases. Make sure everyone is aware of the tools
             other teams use. Tools used for collaboration should be easily accessible and agreed upon by everyone in
             every team.</p>
-          <img src="../static/images/portfolio/design-language-system-tools.png" alt="design-language-system-tool"
+          <img src="/images/portfolio/design-language-system-tools.png" alt="design-language-system-tool"
             className="img-fluid" />
           <h3>Folder System</h3>
           <p>Create a folder system to organize work. Standardize the naming convention. This will make it easier to
             find a particular file. Find a formula that works best for all the teams, perfect a naming convention and
             STICK TO IT.</p>
-          <img src="../static/images/portfolio/design-language-system-folder.png" alt="design-language-system-folder"
+          <img src="/images/portfolio/design-language-system-folder.png" alt="design-language-system-folder"
             className="img-fluid" />
           <h3>Documentation</h3>
           <p>Document all these standardizations. Create a one stop shop for every information related to the system
             followed.</p>
-          <img src="../static/images/portfolio/design-language-system-documents.png"
+          <img src="/images/portfolio/design-language-system-documents.png"
             alt="design-language-system-documents" className="img-fluid" />
           <h3>Style Guide</h3>
           <p>Conduct a UI Audit (If working on an already existing platform). This is essentially making an inventory of
             all the components that make up the digital product. All we have to do is take screenshots of all the
             elements and components that make up your product and categorize them. The components range from right, from
             the text to buttons and accordion to tabs.</p>
-          <img src="../static/images/portfolio/design-language-system-style.png" alt="design-language-system-style"
+          <img src="/images/portfolio/design-language-system-style.png" alt="design-language-system-style"
             className="img-fluid" />
           <h3>Foundation</h3>
           <p>We had already created a basic style guide, that we called the foundation. This foundation loosely defined
@@ -147,13 +147,13 @@ export const Content = () => (
             solutions. This way we felt that we were all working together, towards the same idea. Reviewing our
             collective work at the end of each new feature, we began to see patterns emerge. We course-corrected when
             necessary, and started defining our standardized components.</p>
-          <img src="../static/images/portfolio/design-language-system-foundation.png"
+          <img src="/images/portfolio/design-language-system-foundation.png"
             alt="design-language-system-foundation" className="img-fluid" />
           <h3>Brand</h3>
           <p>A DLS creates a personality for a digital product. A personality that has its own character and other
             quirks which gives it its own identity and allows it to be recognized in this over populated world of
             digital products.</p>
-          <img src="../static/images/portfolio/design-language-system-logos.png" alt="design-language-system-logos"
+          <img src="/images/portfolio/design-language-system-logos.png" alt="design-language-system-logos"
             className="img-fluid" />
         </div>
       </div>
@@ -178,7 +178,7 @@ export const Content = () => (
       </div>
       <div className="row">
         <div className="col-12">
-          <img src="../static/images/portfolio/design-language-system-overall.png" alt="design-language-system-overall"
+          <img src="/images/portfolio/design-language-system-overall.png" alt="design-language-system-overall"
             className="img-fluid" />
         </div>
       </div>

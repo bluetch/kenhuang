@@ -1,8 +1,8 @@
 import React from "react";
 
 export const Content = () => (
-  <article className="portfolio">
-    <div className="hero" style={{ backgroundImage: "url('../static/images/portfolio/shopee-workshop-01.jpg')", }}>
+  <article className="portfolio-page">
+    <div className="hero" style={{ backgroundImage: "url('/images/portfolio/shopee-workshop-01.jpg')", }}>
     </div>
     <section>
       <div className="container">
@@ -86,7 +86,7 @@ export const Content = () => (
               <li>New users sessions</li>
               <li>Average view time</li>
             </ul>
-            <img src="../static/images/portfolio/shopee-overall-sessions.png" alt="shopee-overall-sessions" className="img-fluid" />
+            <img src="/images/portfolio/shopee-overall-sessions.png" alt="shopee-overall-sessions" className="img-fluid" />
             <p>Base on the above data, we found the product page which has too long load time, high bounce rate for lots of new users than other pages. In E-commerce, the product page is the one of the most important pages for conversion rate. So we decide to improve this page for higher priority, and also make a product roadmap to summarize that maps out the vision and direction.</p>
           </div>
         </div>
@@ -110,14 +110,14 @@ export const Content = () => (
             <p>
               <a href="https://www.interaction-design.org/literature/article/affinity-diagrams-learn-how-to-cluster-and-bundle-ideas-and-facts" className="text-link">Affinity maps</a>
               were then used to organize and categorize these many different data points, from which common themes and relationships surrounding the observations emerged — even uncovering previously hidden ones.</p>
-            <img src="../static/images/portfolio/shopee-affinity-map.jpg" alt="shopee-affinity-map" className="img-fluid" />
+            <img src="/images/portfolio/shopee-affinity-map.jpg" alt="shopee-affinity-map" className="img-fluid" />
             <h4>Solution Discovery</h4>
             <p>The second half of the day focused on devising a design that met different user groups’ needs. To do this, participants were regrouped so each group had a mix of user personas.</p>
             <h3>Card Sorting</h3>
             <p>
               Teams were given cards with components of Shopee’s digital interface and tasked to first classify, then sort according to importance. The open card sort method allowed participants to explore each others’ conceptions of user mental models. From this, teams were able to organically determine their design guidelines for the next phase of the sprint.
             </p>
-            <img src="../static/images/portfolio/shopee-workshop-card-sorting.jpg" alt="shopee-workshop-card-sorting" className="img-fluid" />
+            <img src="/images/portfolio/shopee-workshop-card-sorting.jpg" alt="shopee-workshop-card-sorting" className="img-fluid" />
             <p>And here is the output:</p>
             <ol>
               <li>Product image</li>
@@ -134,7 +134,7 @@ export const Content = () => (
             <h3>Sketch Storming</h3>
             <p>
               Participants first put pen to paper and individually sketched their ideal product, then sketched a single mock-up as a group. The insights that emerged from the diverse set of participants will no doubt be invaluable to future product development and innovations.</p>
-            <img src="../static/images/portfolio/shopee-workshop-sketch-vote.jpg" alt="shopee-workshop-sketch-vote" className="img-fluid" />
+            <img src="/images/portfolio/shopee-workshop-sketch-vote.jpg" alt="shopee-workshop-sketch-vote" className="img-fluid" />
           </div>
         </div>
       </div>
@@ -153,7 +153,7 @@ export const Content = () => (
       </div>
     </section>
     <section>
-      <img src="../static/images/portfolio/shopee-amp-pdp-wireframe-overall.png" alt="shopee-amp-pdp-wireframe-overall" className="img-fluid" />
+      <img src="/images/portfolio/shopee-amp-pdp-wireframe-overall.png" alt="shopee-amp-pdp-wireframe-overall" className="img-fluid" />
     </section>
     <section>
       <div className="container">
@@ -170,7 +170,7 @@ export const Content = () => (
               <li>Customization options</li>
             </ul>
             <p>Ideally, all of this information lives above the fold. That isn’t always possible (in fact, it is rarely possible). The solution here is to extraction the most meaningful wording of each service. Like voucher, via interview survey, there are few people need it, but which they actually need. We make it as a small block, only display the discount percentage, if they really like to know in detail (expire date, min speed, capped), they can click to see more in detail.</p>
-            <img src="../static/images/portfolio/shopee-amp-pdp-wireframe-voucher.png" alt="shopee-amp-pdp-wireframe-voucher" className="img-fluid" />
+            <img src="/images/portfolio/shopee-amp-pdp-wireframe-voucher.png" alt="shopee-amp-pdp-wireframe-voucher" className="img-fluid" />
             <h4>Fourth Screen: Recommendation</h4>
             <ul>
               <li>From the same shop</li>
@@ -180,7 +180,7 @@ export const Content = () => (
             <p>There are 3 recommendation sections, We put these under the product information, it can help users find out more ideal, similiar, cheaper products. For You May Also Like section, it relate the users browse history and current product, make people more choice.</p>
             <div className="row">
               <div className="col-md-6">
-                <img src="../static/images/portfolio/shopee-amp-pdp-wireframe-recommendation.png" alt="shopee-amp-pdp-wireframe-recommendation" className="img-fluid" />
+                <img src="/images/portfolio/shopee-amp-pdp-wireframe-recommendation.png" alt="shopee-amp-pdp-wireframe-recommendation" className="img-fluid" />
               </div>
             </div>
             <h4>Error Page</h4>
@@ -209,9 +209,9 @@ export const Content = () => (
       </div>
     </section>
     <section>
-      <img src="../static/images/portfolio/shopee-amp-pdp-mockup-01.png" alt="shopee-amp-pdp-mockup-01" className="img-fluid" />
-      <img src="../static/images/portfolio/shopee-amp-pdp-mockup-02.png" alt="shopee-amp-pdp-mockup-02" className="img-fluid" />
-      <img src="../static/images/portfolio/shopee-amp-pdp-mockup-error.png" alt="shopee-amp-pdp-mockup-error" className="img-fluid" />
+      <img src="/images/portfolio/shopee-amp-pdp-mockup-01.png" alt="shopee-amp-pdp-mockup-01" className="img-fluid" />
+      <img src="/images/portfolio/shopee-amp-pdp-mockup-02.png" alt="shopee-amp-pdp-mockup-02" className="img-fluid" />
+      <img src="/images/portfolio/shopee-amp-pdp-mockup-error.png" alt="shopee-amp-pdp-mockup-error" className="img-fluid" />
     </section>
     <section>
       <div className="container">
@@ -269,7 +269,7 @@ export const Content = () => (
               <li><strong>150%</strong> more user browse time on pages</li>
               <li>Increase to <strong>39%</strong> new users reach the page from Google search</li>
             </ul> */}
-            <img src="../static/images/portfolio/shopee-amp-pdp-performance-simple.png" alt="shopee-amp-pdp-performance-simple" className="img-fluid" />
+            <img src="/images/portfolio/shopee-amp-pdp-performance-simple.png" alt="shopee-amp-pdp-performance-simple" className="img-fluid" />
           </div>
         </div>
       </div>

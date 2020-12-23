@@ -1,7 +1,7 @@
 import React from "react";
 
 export const Content = () => (
-  <article className="portfolio">
+  <article className="portfolio-page">
     
     <section style={{ textAlign: "center" }}>
       <div className="container">
@@ -10,7 +10,7 @@ export const Content = () => (
             <h1 style={{ fontSize: "46px", fontWeight: "700", margin: "60px 0" }}>Design Prescription Helper App for patient to get pills more efficiently</h1>
             <p>The prescription flow has remained paper work for decades. Its redesign is an opportunity to improve the user flow infrastructure in one of the biggest cities in Taiwan, which could decrease pollution, provide access to better education and employment opportunities, improve the health of millions of citizens and potentially save the economy an enormous amount of money.</p>
             <p>My role: Product Designer, 2014 - 2016</p>
-            <img src="../static/images/portfolio/prescription-helper-cover.png"
+            <img src="/images/portfolio/prescription-helper-cover.png"
     alt="Prescription UX design"
     className="img-fluid" />
           </div>
@@ -33,13 +33,13 @@ export const Content = () => (
               <li><strong>86.5%</strong> of people return to original hospital to take drugs.</li>
               <li>There are <strong>6500</strong> of people lost prescription per month.</li>
             </ol>
-            <img src="../static/images/portfolio/prescription-helper-background.png" alt="prescription-helper-background" className="img-fluid" />
+            <img src="/images/portfolio/prescription-helper-background.png" alt="prescription-helper-background" className="img-fluid" />
             <p>Every time is a long journey, some people don’t know or don’t trust the quality local clinic.</p>
             <h4>Interview with doctors and pharmacists</h4>
             <p>We have interviews with some doctors and pharmacists and get some feedback to design the order flow and upload prescriptions in prescriptions helper.</p>
             <p>Through our research, we found there are not only older people but also lot of children and grandchildren usually help to own prescription to get medicine for their family needs, we try to combine more convenient tool such as e-prescription via QR-code to reduce massive upload time.</p>
             <p>Employee in pharmacy are trying to accomplish the same things: fill prescriptions accurately and efficiently, provide high-quality patient care, and maintain a sustainable business model in which employees have good job satisfaction and customers are happy. In reality, most pharmacies operate under a model where employees spend most of their time addressing insurance issues, physician callbacks, and urgent requests. Adding more patient care services, although important, increases the workload without adding revenue. The tendency for chaos to erupt can be mitigated, however, with an improved work flow.</p>
-            <img src="../static/images/portfolio/prescription-helper-template.png" alt="prescription-helper-template" className="img-fluid" />
+            <img src="/images/portfolio/prescription-helper-template.png" alt="prescription-helper-template" className="img-fluid" />
             <h4>Solution</h4>
             <ol>
               <li>Integrate prescription flow as an order between pharmacies and suppliers.</li>
@@ -62,7 +62,7 @@ export const Content = () => (
             <p>Once the idea and rules of prescription confirmed, I started to draft order flow to make sure all information and access points of each stage for users, platform, suppliers and pharmacies.</p>
           </div>
           <div className="col-12">
-            <img src="../static/images/portfolio/prescription-helper-flow.jpg" alt="prescription-helper-flow" className="img-fluid" />
+            <img src="/images/portfolio/prescription-helper-flow.jpg" alt="prescription-helper-flow" className="img-fluid" />
           </div>
           <div className="col-md-7 offset-md-5">
             <p>This is where I do most of my critical thinking about what the user needs, and design a detailed oriented user experience. My goal is to solve all the problems before I start any visual design.</p>
@@ -71,7 +71,7 @@ export const Content = () => (
       </div>
     </section>
     <section>
-      <img src="../static/images/portfolio/prescription-helper-upload-flow-mobile.png" alt="prescription-helper-upload-flow-pc" className="img-fluid" />
+      <img src="/images/portfolio/prescription-helper-upload-flow-mobile.png" alt="prescription-helper-upload-flow-pc" className="img-fluid" />
       <p style={{ textAlign: "center" }}>Upload flow</p>
     </section>
     <section>
@@ -85,8 +85,8 @@ export const Content = () => (
           </div>
         </div>
       </div>
-      <img src="../static/images/portfolio/prescription-helper-mockup-1.jpg" alt="prescription-helper-background" className="img-fluid" />
-      <img src="../static/images/portfolio/prescription-helper-mockup-2.jpg" alt="prescription-helper-mockup" className="img-fluid" />
+      <img src="/images/portfolio/prescription-helper-mockup-1.jpg" alt="prescription-helper-background" className="img-fluid" />
+      <img src="/images/portfolio/prescription-helper-mockup-2.jpg" alt="prescription-helper-mockup" className="img-fluid" />
     </section>
     <section>
       <div className="container">

@@ -1,8 +1,8 @@
 import React from "react";
 
 export const Content = () => (
-  <article className="portfolio">
-    <div className="hero" style={{ backgroundImage: "url('../static/images/portfolio/pet-adoption-cover.jpg')", }}>
+  <article className="portfolio-page">
+    <div className="hero" style={{ backgroundImage: "url('/images/portfolio/pet-adoption-cover.jpg')", }}>
     </div>
     <section>
       <div className="container">
@@ -56,7 +56,7 @@ export const Content = () => (
           </div>
           <div className="col-md-7">
             <h3>Brainstorming ideas</h3>
-            <img src="../static/images/portfolio/pet-adoption-brainstorm.jpg" className="img-fluid" alt="" />
+            <img src="/images/portfolio/pet-adoption-brainstorm.jpg" className="img-fluid" alt="" />
             <p>I started out with some brainstorming to explore the topic of the design exercise and gather my initial thoughts. I did some competitor research to see how other products were tackling this issue and taking notes of the things I did and didn’t like. Just roughly penning down what features the app would need, what information would need to be shown, and what pieces of content should be in focus.</p>
             <h4>Find the problem</h4>
             <ol>
@@ -66,7 +66,7 @@ export const Content = () => (
             </ol>
             <h4>Interview with stakeholders</h4>
             <p>I survery with potiental adopters to help me build a deeper understanding of why the people choose pet shop instead of the shelter. Also interview with shelter assistanct to know real adoption process in detail. Then base on those insights and built main persona.</p>
-            <img src="../static/images/portfolio/pet-adoption-persona.png" className="img-fluid" alt="" />
+            <img src="/images/portfolio/pet-adoption-persona.png" className="img-fluid" alt="" />
             <h4>Hypothesis</h4>
             <p>Adopters who are educated about the long-term benefits of accurate pet compatibility will make better and more informed decisions about the pets they adopt. This reduces the number of pets going back into shelter care and alleviates the strain on shelter workers so they can spend more time evaluating animals issues and finding the right adopters.</p>
           </div>
@@ -109,7 +109,7 @@ export const Content = () => (
         </div>
         <div className="row">
           <div className="col-12">
-            <img src="../static/images/portfolio/pet-adoption-userflow-first-time.jpg" alt="pet-adoption-userflow-first-time" className="img-fluid" />
+            <img src="/images/portfolio/pet-adoption-userflow-first-time.jpg" alt="pet-adoption-userflow-first-time" className="img-fluid" />
           </div>
         </div>
       </div>
@@ -144,7 +144,7 @@ export const Content = () => (
           </div>
         </div>
         <div className="col-12">
-          <img src="../static/images/portfolio/pet-adoption-wireframe-questionnaire.png" alt="pet-adoption-wireframe-questionnaire" className="img-fluid" />
+          <img src="/images/portfolio/pet-adoption-wireframe-questionnaire.png" alt="pet-adoption-wireframe-questionnaire" className="img-fluid" />
         </div>
         <div className="col-md-7 offset-md-5">
           <p>Once the user completes the questionnaire, we congratulate the user gets a view with an artificial loading indicator. In cases like this it’s important to increase the perceived value of the product. If the user spends ~5 minutes answering questions, but the results appear instantly, they might feel as if the product is not really doing anything and all his work was for nothing. Showing a nice loading animation for just a few seconds will prevent this.</p>
@@ -162,7 +162,7 @@ export const Content = () => (
           <p>In this part, it pretty similar with social network app, I won’t go into detail. Just mention it, for the long-term, finish an adoption and reinforces adopters lifestyle are both important for shelters.</p>
         </div>
         <div className="col-12">
-          <img src="../static/images/portfolio/pet-adoption-wireframe-feed.png" alt="pet-adoption-wireframe-feed" className="img-fluid" />
+          <img src="/images/portfolio/pet-adoption-wireframe-feed.png" alt="pet-adoption-wireframe-feed" className="img-fluid" />
         </div>
       </div>
     </section>
@@ -184,7 +184,7 @@ export const Content = () => (
           </div>
         </div>
       </div>
-      <img src="../static/images/portfolio/pet-adoption-mockup-signin.png" alt="pet-adoption-mockup-signin" className="img-fluid" />
+      <img src="/images/portfolio/pet-adoption-mockup-signin.png" alt="pet-adoption-mockup-signin" className="img-fluid" />
       <div className="container">
         <div className="row">
           <div className="col-md-7 offset-md-5">
@@ -193,7 +193,7 @@ export const Content = () => (
           </div>
         </div>
       </div>
-      <img src="../static/images/portfolio/pet-adoption-mockup-questionnaire.png" alt="pet-adoption-mockup-questionnaire" className="img-fluid" />
+      <img src="/images/portfolio/pet-adoption-mockup-questionnaire.png" alt="pet-adoption-mockup-questionnaire" className="img-fluid" />
       <div className="container">
         <div className="row">
           <div className="col-md-7 offset-md-5">
@@ -201,7 +201,7 @@ export const Content = () => (
           </div>
         </div>
       </div>
-      <img src="../static/images/portfolio/pet-adoption-mockup-pet-profile.png" alt="pet-adoption-mockup-pet-profile" className="img-fluid" />
+      <img src="/images/portfolio/pet-adoption-mockup-pet-profile.png" alt="pet-adoption-mockup-pet-profile" className="img-fluid" />
       <div className="container">
         <div className="row">
           <div className="col-md-7 offset-md-5">
@@ -209,7 +209,7 @@ export const Content = () => (
           </div>
         </div>
       </div>
-      <img src="../static/images/portfolio/pet-adoption-mockup-message.png" alt="pet-adoption-mockup-message" className="img-fluid" />
+      <img src="/images/portfolio/pet-adoption-mockup-message.png" alt="pet-adoption-mockup-message" className="img-fluid" />
       <div className="container">
         <div className="row">
           <div className="col-md-7 offset-md-5">
@@ -217,7 +217,7 @@ export const Content = () => (
           </div>
         </div>
       </div>
-      <img src="../static/images/portfolio/pet-adoption-mockup-my-pet.png" alt="pet-adoption-mockup-my-pet" className="img-fluid" />
+      <img src="/images/portfolio/pet-adoption-mockup-my-pet.png" alt="pet-adoption-mockup-my-pet" className="img-fluid" />
       <div className="container">
         <div className="row">
           <div className="col-md-7 offset-md-5">

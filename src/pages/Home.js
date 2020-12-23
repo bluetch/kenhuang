@@ -1,16 +1,24 @@
-import React, { PureComponent } from "react";
-import { ShowAll } from "./Portfolio.js"
+import { useState, useEffect } from 'react';
 import Particles from 'react-particles-js';
-import Typing from 'react-typing-animation';
+import axios from 'axios';
+import { portfolioData, instagramData } from '../json/constants';
 
-class Home extends PureComponent {
-  componentDidMount() {
-    document.title = "Product Designer | Ken Huang";
-  }
-  render() {
-    return (
-      <div id="home">
-        <section className="hero">
+const Home = (props) => {
+  const [photos, setPhotos] = useState(instagramData);
+
+  useEffect(() => {
+    axios.get('https://www.instagram.com/kenbluerr/?__a=1')
+      .then(res => {
+        setPhotos(res.data.graphql.user.edge_owner_to_timeline_media.edges);
+      })
+      .catch(error => {
+        console.log(error);
+      });
+  }, [])
+
+  return (
+    <div className="home-page">
+      <section className="hero">
           <Particles
             className="particles-layout"
             style={{
@@ -98,27 +106,55 @@ class Home extends PureComponent {
             }} />
           <div className="container">
             <div className="row">
-              <div className="col-md-8 offset-md-2 text-center">
+              <div className="col-md-8 offset-md-2" style={{textAlign:"center"}}>
                 <h2>Hi, I'm Ken Huang, a passionate product designer / UX engineer from Taipei, Taiwan now living in Singapore</h2>
-                <h3>
-                  <Typing>
-                    <span role="img" aria-label="people">🕵️‍♂️ Detective?</span>
-                    <Typing.Delay ms={2000} />
-                    <Typing.Backspace count={20} />
-                    <span role="img" aria-label="people">🏂 Explorer?</span>
-                    <Typing.Delay ms={2000} />
-                    <Typing.Backspace count={20} />
-                    <span role="img" aria-label="people">Design everywhere! 👨‍🎨</span>
-                  </Typing>
-                </h3>
               </div>
             </div>
           </div>
         </section>
-        <ShowAll />
+      <div className="container">
+      <a className="link-more" href="/portfolio">more</a>
+        <h2>Portfolio</h2>
+        
+        <div className="grid">
+          {
+            portfolioData.map((item, key) => {
+              if (key < 3) {
+                return (
+                  <a href={item.url} className="card" key={key}>
+                    <img src={`/images/portfolio/` + item.image} alt="" />
+                    <p className="name">{item.name} <span className="date">({item.date})</span></p>
+                    <p className="desc">{item.desc}</p>
+                  </a>
+                )
+              } else {
+                return false;
+              }
+            })
+          }
+        </div>
+        <a className="link-more" href="/illustrations">more</a>
+        <h2>Illustrations</h2>
+        
+        <div className="grid">
+          {
+            photos.map((item, key) => {
+              if (key < 3) {
+                return (
+                  <a href={"https://www.instagram.com/p/" + item.node.shortcode} key={key} className="card" rel="noopener noreferrer" target="_blank">
+                    <img src={item.node.thumbnail_resources[3].src} alt={item.node.accessibility_caption} />
+                  </a>
+                )
+              }else{
+                return false;
+              }
+            })
+          }
+        </div>
       </div>
-    );
-  }
+    </div>
+
+  )
 }
 
 export default Home;

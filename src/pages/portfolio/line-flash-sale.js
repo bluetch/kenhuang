@@ -3,7 +3,7 @@ import React from "react";
 // https://medium.com/prototyping-practice/apple-tv-gestural-ui-redesign-4388b9d779b3
 
 export const Content = () => (
-	<article className="portfolio">
+	<article className="portfolio-page">
 		<section>
 			<div className="container">
 				<div className="row">

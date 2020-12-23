@@ -1,378 +1,57 @@
-@import "_mixin.scss";
-/* /////////////////////////////
+@import "_variable.scss";
 
-	1. Basic Styles
-	2. Navbar
-  3. Buttons
-  4. About
-  5. Home
-  6. Portfolio
-  6-1. Medium style
-	14. Footer
-	15. Media Queries
-	16. Keyframe
+.header {
+  &.scroll {
+    border-bottom: 1px solid #B8b8b8;
+  }
 
-   //////////////////////////*/
+  .container {
+    display: flex;
+    justify-content: space-between;
+  }
 
-$primary: #e03535;
-$secondary: #e03535;
-$black10: rgba(0, 0, 0, 0.1);
+  .logo {
+    display: block;
+    margin-top: 16px;
 
+    img {
+      height: 30px;
+      display: inline-block;
+      vertical-align: middle;
+    }
+  }
 
-.text-secondary {
-	color: $secondary !important;
+  nav {
+    a {
+      display: inline-block;
+      color: $black50;
+      padding: 20px 20px;
+      text-decoration: none;
+
+      &:hover,
+      .active {
+        color: $blue60;
+      }
+      &:last-child{
+        padding-right: 0;
+      }
+    }
+  }
 }
 
-.btn-light {
-	border: 1px solid black;
-	color: black;
+.footer {
+  padding: 20px 0;
+
+  .copyright {
+    text-align: right;
+    color: $black40;
+    font-size: 12px;
+  }
+
 }
 
-body {
-	margin: 0;
-	padding: 0;
-	font-family: 'Roboto', 'Open Sans', sans-serif;
-	color: rgba(0, 0, 0, 0.87);
-	-webkit-font-smoothing: antialiased;
-	-moz-osx-font-smoothing: grayscale;
-
-	@media (min-width: 992px) {
-		//padding-top: 83px;
-	}
-
-	@media (max-width: 991px) {
-		padding-top: 59px;
-	}
-}
-
-strong {
-	font-weight: 600;
-}
-
-h1 {
-	font-size: 1.5rem;
-
-	@media (min-width: 992px) {
-		font-size: 2.5rem;
-	}
-}
-
-h2 {
-	font-size: 1.3rem;
-
-	@media (min-width: 992px) {
-		font-size: 2rem;
-	}
-}
-
-h3 {
-	font-size: 3rem;
-}
-
-a {
-	&.text-link {
-		color: rgba(0, 0, 0, 0.83);
-		text-decoration: underline;
-		margin: 0 2px 0 4px;
-	}
-
-	&.primary-link {
-		margin: 0 2px 0 4px;
-	}
-
-	&:hover {
-		text-decoration: none;
-	}
-}
-
-p {
-	line-height: 1.6;
-
-	@media(max-width: 991px) {
-		line-height: 1.3;
-	}
-}
-
-p,
-li {
-	font-weight: 300;
-
-	@media(min-width: 992px) {
-		letter-spacing: .05em;
-	}
-}
-
-ul {
-	@media(max-width: 991px) {
-		padding-left: 20px;
-	}
-
-	li {
-		font-size: 15px;
-		line-height: 20px;
-		margin-bottom: 10px;
-	}
-}
-
-hr {
-	margin: 32px 0;
-}
-
-section {
-	@media (min-width: 992px) {
-		margin: 100px 0px;
-	}
-
-	@media (max-width: 991px) {
-		margin: 30px 0;
-	}
-}
-
-.crop {
-	position: relative;
-	width: 100%;
-	padding-top: 100%;
-	overflow: hidden;
-}
-
-.crop img {
-	position: absolute;
-	left: 50%;
-	top: 50%;
-	height: 100%;
-	width: auto;
-	-webkit-transform: translate(-50%, -50%);
-	-ms-transform: translate(-50%, -50%);
-	transform: translate(-50%, -50%);
-}
-
-.crop img.portrait {
-	width: 100%;
-	height: auto;
-}
-
-/* ==============================================
-     2. Navbar 
-  ===============================================*/
-
-.navbar.navbar-light {
-	background-color: white; //box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.09);
-
-	.navbar-brand {
-		padding-left: 0;
-	}
-
-	.logo-img {
-		max-height: 30px;
-		margin: -4px 16px 0 0;
-	}
-
-	.logo-text {
-		display: inline-block;
-		letter-spacing: 1px;
-		margin: 0;
-		font-size: 1.3rem;
-		font-weight: 700;
-	}
-
-	.nav-item {
-		margin: 0;
-	}
-
-	.nav-link {
-		font-size: 15px;
-		font-weight: 400;
-		letter-spacing: .05em;
-		//padding: 10px 16px;
-		display: block;
-
-		&:hover {
-			text-decoration: none;
-			color: $secondary;
-		}
-
-		&.active {
-			font-weight: 600;
-		}
-	}
-
-	.navbar-toggler {
-		padding: .25rem;
-		border: none;
-	}
-
-	/* Large devices (desktops, 992px and up) */
-	@media (min-width: 992px) {
-		padding: 10px;
-
-		&.navbar-expand-lg .navbar-nav .nav-link {
-			padding-left: 40px;
-		}
-	}
-
-	@media (max-width: 991px) {
-		.navbar-nav {
-			height: 100vh;
-			padding-top: 20vh;
-		}
-
-		.nav-item {
-			padding: 10px 0;
-			text-align: center;
-		}
-
-		.logo-img {
-			position: absolute;
-			top: 15px;
-			left: 10px;
-		}
-
-		.logo-text {
-			font-size: 1.1rem;
-			letter-spacing: 0;
-		}
-
-		// .navbar-collapse::after {
-		// 	content: "";
-		// 	position: fixed;
-		// 	top: 256px;
-		// 	right: 0;
-		// 	bottom: 0;
-		// 	left: 0;
-		// 	background: rgba(0, 0, 0, 0.4);
-		// }
-	}
-}
-
-/* ==============================================
-     3. Buttons
-  ===============================================*/
-
-/* ==============================================
-     4. About
-  ===============================================*/
-
-#about {
-	h1 {
-		margin-bottom: 6px;
-		font-size: 22px;
-
-		@media (max-width: 991px) {
-			margin: 20px 0;
-		}
-	}
-
-	h3 {
-		margin-bottom: 30px;
-	}
-
-	.hero {
-		padding: 0;
-		background-repeat: no-repeat;
-		background-position: center center;
-		background-size: cover; //background-attachment: fixed;
-		//height: 50vh;
-	}
-
-	.title {
-		margin-bottom: 30px;
-		font-weight: 800;
-	}
-
-	.my-portrait {
-		width: 66%;
-		border-radius: 50%;
-		border: 8px solid white;
-		box-shadow: 0 1px 1px rgba(0, 0, 0, .07);
-	}
-
-	.instagram {
-		margin-top: 50px;
-		border-top: 1px solid $black10;
-		padding-top: 50px;
-	}
-
-	.instagram-photo {
-		border: 1px solid $black10;
-		border-radius: 2px;
-		display: block;
-
-		img {
-			width: 100%;
-			border: 6px solid white;
-		}
-	}
-
-	.profile {
-		margin: 160px 0;
-
-		@media (max-width: 991px) {
-			text-align: center;
-		}
-	}
-
-	.skill {
-		h3 {
-			margin-bottom: 60px;
-		}
-
-		h5 {
-			margin-top: 20px;
-
-			&:first-child {
-				margin-top: 0;
-			}
-		}
-
-		p {
-			margin-bottom: 6px;
-		}
-	}
-
-	.experience {
-		.job-title {
-			margin-top: 30px;
-		}
-
-		h5 {
-			font-weight: 500;
-		}
-
-		a {
-			margin: 0;
-		}
-	}
-
-	.travel {
-
-
-		.desc {
-			text-align: center;
-			font-size: 12px;
-			margin-top: 6px;
-			white-space: nowrap;
-			overflow: hidden;
-			text-overflow: ellipsis;
-		}
-
-		a {
-			img {
-				transition: all .2s ease-in-out;
-
-				&:hover {
-					transform: scale(1.1);
-				}
-			}
-		}
-	}
-}
-
-/* ==============================================
-     5. Home
-  ===============================================*/
-
-#home {
-	.hero {
+.home-page {
+  .hero {
 		position: relative;
 		padding: 27vh 0 17vh;
 		display: flex;
@@ -430,295 +109,307 @@ section {
 
 		}
 	}
-
-	.particles-layout {
-		background: #0052e9;
-	}
+  h1 {
+    font-family: 'Roboto';
+    font-weight: 300;
+    width: 60%;
+    margin: 160px auto 160px;
+    font-size: 38px;
+    line-height: 1.5;
+    text-align: center;
+  }
+  .link-more{
+    float:right;
+    color: $black40;
+  }
 }
 
-/* ==============================================
-     6. Portfolio
-  ===============================================*/
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  margin-bottom: 60px;
 
-.portfolio {
-	h3 {
-		font-size: 1.6em;
-		font-weight: 700;
+  &.four {
+    grid-template-columns: repeat(4, 1fr);
+  }
 
-		&:not(:first-child) {
-			margin-top: 50px;
-		}
+  .card {
+    color: black;
+    text-decoration: none;
+    display: block;
 
-		@media (max-width: 991px) {
-			font-size: 1em;
-		}
-	}
+    img {
+      width: 100%;
+    }
+  }
+}
 
-	h4 {
-		font-size: 1.1em;
-		margin-bottom: 20px;
+.portfolio-page {
+  section {
+    @media (min-width: 992px) {
+      margin: 100px 0px;
+    }
 
-		&:not(:first-child) {
-			margin-top: 50px;
-		}
-	}
+    @media (max-width: 991px) {
+      margin: 30px 0;
+    }
+  }
 
-	h5 {
-		margin-top: 30px;
-	}
+  h1 {
+    font-size: 2em;
+    margin: 0 0 20px;
+  }
 
-	.hero {
-		padding: 0;
-		background-repeat: no-repeat;
-		background-position: center center;
-		background-size: cover; // background-attachment: fixed;
-		height: 50vh;
-	}
+  h3 {
+    font-size: 1.6em;
+    font-weight: 700;
 
-	.title-block {
-		margin-bottom: 50px;
-		padding-bottom: 50px;
+    &:not(:first-child) {
+      margin-top: 50px;
+    }
 
-		@media(max-widh: 991px) {
-			margin-bottom: 10px;
-		}
-	}
+    @media (max-width: 991px) {
+      font-size: 1em;
+    }
+  }
 
-	.img-fluid {
-		margin: 30px 0;
-	}
+  h4 {
+    font-size: 1.1em;
+    margin-bottom: 20px;
 
-	.card {
-		position: relative;
-		opacity: 0.8;
-		transition: 0.3s all;
-		border: none;
-		margin-bottom: 40px;
-		color: #676767;
+    &:not(:first-child) {
+      margin-top: 50px;
+    }
+  }
 
-		&:hover {
-			transition: 0.3s all;
-			opacity: 1;
-			box-shadow: 0px 22px 43px rgba(68, 68, 68, 0.2);
-			margin-top: -5px;
+  h5 {
+    margin-top: 30px;
+  }
 
-			.card-body {
-				transition: 0.3s all;
-				padding-left: 1.25rem;
-			}
-		}
+  .hero {
+    padding: 0;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover; // background-attachment: fixed;
+    height: 50vh;
+  }
 
-		.card-body {
-			transition: 0.3s all;
-			position: relative;
-			padding-left: 0;
-		}
+  .title-block {
+    margin-bottom: 50px;
+    padding-bottom: 50px;
 
-		.card-title {
-			color: rgba(0, 0, 0, 0.87);
-			font-size: 18px;
-			display: inline-block;
-		}
+    @media(max-widh: 991px) {
+      margin-bottom: 10px;
+    }
+  }
 
-		.card-title:last-child {
-			margin-bottom: 0;
-		}
-		.date{
-			font-size: 14px;
-			margin-left: 8px;
-			vertical-align: middle;
-			color: rgba(0,0,0,0.4);
-		}
+  .img-fluid {
+    margin: 30px 0;
+  }
 
-		@media (min-width: 992px) {
-			.card-title {
-				font-size: 28px;
-				letter-spacing: -0.5px;
-			}
-		}
+  .card {
+    position: relative;
+    opacity: 0.8;
+    transition: 0.3s all;
+    border: none;
+    margin-bottom: 40px;
+    color: #676767;
 
-		@media (max-width: 991px) {
-			margin-bottom: 10px;
+    &:hover {
+      transition: 0.3s all;
+      opacity: 1;
+      box-shadow: 0px 22px 43px rgba(68, 68, 68, 0.2);
+      margin-top: -5px;
 
-			.card-body {
-				padding: 10px 0 0 0;
-			}
+      .card-body {
+        transition: 0.3s all;
+        padding-left: 1.25rem;
+      }
+    }
 
-			.card-title {
-				font-size: 0.8em;
-			}
+    .card-body {
+      transition: 0.3s all;
+      position: relative;
+      padding-left: 0;
+    }
 
-			p {
-				font-size: 0.8em;
-			}
-		}
-	}
+    .card-title {
+      color: rgba(0, 0, 0, 0.87);
+      font-size: 18px;
+      display: inline-block;
+    }
 
-	&.dls {
-		svg {
-			height: 54px;
-		}
-	}
+    .card-title:last-child {
+      margin-bottom: 0;
+    }
+
+    .date {
+      font-size: 14px;
+      margin-left: 8px;
+      vertical-align: middle;
+      color: rgba(0, 0, 0, 0.4);
+    }
+
+    @media (min-width: 992px) {
+      .card-title {
+        font-size: 28px;
+        letter-spacing: -0.5px;
+      }
+    }
+
+    @media (max-width: 991px) {
+      margin-bottom: 10px;
+
+      .card-body {
+        padding: 10px 0 0 0;
+      }
+
+      .card-title {
+        font-size: 0.8em;
+      }
+
+      p {
+        font-size: 0.8em;
+      }
+    }
+  }
+
+  &.dls {
+    svg {
+      height: 54px;
+    }
+  }
 }
 
 .portfolio-footer-link {
-	color: #ccc;
-	margin: 8px 12px;
-	word-break: keep-all;
-	display: inline-block;
-	font-size: 1.2em;
+  color: #ccc;
+  margin: 8px 12px;
+  word-break: keep-all;
+  display: inline-block;
+  font-size: 1.2em;
 }
 
-/* ==============================================
-     6. Card
-  ===============================================*/
-
-.card {}
-
-/* ==============================================
-     14. Footer
-  ===============================================*/
-
-footer {
-	padding: 20px 0;
-	color: #62656a;
-
-	.copyright {
-		float: right;
-		margin: 0;
-		font-size: 12px;
-		line-height: 37px;
-	}
-
-	a {
-		display: inline-block;
-
-		&:hover {
-			text-decoration: none;
-		}
-	}
-
-	i {
-		font-size: 25px;
-		color: #888;
-		margin-right: 10px;
-
-		&:hover {}
-	}
+.illustrations-page {
+  background: $black05;
 }
 
-#vocabulary {
-	input[type="checkbox"] {
-		margin-right: 4px;
-	}
+.contact-page {
+  padding: 100px 0;
+  text-align: center;
 }
 
-/* ==============================================
-     15. Media Queries
-  ===============================================*/
+.about-page {
+  padding: 100px 0;
 
-/* Extra small devices (portrait phones, less than 576px) */
+  h1 {
+    margin-bottom: 6px;
+    font-size: 22px;
 
-@media (max-width: 575.98px) {}
+    @media (max-width: 991px) {
+      margin: 20px 0;
+    }
+  }
 
-@media (max-width: 768px) {}
+  h3 {
+    margin-bottom: 30px;
+  }
 
-/* Small devices (mobile, 991px and down) */
+  .hero {
+    padding: 0;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover; //background-attachment: fixed;
+    //height: 50vh;
+  }
 
-@media (max-width: 991px) {}
+  .title {
+    margin-bottom: 30px;
+    font-weight: 800;
+  }
 
-/* Large devices (desktops, 992px and up) */
+  .my-portrait {
+    width: 66%;
+    border-radius: 50%;
+    border: 8px solid white;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, .07);
+  }
 
-@media (min-width: 992px) {}
+  .instagram {
+    margin-top: 50px;
+    border-top: 1px solid $black10;
+    padding-top: 50px;
+  }
 
-/* Extra large devices (large desktops, 1200px and up) */
+  .instagram-photo {
+    border: 1px solid $black10;
+    border-radius: 2px;
+    display: block;
 
-@media (min-width: 1200px) {}
+    img {
+      width: 100%;
+      border: 6px solid white;
+    }
+  }
 
-/* Medium devices (tablets, 768px and up) */
+  .profile {
+    margin: 160px 0;
 
-@media (min-width: 768px) and (max-width: 991.98px) {}
+    @media (max-width: 991px) {
+      text-align: center;
+    }
+  }
 
-/* ==============================================
-     16. Keyframe
-  ===============================================*/
+  .skill {
+    h3 {
+      margin-bottom: 60px;
+    }
 
-@-webkit-keyframes Gradient {
-	0% {
-		background-position: 0% 50%;
-	}
+    h5 {
+      margin-top: 20px;
 
-	50% {
-		background-position: 100% 50%;
-	}
+      &:first-child {
+        margin-top: 0;
+      }
+    }
 
-	100% {
-		background-position: 0% 50%;
-	}
-}
+    p {
+      margin-bottom: 6px;
+    }
+  }
 
-@-moz-keyframes Gradient {
-	0% {
-		background-position: 0% 50%;
-	}
+  .experience {
+    .job-title {
+      margin-top: 30px;
+    }
 
-	50% {
-		background-position: 100% 50%;
-	}
+    h5 {
+      font-weight: 500;
+    }
 
-	100% {
-		background-position: 0% 50%;
-	}
-}
+    a {
+      margin: 0;
+    }
+  }
 
-@keyframes Gradient {
-	0% {
-		background-position: 0% 50%;
-	}
+  .travel {
+    .desc {
+      text-align: center;
+      font-size: 12px;
+      margin-top: 6px;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
 
-	50% {
-		background-position: 100% 50%;
-	}
+    a {
+      img {
+        transition: all .2s ease-in-out;
 
-	100% {
-		background-position: 0% 50%;
-	}
-}
-
-
-// stock start
-
-.stock {
-	table {
-		p {
-			margin: 0;
-			font-size: 12px;
-		}
-	}
-}
-
-// illustration
-
-.illustration-page {
-	.grid {
-		display: grid;
-		grid-template-columns: 1fr 1fr 1fr 1fr;
-		grid-gap: 20px;
-	}
-
-	.item {
-		border: 1px solid rgba(0, 0, 0, 0.09);
-		padding: 4px;
-
-		&:hover {
-			img {
-				transform: scale(1.1);
-			}
-		}
-
-		img {
-			width: 100%;
-			transition: all .2s ease-in-out;
-		}
-	}
+        &:hover {
+          transform: scale(1.1);
+        }
+      }
+    }
+  }
 }

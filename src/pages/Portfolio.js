@@ -1,207 +1,54 @@
-import React from "react";
-import { Switch, Route, Link, NavLink } from 'react-router-dom';
-import { Helmet } from "react-helmet";
+import { Route, Switch, useRouteMatch, Redirect } from 'react-router-dom';
+import { portfolioData } from '../json/constants';
 
-const portfolioAPI = {
-  tasks: [
-    {
-      url: "product-detail-page",
-      name: "Product Detail Page",
-      date: "2018",
-      desc: "To improve performance and get more acquisition for e-commerce",
-      image: "static/images/portfolio/shopee-amp-product-detail-page.jpg",
-      state: true
-    },
-    {
-      url: "design-language-system",
-      name: "Design Language System",
-      date: "2018",
-      desc: "A set of rules and guidelines help work efficiency",
-      image: "static/images/portfolio/design-language-system-cover.jpg",
-      state: true
-    },
-    {
-      url: "design-exercise-pet-adoption",
-      name: "Pet Adoption",
-      date: "2017",
-      desc: "Design exercise",
-      image: "static/images/portfolio/pet-adoption-cover.png",
-      state: true
-    },
-    {
-      url: "shopee-microsite",
-      name: "Shopee microsite",
-      date: "2017",
-      desc: "A content management system help on E-commerce",
-      image: "static/images/portfolio/design-language-system-cover.jpg",
-      state: "hide"
-    },
-    {
-      url: "shopee-recruitment",
-      name: "Shopee Graphic Recruitment",
-      date: "2017",
-      desc: "Social network recruitment strategy",
-      image: "static/images/portfolio/shopee-recruitment-frog-cover.png",
-      state: true
-    },
-    {
-      url: "prescription-helper",
-      name: "Prescription Helper",
-      date: "2015",
-      desc: "A simple Medical App for get drugs of prescription",
-      image: "static/images/portfolio/prescription-helper-cover.png",
-      state: "hide"
-    },
-    {
-      url: "line-flash-sale",
-      name: "LINE Flash Sale",
-      date: "2014",
-      desc: "Deliver UX/UI design for Web App for LINE",
-      image: "static/images/portfolio/line-flash-sale-cover.png",
-      state: true
-    },
-    {
-      url: "lost-device-protection",
-      name: "Lost Device Protection",
-      date: "2012",
-      desc: "Trend Micro",
-      image: "static/images/portfolio/lost-device-protection-cover.jpg",
-      state: true
-    },
-    {
-      url: "jewelry-box",
-      name: "Jewelry-box",
-      date: "2012",
-      desc: "Trend Micro",
-      image: "static/images/portfolio/jewelry-box-cover.jpg",
-      state: true
-    },
-  ],
-  preview() { return this.tasks },
-  get: function (id) {
-    const isPortfolio = p => p.url === id
-    return this.tasks.find(isPortfolio)
-  }
-}
+const lists = [];
 
+portfolioData.map((item) => {
+  lists.push(item.url);
+})
 
-export class SeeMorePortfolio extends React.Component {
-  render() {
-    return (
-      <section>
-        <div className="container">
-          <div className="row">
-            <div className="col-12">
-              <NavLink to="/portfolio" className="portfolio-footer-link">All</NavLink>
-              {
-                portfolioAPI.preview().map(task => {
-                  if (task.state === true) {
-                    return (
-                      <NavLink to={`/portfolio/${task.url}`} className="portfolio-footer-link">
-                        {task.name}
-                      </NavLink>
-                    )
-                  }else{
-                    return false
-                  }
-                })
-              }
-            </div>
-          </div>
+const Index = (props) => {
+  return (
+    <div className="portfolio-page">
+      <div className="container">
+        <h1>Portfolio</h1>
+        <div className="grid">
+          {
+            portfolioData.map((item, key) => {
+              return (
+                <a href={`/portfolio/` + item.url} key={key} className="card">
+                  <img src={`/images/portfolio/` + item.image} alt="" />
+                  <p className="name">{item.name} <span className="date">({item.date})</span></p>
+                  <p className="desc">{item.desc}</p>
+                </a>
+              )
+            })
+          }
         </div>
-      </section>
-    )
-  }
-}
-
-export const ShowAll = () => (
-  <section className="portfolio">
-    <div className="container">
-      <div className="row">
-        {
-          portfolioAPI.preview().map(task => {
-            if (task.state === true) {
-              return (
-                <div className="col-6" key={task.url}>
-                  <Link to={`/portfolio/${task.url}`} className="card">
-                    <img src={task.image} className="card-img-top" alt={task.name} />
-                    <div className="card-body">
-                      <h3 className="card-title">{task.name}<span class="date">({task.date})</span></h3>
-                      <p className="desc">{task.desc}</p>
-                    </div>
-                  </Link>
-                </div>
-              )
-            } else if (task.state === false) {
-              return (
-                <div className="col-6" key={task.url}>
-                  <div className="card coming">
-                    <img src={task.image} className="card-img-top" alt={task.name} />
-                    <div className="card-body">
-                      <h3 className="card-title">{task.name}<span class="date">({task.date})</span></h3>
-                      <p className="desc">{task.desc}</p>
-                    </div>
-                  </div>
-                </div>
-              )
-            } else {
-              return false;
-            }
-          })
-        }
       </div>
     </div>
-  </section>
-)
-
-class Article extends React.Component {
-  // constructor(props){
-  //   super(props);
-  // }
-  componentDidMount() {
-    const item = portfolioAPI.get(this.props.match.params.url);
-    document.title = item.name + " | Ken Huang";
-  }
-  render() {
-    const item = portfolioAPI.get(this.props.match.params.url);
-    //console.log(item);
-    if (item) {
-      var { Content } = require('./portfolio/' + item.url);
-      return (
-        <div>
-          <Helmet
-            title={item.name}
-            meta={[
-              { name: "description", content: item.desc },
-              { property: "og:title", content: item.title },
-              { property: "og:site_name", content: "Product Designer | Ken Huang" },
-              { property: "og:url", content: item.url },
-              { property: "og:image", content: item.image },
-              { property: "og:description", content: item.desc },
-            ]}
-          />
-          <Content />
-          <SeeMorePortfolio />
-        </div>
-      )
-    } else {
-      return <div>Sorry, but the task was not found</div>
-    }
-  }
+  )
 }
 
-class Portfolio extends React.Component {
-  componentDidMount() {
-    document.title = "Portfolio - Ken Huang";
+const Item = (props) => {
+  const match = useRouteMatch('/portfolio/:pid');
+  if (lists.indexOf(match.params.pid) > -1) {
+    var { Content } = require('./portfolio/' + match.params.pid);
+    return <Content />;
+  } else {
+    return <Redirect to="/404" />
   }
-  render() {
-    return (
-      <Switch>
-        <Route exact path='/portfolio' component={ShowAll} />
-        <Route path='/portfolio/:url' component={Article} />
-      </Switch>
-    );
-  }
+
+}
+
+const Portfolio = (props) => {
+  document.title = "Portfolio | Ken Huang";
+  return (
+    <Switch>
+      <Route exact path='/portfolio' component={Index} />
+      <Route path='/portfolio/:pid' component={Item} />
+    </Switch>
+  )
 }
 
 export default Portfolio;

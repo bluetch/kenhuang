@@ -1,8 +1,8 @@
 import React from "react";
 
 export const Content = () => (
-  <article className="portfolio">
-    <img src="../static/images/portfolio/shopee-recruitment-frog-square.png"
+  <article className="portfolio-page">
+    <img src="/images/portfolio/shopee-recruitment-frog-square.png"
       alt="shopee recruitment cover"
       className="img-fluid"
     />
@@ -28,7 +28,7 @@ export const Content = () => (
           </div>
           <div className="col-md-7">
             <p>In the beginning of 2018, Travel Frog has topped the charts in the free game category in Apple's App Store in China for more than a fortnight. Soon after, it also becomes popular in South ease area.</p>
-            <img src="../static/images/portfolio/shopee-recruitment-frog-app.jpg"
+            <img src="/images/portfolio/shopee-recruitment-frog-app.jpg"
               alt="travel frog game"
               className="img-fluid"
             />
@@ -66,11 +66,11 @@ export const Content = () => (
       <h2>Visual Design</h2>
       </div>
       </div>
-      <img src="../static/images/portfolio/shopee-recruitment-wechat.png"
+      <img src="/images/portfolio/shopee-recruitment-wechat.png"
         alt="shopee recruitment wechat"
         className="img-fluid"
       />
-      <img src="../static/images/portfolio/shopee-recruitment-content.png"
+      <img src="/images/portfolio/shopee-recruitment-content.png"
         alt="shopee recruitment content"
         className="img-fluid"
       />
@@ -83,7 +83,7 @@ export const Content = () => (
           </div>
           <div className="col-md-7">
             <p>We got nearly <strong className="text-primary">hundred</strong> of great designer resumes around the China, Taiwan, Indonesia, Singapore, and Thailand ...etc, in one week.</p>
-            <img src="../static/images/portfolio/shopee-recruitment-email.png"
+            <img src="/images/portfolio/shopee-recruitment-email.png"
         alt="shopee recruitment content"
         className="img-fluid"
       />
