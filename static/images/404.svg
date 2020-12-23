@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="500px" height="400px" viewBox="0 0 455 400" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 51.1 (57501) - http://www.bohemiancoding.com/sketch -->
+    <defs>
+        <linearGradient x1="0.0138059701%" y1="50.1473881%" x2="100.353358%" y2="50.1473881%" id="linearGradient-1">
+            <stop stop-color="#FF4E2A" offset="0%"></stop>
+            <stop stop-color="#ffab00" offset="100%"></stop>
+        </linearGradient>
+        <g id="zero" stroke="#3579ed" stroke-width="1">
+            <circle class="st3" cx="235.3" cy="181.2" r="72.6"/>        
+            <ellipse transform="matrix(0.1602 -0.9871 0.9871 0.1602 18.7687 384.3608)" class="st3" cx="235.3" cy="181.2" rx="69.6" ry="69.6"/>        
+            <ellipse transform="matrix(0.1602 -0.9871 0.9871 0.1602 18.7687 384.3608)" class="st3" cx="235.3" cy="181.2" rx="66.6" ry="66.6"/>        
+            <ellipse transform="matrix(0.1602 -0.9871 0.9871 0.1602 18.7687 384.3608)" class="st3" cx="235.3" cy="181.2" rx="63.6" ry="63.6"/>        
+            <ellipse transform="matrix(0.1602 -0.9871 0.9871 0.1602 18.7687 384.3608)" class="st3" cx="235.3" cy="181.2" rx="60.6" ry="60.6"/>        
+            <ellipse transform="matrix(0.1602 -0.9871 0.9871 0.1602 18.7687 384.3608)" class="st3" cx="235.3" cy="181.2" rx="57.6" ry="57.6"/>        
+            <ellipse transform="matrix(0.1602 -0.9871 0.9871 0.1602 18.7687 384.3608)" class="st3" cx="235.3" cy="181.2" rx="54.6" ry="54.6"/>        
+            <ellipse transform="matrix(0.1602 -0.9871 0.9871 0.1602 18.7687 384.3608)" class="st3" cx="235.3" cy="181.2" rx="51.6" ry="51.6"/>        
+            <ellipse transform="matrix(0.1602 -0.9871 0.9871 0.1602 18.7687 384.3608)" class="st3" cx="235.3" cy="181.2" rx="48.6" ry="48.6"/>        
+            <ellipse transform="matrix(0.1602 -0.9871 0.9871 0.1602 18.7687 384.3608)" class="st3" cx="235.3" cy="181.2" rx="45.6" ry="45.6"/>        
+            <ellipse transform="matrix(0.1602 -0.9871 0.9871 0.1602 18.7687 384.3608)" class="st3" cx="235.3" cy="181.2" rx="42.6" ry="42.6"/>        
+            <ellipse transform="matrix(0.1602 -0.9871 0.9871 0.1602 18.7687 384.3608)" class="st3" cx="235.3" cy="181.2" rx="39.6" ry="39.6"/>
+        </g>
+        <g id="four" stroke="#3579ed" stroke-width="1">
+            <polyline class="st3" points="104.2,256.2 104.2,136 64.3,182.9 104.2,182.9  "/>
+            <polyline class="st3" points="107.1,256.2 107.1,131.5 104.2,131.5 60.7,182.9 60.7,185.9 104.2,185.9     "/>
+            <polyline class="st3" points="109.9,256.2 109.9,127.3 104.2,127.3 57.1,182.9 57.1,189 104.2,189     "/>
+            <polyline class="st3" points="112.8,256.2 112.8,123.1 104.2,123.1 53.5,182.9 53.5,192.1 104.2,192.1     "/>
+            <polyline class="st3" points="115.7,256.2 115.7,118.8 104.2,118.8 49.9,182.9 49.9,195.1 104.2,195.1     "/>
+            <polyline class="st3" points="118.6,256.2 118.6,114.6 104.2,114.6 46.4,182.9 46.4,198.2 104.2,198.2     "/>
+            <polyline class="st3" points="121.5,256.2 121.5,110.3 104.2,110.3 42.8,182.9 42.8,201.2 104.2,201.2     "/>
+            <polyline class="st3" points="124.4,256.2 124.4,106.1 104.2,106.1 39.2,182.9 39.2,204.3 104.2,204.3     "/>
+            <polyline class="st3" points="127.2,256.2 127.2,101.9 104.2,101.9 35.6,182.9 35.6,207.4 104.2,207.4     "/>
+            <polyline class="st3" points="130.1,256.2 130.1,97.6 104.2,97.6 32,182.9 32,210.4 104.2,210.4   "/>
+            <polyline class="st3" points="133,256.2 133,93.4 104.2,93.4 28.4,182.9 28.4,213.5 104.2,213.5   "/>
+            <polyline class="st3" points="135.9,256.2 135.9,89.1 104.2,89.1 24.8,182.9 24.8,216.5 104.2,216.5   "/>
+            <line class="st3" x1="171.2" y1="216.5" x2="135.9" y2="216.5"/>
+            <line class="st3" x1="135.9" y1="182.9" x2="171.2" y2="182.9"/>
+            <line class="st3" x1="135.9" y1="185.9" x2="171.2" y2="185.9"/>
+            <line class="st3" x1="135.9" y1="189" x2="171.2" y2="189"/>
+            <line class="st3" x1="135.9" y1="192.1" x2="171.2" y2="192.1"/>
+            <line class="st3" x1="135.9" y1="195.1" x2="171.2" y2="195.1"/>
+            <line class="st3" x1="135.9" y1="198.2" x2="171.2" y2="198.2"/>
+            <line class="st3" x1="135.9" y1="201.2" x2="171.2" y2="201.2"/>
+            <line class="st3" x1="135.9" y1="204.3" x2="171.2" y2="204.3"/>
+            <line class="st3" x1="135.9" y1="207.4" x2="171.2" y2="207.4"/>
+            <line class="st3" x1="135.9" y1="210.4" x2="171.2" y2="210.4"/>
+            <line class="st3" x1="135.9" y1="213.5" x2="171.2" y2="213.5"/>
+        </g>
+
+        <g id="Group2">
+            <path id="Rectangle-path" stroke="#3579ed" d="M0,0 h145 v145 h-145 v-145"/>
+
+            <circle id="Oval" fill="url(#linearGradient-1)" fill-rule="nonzero" cx="0" cy="0" r="13">
+                <animateMotion id="anim4" dur="35s" repeatCount="indefinite">
+                    <mpath xlink:href="#Rectangle-path"/>
+                </animateMotion>
+            </circle>
+        </g>
+
+    </defs>
+    <g id="image" fill="none">
+        <use xlink:href="#four" x="0" y="0" transform="translate(0,0)">
+            <animateMotion id="anim1" dur="20s" repeatCount="indefinite" path="M0,0V30V0z"/>
+        </use>
+        <use xlink:href="#four" x="0" y="0" transform="translate(250,10)">
+            <animateMotion id="anim2" dur="20s" repeatCount="indefinite" path="M0,20V0V20z"/>
+        </use>
+        <use xlink:href="#zero" x="0" y="0" transform="translate(0,0)">
+            <animateMotion id="anim3" dur="20s" repeatCount="indefinite" path="M0,30V0V60V30z"/>
+        </use>
+
+        <use xlink:href="#Group2" x="0" y="0">
+            <animateMotion id="anim5" dur="30s" repeatCount="indefinite" path="M237.497052,96.5724689 C208.639731,99.2202218 189.538621,108.854632 180.193721,125.475699 C170.848821,142.096766 174.079342,162.823443 189.885284,187.65573 C218.900008,183.673794 237.41554,173.784541 245.431879,157.987968 C253.448217,142.191396 250.803275,121.719563 237.497052,96.5724689 Z"/>
+        </use>
+
+    </g>
+</svg>

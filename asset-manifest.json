@@ -1,23 +1,16 @@
 {
-  "files": {
-    "main.css": "/kenhuang/static/css/main.05bdb910.chunk.css",
-    "main.js": "/kenhuang/static/js/main.63cd7296.chunk.js",
-    "main.js.map": "/kenhuang/static/js/main.63cd7296.chunk.js.map",
-    "runtime-main.js": "/kenhuang/static/js/runtime-main.2ff5b135.js",
-    "runtime-main.js.map": "/kenhuang/static/js/runtime-main.2ff5b135.js.map",
-    "static/js/2.47e37b95.chunk.js": "/kenhuang/static/js/2.47e37b95.chunk.js",
-    "static/js/2.47e37b95.chunk.js.map": "/kenhuang/static/js/2.47e37b95.chunk.js.map",
-    "static/js/3.72cb7bb8.chunk.js": "/kenhuang/static/js/3.72cb7bb8.chunk.js",
-    "static/js/3.72cb7bb8.chunk.js.map": "/kenhuang/static/js/3.72cb7bb8.chunk.js.map",
-    "index.html": "/kenhuang/index.html",
-    "static/css/main.05bdb910.chunk.css.map": "/kenhuang/static/css/main.05bdb910.chunk.css.map",
-    "static/js/2.47e37b95.chunk.js.LICENSE.txt": "/kenhuang/static/js/2.47e37b95.chunk.js.LICENSE.txt",
-    "static/media/index.scss": "/kenhuang/static/media/WorkSans-Regular.b13bc1b6.ttf"
-  },
-  "entrypoints": [
-    "static/js/runtime-main.2ff5b135.js",
-    "static/js/2.47e37b95.chunk.js",
-    "static/css/main.05bdb910.chunk.css",
-    "static/js/main.63cd7296.chunk.js"
-  ]
+  "main.css": "/static/css/main.d0768b5b.chunk.css",
+  "main.js": "/static/js/main.4d995034.chunk.js",
+  "main.js.map": "/static/js/main.4d995034.chunk.js.map",
+  "runtime~main.js": "/static/js/runtime~main.48c1f52f.js",
+  "runtime~main.js.map": "/static/js/runtime~main.48c1f52f.js.map",
+  "static/css/2.1c70f99b.chunk.css": "/static/css/2.1c70f99b.chunk.css",
+  "static/js/2.944e1dcc.chunk.js": "/static/js/2.944e1dcc.chunk.js",
+  "static/js/2.944e1dcc.chunk.js.map": "/static/js/2.944e1dcc.chunk.js.map",
+  "index.html": "/index.html",
+  "precache-manifest.e1d17e6f8f4926848fc971965ba4e886.js": "/precache-manifest.e1d17e6f8f4926848fc971965ba4e886.js",
+  "service-worker.js": "/service-worker.js",
+  "static/css/2.1c70f99b.chunk.css.map": "/static/css/2.1c70f99b.chunk.css.map",
+  "static/css/main.d0768b5b.chunk.css.map": "/static/css/main.d0768b5b.chunk.css.map",
+  "static/js/2.944e1dcc.chunk.js.LICENSE.txt": "/static/js/2.944e1dcc.chunk.js.LICENSE.txt"
 }
