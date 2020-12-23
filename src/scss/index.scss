@@ -1,0 +1,55 @@
+@font-face {
+  font-family: 'Work Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Work Sans'), local('WorkSans'),
+    url('../assets/fonts/Work_sans/WorkSans-Regular.ttf');
+}
+
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Roboto'),
+    url('../assets/fonts/Roboto/Roboto-Regular.ttf');
+}
+
+body {
+  margin: 0;
+  font-family: 'Roboto', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+ol, ul{
+  padding-left: 20px;
+}
+
+li,p{
+  font-weight: 300;
+  line-height: 1.5;
+  letter-spacing: .05em;
+}
+
+a {
+	&.text-link {
+		color: rgba(0, 0, 0, 0.83);
+		text-decoration: underline;
+		margin: 0 2px 0 4px;
+	}
+
+	&.primary-link {
+		margin: 0 2px 0 4px;
+	}
+
+	&:hover {
+		text-decoration: none;
+	}
+}

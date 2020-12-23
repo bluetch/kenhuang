@@ -82,8 +82,9 @@ const App = () => (
         <Route path='/resume' component={Resume} />
         <Route path='/illustration' component={Illustration} />
         <Route path='/kenhuang' component={Home} />
-        <Route path='/stock' component={Stock} />
         <Route path='/stock/ark' component={Ark} />
+        <Route path='/stock' component={Stock} />
+        
         <Route path='/game' component={Game} />
         <Route path='/vocabulary' component={Vocabulary} />
         <Route path="*" component={NoMatch} />
